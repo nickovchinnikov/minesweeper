@@ -7,3 +7,6 @@
 
 ## Lecture 3 Project init
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/1)
+
+## Lecture 4 Code-style tools Eslint and Prettier
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/2)

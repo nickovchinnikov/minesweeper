@@ -1,0 +1,29 @@
+{
+  "name": "minesweeper",
+  "version": "1.0.0",
+  "description": "Minesweeper game",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickovchinnikov/minesweeper.git"
+  },
+  "keywords": [
+    "React",
+    "Redux"
+  ],
+  "author": "Nikita Ovchinnikov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nickovchinnikov/minesweeper/issues"
+  },
+  "homepage": "https://github.com/nickovchinnikov/minesweeper#readme",
+  "devDependencies": {
+    "typescript": "^4.3.4"
+  }
+}

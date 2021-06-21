@@ -1,13 +1,13 @@
-type UserPermissions = 'admin' | 'user' | 'manager';
+export type UserPermissions = 'admin' | 'user' | 'manager';
 
-type PermissionsWithoutAdmin = Exclude<UserPermissions, 'admin'>;
+export type PermissionsWithoutAdmin = Exclude<UserPermissions, 'admin'>;
 
 interface DepartmentsForPermission {
   depName: string;
   lvl: number;
 }
 
-const DepsForPerms: Record<UserPermissions, DepartmentsForPermission> = {
+export const DepsForPerms: Record<UserPermissions, DepartmentsForPermission> = {
   admin: {
     depName: 'security',
     lvl: 10,
@@ -32,7 +32,7 @@ type BasicUser<A = boolean, P = TuplePermissinons> = {
   permissions?: P;
 };
 
-type BasicUserWithoutPermissions = Omit<BasicUser, 'permissions'>;
+export type BasicUserWithoutPermissions = Omit<BasicUser, 'permissions'>;
 
 type AdvancedUser = {
   account: number;
@@ -40,11 +40,11 @@ type AdvancedUser = {
 
 type FullUser<A = boolean, P = string[]> = BasicUser<A, P> & AdvancedUser;
 
-type BasicUserReadonly = Readonly<BasicUser>;
-type BasicUserRequired = Required<BasicUser>;
-type BasicUserPartial = Partial<BasicUser>;
+export type BasicUserReadonly = Readonly<BasicUser>;
+export type BasicUserRequired = Required<BasicUser>;
+export type BasicUserPartial = Partial<BasicUser>;
 
-type BasicUserReadonlyRequired = Readonly<Required<BasicUser>>;
+export type BasicUserReadonlyRequired = Readonly<Required<BasicUser>>;
 
 const user: FullUser<boolean> = {
   name: 'Nick',
@@ -65,12 +65,12 @@ function getFirst<T>(arr: T[]): T {
 
 type BasicFunction = () => FullUser[];
 
-type getFirstReturnType = ReturnType<BasicFunction>;
+export type getFirstReturnType = ReturnType<BasicFunction>;
 
 getFirst<FullUser>(usersArray);
 
 type MathFunc<T = number> = (a: T, b: T) => T;
 
-const mul: MathFunc = (a, b) => a * b;
+export const mul: MathFunc = (a, b) => a * b;
 
-const add: MathFunc = (a, b) => a + b;
+export const add: MathFunc = (a, b) => a + b;

@@ -20,3 +20,6 @@
 ### Unknown, never and Tuple
 ### UtilityTypes
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/3)
+
+### Minesweeper basic types
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/4)

@@ -1,6 +1,5 @@
 # Minesweeper
 
-
 ## Secture 1: Introduction
 
 ### Minesweeper presentation
@@ -28,3 +27,6 @@
 
 ### Ecma TC39 and Babel
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/5)
+
+### Jest testing framework (TDD vs TLD)
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/6)

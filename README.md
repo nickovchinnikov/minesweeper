@@ -1,7 +1,7 @@
 # Minesweeper
 
 
-## Secture 1 Introduction
+## Secture 1: Introduction
 
 ### Minesweeper presentation
 
@@ -23,3 +23,8 @@
 
 ### Minesweeper basic types
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/4)
+
+## Secture 2: Jest and TDD
+
+### Ecma TC39 and Babel
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/5)

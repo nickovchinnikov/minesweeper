@@ -30,3 +30,6 @@
 
 ### Jest testing framework (TDD vs TLD)
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/6)
+
+### Basic game logic
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/7)

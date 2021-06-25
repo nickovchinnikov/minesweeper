@@ -33,3 +33,4 @@
 
 ### Basic game logic
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/7)
+[Pull request2](https://github.com/nickovchinnikov/minesweeper/pull/8)

@@ -1,5 +1,10 @@
 import { Cell, Coords, Field } from './Field';
 
+/**
+ * Get neighbour cells indexes
+ * @param {Coords} coords
+ * @returns {Record<string, [number, number]>}
+ */
 export const getNeigboursItems = ([y, x]: Coords): Record<
   string,
   [number, number]
@@ -14,9 +19,21 @@ export const getNeigboursItems = ([y, x]: Coords): Record<
   leftTop: [y - 1, x - 1],
 });
 
+/**
+ * Check item in the field
+ * @param {Coords} coords
+ * @param {Field} field
+ * @returns {boolean}
+ */
 export const checkItemInField = ([y, x]: Coords, { length }: Field): boolean =>
   y >= 0 && x >= 0 && length - y > 0 && length - x > 0;
 
+/**
+ * Increment neighbour items for cell with coords
+ * @param {Coords} coords
+ * @param {Field} field
+ * @returns {Cell}
+ */
 export const incrementNeibours = (coords: Coords, field: Field): Field => {
   const items = getNeigboursItems(coords);
 

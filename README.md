@@ -77,3 +77,13 @@
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/7)
 
 [Pull request2](https://github.com/nickovchinnikov/minesweeper/pull/8)
+
+## Section 5: Components Library
+
+### Library Emotion for css-in-js
+
+[emotion docs](https://emotion.sh/docs/introduction)
+
+[minesweeper codepen](https://codepen.io/poopsplat/pen/XOBQEe)
+
+[pull request](https://github.com/nickovchinnikov/minesweeper/pull/11/files)

@@ -1,6 +1,6 @@
 # Minesweeper
 
-## Secture 1: Introduction
+## Section 1: Introduction
 
 ### Minesweeper presentation
 
@@ -16,6 +16,9 @@
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/2)
 
+
+## Section 2: Typescript recap
+
 ### Typescript basic
 ### Parametric typing with generics
 ### Interfaces, Types and Union
@@ -30,15 +33,36 @@
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/4)
 
-## Secture 2: Jest and TDD
+## Section 3: React intro
+
+### Create React App
+
+[Create React App](https://create-react-app.dev/)
+
+### JSX at Glance
+
+[Introducing JSX](https://reactjs.org/docs/introducing-jsx.html)
+
+### JSX compilation
+
+[Introducing the New JSX Transform](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html)
+
+### Props and conditional rendering
 
 ### Ecma TC39 and Babel
 
-[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/5)
-
 [What is Babel?](https://babeljs.io/docs/en/)
-
 [TC39](https://tc39.es/)
+
+### Webpack intro
+
+[Webpack Getting Started](https://webpack.js.org/guides/getting-started/)
+
+### Webpack dev server
+
+[React intro examples pull request](https://github.com/nickovchinnikov/minesweeper/pull/10/files)
+
+## Section 4: Jest, TDD and basic game logic
 
 ### Jest testing framework (TDD vs TLD)
 
@@ -48,7 +72,7 @@
 
 [Jest and TDD](https://medium.com/@suvodeep4119/javascript-tdd-using-jest-9b535c6be7be)
 
-### Basic game logic
+### Basic game functionality
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/7)
 

@@ -24,4 +24,12 @@ module.exports = {
     'prettier/prettier': ['error', { singleQuote: true }],
     'react/prop-types': 0,
   },
+  overrides: [
+    {
+      files: ['webpack.config.js'],
+      rules: {
+        '@typescript-eslint/no-var-requires': ['off'],
+      },
+    },
+  ],
 };

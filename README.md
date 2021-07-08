@@ -62,7 +62,24 @@
 
 [React intro examples pull request](https://github.com/nickovchinnikov/minesweeper/pull/10/files)
 
-## Section 4: Jest, TDD and basic game logic
+## Section 4: Storybook and Components Library
+
+### Library Emotion for css-in-js
+
+[Emotion docs](https://emotion.sh/docs/introduction)
+
+[Minesweeper codepen](https://codepen.io/poopsplat/pen/XOBQEe)
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/11/files)
+
+### Storybook intro
+[Strybook docs](https://storybook.js.org/)
+
+### Create components with Storybook
+### Components composition
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/12)
+
+## Section 5: Jest, TDD and basic game logic
 
 ### Jest testing framework (TDD vs TLD)
 
@@ -78,12 +95,3 @@
 
 [Pull request2](https://github.com/nickovchinnikov/minesweeper/pull/8)
 
-## Section 5: Components Library
-
-### Library Emotion for css-in-js
-
-[emotion docs](https://emotion.sh/docs/introduction)
-
-[minesweeper codepen](https://codepen.io/poopsplat/pen/XOBQEe)
-
-[pull request](https://github.com/nickovchinnikov/minesweeper/pull/11/files)

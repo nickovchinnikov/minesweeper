@@ -79,6 +79,9 @@
 ### Components composition
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/12)
 
+### Chromatic for visual testing
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/13)
+
 ## Section 5: Jest, TDD and basic game logic
 
 ### Jest testing framework (TDD vs TLD)

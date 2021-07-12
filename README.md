@@ -85,6 +85,9 @@
 ### List and Keys
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/14)
 
+### Dynamic components with useState Hook
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/15)
+
 ## Section 5: Jest, TDD and basic game logic
 
 ### Jest testing framework (TDD vs TLD)

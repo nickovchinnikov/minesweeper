@@ -16,7 +16,6 @@
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/2)
 
-
 ## Section 2: Typescript recap
 
 ### Typescript basic
@@ -89,6 +88,7 @@
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/11/files)
 
 ### Storybook intro
+
 [Strybook docs](https://storybook.js.org/)
 
 ### Create components with Storybook
@@ -116,3 +116,9 @@
 [Testing-library](https://testing-library.com/docs/queries/about)
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/16)
+
+### Fragment
+
+[Fragments](https://reactjs.org/docs/fragments.html)
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/17)

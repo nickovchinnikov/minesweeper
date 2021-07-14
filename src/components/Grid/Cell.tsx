@@ -1,38 +1,91 @@
 import React, { FC } from 'react';
 import styled from '@emotion/styled';
 
-import { Cell as CellType, CellState } from '@/helpers/Field';
+import { Cell as CellType, Coords, CellState } from '@/helpers/Field';
 
 export interface CellProps {
+  /**
+   * Cell status based on the CellType
+   */
   children: CellType;
+  /**
+   * Cell coordinates
+   */
+  coords: Coords;
+  /**
+   * onClick by cell handler
+   */
+  onClick: (coords: Coords) => void;
+  /**
+   * onContextMenu by cell handler
+   */
+  onContextMenu: (coords: Coords) => void;
 }
 
-export const Cell: FC<CellProps> = ({ children }) => {
+export const Cell: FC<CellProps> = ({ children, coords, ...rest }) => {
+  const isActiveCell = [
+    CellState.hidden,
+    CellState.flag,
+    CellState.weakFlag,
+  ].includes(children);
+
+  const onClick = () => {
+    if (isActiveCell) {
+      rest.onClick(coords);
+    }
+  };
+
+  const onContextMenu = (elem: React.MouseEvent<HTMLElement>) => {
+    /**
+     * Prevent context menu by default
+     */
+    elem.preventDefault();
+
+    if (isActiveCell) {
+      rest.onContextMenu(coords);
+    }
+  };
+
+  const props = {
+    onClick,
+    onContextMenu,
+  };
+
+  return <ComponentsMap {...props}>{children}</ComponentsMap>;
+};
+
+interface ComponentsMapProps {
+  children: CellType;
+  onClick: (elem: React.MouseEvent<HTMLElement>) => void;
+  onContextMenu: (elem: React.MouseEvent<HTMLElement>) => void;
+}
+
+const ComponentsMap: FC<ComponentsMapProps> = ({ children, ...rest }) => {
   switch (children) {
     case CellState.empty:
-      return <RevealedFrame />;
+      return <RevealedFrame {...rest} />;
     case CellState.bomb:
       return (
-        <BombFrame>
+        <BombFrame {...rest}>
           <Bomb />
         </BombFrame>
       );
+    case CellState.hidden:
+      return <ClosedFrame {...rest} />;
     case CellState.flag:
       return (
-        <ClosedFrame>
+        <ClosedFrame {...rest}>
           <Flag />
         </ClosedFrame>
       );
     case CellState.weakFlag:
       return (
-        <ClosedFrame>
+        <ClosedFrame {...rest}>
           <WeakFlag />
         </ClosedFrame>
       );
-    case CellState.hidden:
-      return <ClosedFrame />;
     default:
-      return <RevealedFrame>{children}</RevealedFrame>;
+      return <RevealedFrame {...rest}>{children}</RevealedFrame>;
   }
 };
 

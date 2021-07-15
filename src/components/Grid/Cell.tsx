@@ -3,6 +3,8 @@ import styled from '@emotion/styled';
 
 import { Cell as CellType, Coords, CellState } from '@/helpers/Field';
 
+import { useMouseDown } from '@/hooks/useMouseDown';
+
 export interface CellProps {
   /**
    * Cell status based on the CellType
@@ -22,15 +24,16 @@ export interface CellProps {
   onContextMenu: (coords: Coords) => void;
 }
 
+export const isActiveCell = (cell: CellType): boolean =>
+  [CellState.hidden, CellState.flag, CellState.weakFlag].includes(cell);
+
 export const Cell: FC<CellProps> = ({ children, coords, ...rest }) => {
-  const isActiveCell = [
-    CellState.hidden,
-    CellState.flag,
-    CellState.weakFlag,
-  ].includes(children);
+  const [mouseDown, setMouseDown, setMouseUp] = useMouseDown();
+
+  const isActive = isActiveCell(children);
 
   const onClick = () => {
-    if (isActiveCell) {
+    if (isActive) {
       rest.onClick(coords);
     }
   };
@@ -41,14 +44,31 @@ export const Cell: FC<CellProps> = ({ children, coords, ...rest }) => {
      */
     elem.preventDefault();
 
-    if (isActiveCell) {
+    if (isActive) {
       rest.onContextMenu(coords);
+    }
+  };
+
+  const onMouseDown = () => {
+    if (isActive) {
+      setMouseDown();
+    }
+  };
+
+  const onMouseUp = () => {
+    if (isActive) {
+      setMouseUp();
     }
   };
 
   const props = {
     onClick,
     onContextMenu,
+    onMouseDown,
+    onMouseUp,
+    onMouseLeave: onMouseUp,
+    mouseDown,
+    'data-testid': `${children}_${coords}`,
   };
 
   return <ComponentsMap {...props}>{children}</ComponentsMap>;
@@ -58,6 +78,11 @@ interface ComponentsMapProps {
   children: CellType;
   onClick: (elem: React.MouseEvent<HTMLElement>) => void;
   onContextMenu: (elem: React.MouseEvent<HTMLElement>) => void;
+  onMouseDown: () => void;
+  onMouseUp: () => void;
+  onMouseLeave: () => void;
+  mouseDown: boolean;
+  'data-testid'?: string;
 }
 
 const ComponentsMap: FC<ComponentsMapProps> = ({ children, ...rest }) => {
@@ -89,7 +114,11 @@ const ComponentsMap: FC<ComponentsMapProps> = ({ children, ...rest }) => {
   }
 };
 
-const ClosedFrame = styled.div`
+interface ClosedFrameProps {
+  mouseDown: boolean;
+}
+
+const ClosedFrame = styled.div<ClosedFrameProps>`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,7 +128,8 @@ const ClosedFrame = styled.div`
   height: 1.8vw;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
-  border-color: white #9e9e9e #9e9e9e white;
+  border-color: ${({ mouseDown = false }) =>
+    mouseDown ? 'transparent' : 'white #9e9e9e #9e9e9e white'};
   &:hover {
     filter: brightness(1.1);
   }

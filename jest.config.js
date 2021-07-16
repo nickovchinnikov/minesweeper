@@ -9,6 +9,15 @@ module.exports = {
   // Indicates whether the coverage information should be collected while executing the test
   collectCoverage: true,
 
+  coverageThreshold: {
+    global: {
+      branches: 90,
+      functions: 90,
+      lines: 90,
+      statements: 90,
+    },
+  },
+
   // The directory where Jest should output its coverage files
   coverageDirectory: 'coverage',
 

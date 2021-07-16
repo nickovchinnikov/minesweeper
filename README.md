@@ -117,6 +117,8 @@
 
 [Testing-library](https://testing-library.com/docs/queries/about)
 
+[How to use React Testing Library Tutorial](https://www.robinwieruch.de/react-testing-library)
+
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/16)
 
 ### Fragment

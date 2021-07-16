@@ -1,5 +1,9 @@
 .history
 .vscode
+__snapshots__
 coverage
+mutation
 node_modules
 build-storybook.log
+# stryker temp files
+.stryker-tmp

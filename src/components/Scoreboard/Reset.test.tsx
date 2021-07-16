@@ -5,6 +5,13 @@ import { Reset } from './Reset';
 
 describe('Reset button check', () => {
   const ResetWithDummyHandlerOnReset: FC = () => <Reset onReset={() => null} />;
+  it('Reset renders correctly', () => {
+    const onReset = jest.fn();
+
+    const { asFragment } = render(<Reset onReset={onReset} />);
+
+    expect(asFragment()).toMatchSnapshot();
+  });
   it('Should render elements with default state', () => {
     render(<ResetWithDummyHandlerOnReset />);
 

@@ -9,6 +9,18 @@ describe('Cell component check', () => {
   const coords: Coords = [1, 1];
 
   for (let cell = CellState.empty; cell <= CellState.weakFlag; cell++) {
+    it('Cell renders correctly', () => {
+      const props = {
+        coords,
+        onClick: jest.fn(),
+        onContextMenu: jest.fn(),
+      };
+
+      const { asFragment } = render(<Cell {...props}>{cell}</Cell>);
+
+      expect(asFragment()).toMatchSnapshot();
+    });
+
     it('Check prevent default contextMenu for every type of cell', () => {
       const props = {
         coords,

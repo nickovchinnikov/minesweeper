@@ -105,6 +105,8 @@
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/14)
 
+## Section 6: React Hooks intro
+
 ### Dynamic components with useState Hook
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/15)
@@ -115,6 +117,8 @@
 
 [Testing-library](https://testing-library.com/docs/queries/about)
 
+[How to use React Testing Library Tutorial](https://www.robinwieruch.de/react-testing-library)
+
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/16)
 
 ### Fragment
@@ -122,3 +126,12 @@
 [Fragments](https://reactjs.org/docs/fragments.html)
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/17)
+
+### Cell component part1
+### Cell component part2
+### Cell component part3
+### Cell component tests
+### Custom hooks
+### Game Field (grid) component
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/18)

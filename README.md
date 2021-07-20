@@ -143,3 +143,7 @@
 ### Test quality tool Stryker-Mutator
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/19)
+
+### Githooks and Husky
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/20)

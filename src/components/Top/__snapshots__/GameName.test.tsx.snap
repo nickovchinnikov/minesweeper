@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GameName renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-size: 2em;
+}
+
+<h1
+    class="emotion-0"
+  >
+    minesweeper
+  </h1>
+</DocumentFragment>
+`;

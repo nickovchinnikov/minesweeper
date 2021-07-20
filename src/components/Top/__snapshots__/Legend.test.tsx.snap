@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Legend renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-size: 1em;
+  margin: 0 auto 2vw;
+  line-height: 1.25em;
+}
+
+.emotion-1 {
+  background: #e3e3e3;
+}
+
+.emotion-2 {
+  color: #ec433c;
+}
+
+.emotion-3 {
+  color: #2a48ec;
+}
+
+<legend
+    class="emotion-0"
+  >
+    <strong>
+      Flag: 
+    </strong>
+    <code
+      class="emotion-1"
+    >
+      <span
+        class="emotion-2"
+      >
+        ctrl
+      </span>
+       + 
+      <span
+        class="emotion-3"
+      >
+        click
+      </span>
+    </code>
+  </legend>
+</DocumentFragment>
+`;

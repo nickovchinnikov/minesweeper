@@ -32,11 +32,11 @@ export const Cell: FC<CellProps> = ({ children, coords, ...rest }) => {
 
   const onClick = () => rest.onClick(coords);
 
-  const onContextMenu = (elem: React.MouseEvent<HTMLElement>) => {
+  const onContextMenu = (event: React.MouseEvent<HTMLDivElement>) => {
     /**
      * Prevent context menu by default
      */
-    elem.preventDefault();
+    event.preventDefault();
 
     if (isActiveCell(children)) {
       rest.onContextMenu(coords);
@@ -58,8 +58,8 @@ export const Cell: FC<CellProps> = ({ children, coords, ...rest }) => {
 
 interface ComponentsMapProps {
   children: CellType;
-  onClick: (elem: React.MouseEvent<HTMLElement>) => void;
-  onContextMenu: (elem: React.MouseEvent<HTMLElement>) => void;
+  onClick: (event: React.MouseEvent<HTMLDivElement>) => void;
+  onContextMenu: (event: React.MouseEvent<HTMLDivElement>) => void;
   onMouseDown: () => void;
   onMouseUp: () => void;
   onMouseLeave: () => void;
@@ -105,7 +105,7 @@ interface ClosedFrameProps {
   mouseDown?: boolean;
 }
 
-const ClosedFrame = styled.div<ClosedFrameProps>`
+export const ClosedFrame = styled.div<ClosedFrameProps>`
   display: flex;
   align-items: center;
   justify-content: center;

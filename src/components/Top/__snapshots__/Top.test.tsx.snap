@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Top renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.emotion-1 {
+  font-size: 2em;
+}
+
+.emotion-2 {
+  font-size: 1em;
+  margin: 0 auto 2vw;
+  line-height: 1.25em;
+}
+
+.emotion-3 {
+  background: #e3e3e3;
+}
+
+.emotion-4 {
+  color: #ec433c;
+}
+
+.emotion-5 {
+  color: #2a48ec;
+}
+
+<header
+    class="emotion-0"
+  >
+    <h1
+      class="emotion-1"
+    >
+      Minesweeper
+    </h1>
+    <legend
+      class="emotion-2"
+    >
+      <strong>
+        Flag: 
+      </strong>
+      <code
+        class="emotion-3"
+      >
+        <span
+          class="emotion-4"
+        >
+          ctrl
+        </span>
+         + 
+        <span
+          class="emotion-5"
+        >
+          click
+        </span>
+      </code>
+    </legend>
+  </header>
+</DocumentFragment>
+`;

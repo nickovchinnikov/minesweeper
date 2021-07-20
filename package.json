@@ -15,7 +15,8 @@
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "chromatic": "npx chromatic --project-token=4785bff4da6c"
+    "chromatic": "npx chromatic --project-token=4785bff4da6c",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -62,6 +63,7 @@
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "html-webpack-plugin": "^5.3.2",
+    "husky": "^7.0.1",
     "jest": "^27.0.5",
     "prettier": "^2.3.1",
     "style-loader": "^3.0.0",

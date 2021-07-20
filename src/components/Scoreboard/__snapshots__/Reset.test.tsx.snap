@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reset button check Reset renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-size: 1.5vw;
+  cursor: pointer;
+  font-weight: 700;
+  border-width: 0.15vw;
+  border-style: solid;
+  background-color: #d1d1d1;
+  border-color: white #9e9e9e #9e9e9e white;
+}
+
+<button
+    class="emotion-0"
+  >
+    🙂
+  </button>
+</DocumentFragment>
+`;

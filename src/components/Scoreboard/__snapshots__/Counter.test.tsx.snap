@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: inline-block;
+  padding: 0 0.3vw;
+  color: #ec433c;
+  border: 0.15vw inset;
+  line-height: 2vw;
+  letter-spacing: 0.08em;
+  background: #333;
+  text-shadow: 0 0 0.1vw #ec433c;
+}
+
+<div
+    class="emotion-0"
+  >
+    001
+  </div>
+</DocumentFragment>
+`;

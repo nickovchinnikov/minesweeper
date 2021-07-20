@@ -1,0 +1,1106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Grid renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: grid;
+  grid-template-columns: repeat(12, auto);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1vw;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+  border-color: #dddddd;
+  cursor: default;
+  color: rgba(0,0,0,0);
+  background-color: #ec433c;
+}
+
+.emotion-1:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.emotion-1:hover {
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+.emotion-2 {
+  border-radius: 50%;
+  width: 1vw;
+  height: 1vw;
+  background-color: #333;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+  border-color: #dddddd;
+  cursor: default;
+  color: #2bb13d;
+}
+
+.emotion-3:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.emotion-3:hover {
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+  border-color: #dddddd;
+  cursor: default;
+  color: #2a48ec;
+}
+
+.emotion-6:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.emotion-6:hover {
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+  border-color: #dddddd;
+  cursor: default;
+  color: rgba(0,0,0,0);
+}
+
+.emotion-7:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.emotion-7:hover {
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+.emotion-34 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+}
+
+.emotion-34:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.emotion-72 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+  border-color: #dddddd;
+  cursor: default;
+  color: #ec6561;
+}
+
+.emotion-72:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.emotion-72:hover {
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+.emotion-85 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+  border-color: #dddddd;
+  cursor: default;
+  color: #233db7;
+}
+
+.emotion-85:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.emotion-85:hover {
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+<div
+    class="emotion-0"
+    size="12"
+  >
+    <div
+      class="emotion-1"
+      data-testid="9_0,0"
+    >
+      <div
+        class="emotion-2"
+      />
+    </div>
+    <div
+      class="emotion-3"
+      data-testid="2_0,1"
+    >
+      2
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9_0,2"
+    >
+      <div
+        class="emotion-2"
+      />
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_0,3"
+    >
+      1
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="0_0,4"
+    />
+    <div
+      class="emotion-7"
+      data-testid="0_0,5"
+    />
+    <div
+      class="emotion-6"
+      data-testid="1_0,6"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_0,7"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_0,8"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_0,9"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_0,10"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_0,11"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_1,0"
+    >
+      1
+    </div>
+    <div
+      class="emotion-3"
+      data-testid="2_1,1"
+    >
+      2
+    </div>
+    <div
+      class="emotion-3"
+      data-testid="2_1,2"
+    >
+      2
+    </div>
+    <div
+      class="emotion-3"
+      data-testid="2_1,3"
+    >
+      2
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_1,4"
+    >
+      1
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="0_1,5"
+    />
+    <div
+      class="emotion-6"
+      data-testid="1_1,6"
+    >
+      1
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9_1,7"
+    >
+      <div
+        class="emotion-2"
+      />
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_1,8"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_1,9"
+    >
+      1
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9_1,10"
+    >
+      <div
+        class="emotion-2"
+      />
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_1,11"
+    >
+      1
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="0_2,0"
+    />
+    <div
+      class="emotion-7"
+      data-testid="0_2,1"
+    />
+    <div
+      class="emotion-6"
+      data-testid="1_2,2"
+    >
+      1
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9_2,3"
+    >
+      <div
+        class="emotion-2"
+      />
+    </div>
+    <div
+      class="emotion-34"
+      data-testid="10_2,4"
+    />
+    <div
+      class="emotion-7"
+      data-testid="0_2,5"
+    />
+    <div
+      class="emotion-3"
+      data-testid="2_2,6"
+    >
+      2
+    </div>
+    <div
+      class="emotion-3"
+      data-testid="2_2,7"
+    >
+      2
+    </div>
+    <div
+      class="emotion-3"
+      data-testid="2_2,8"
+    >
+      2
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_2,9"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_2,10"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_2,11"
+    >
+      1
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="0_3,0"
+    />
+    <div
+      class="emotion-7"
+      data-testid="0_3,1"
+    />
+    <div
+      class="emotion-34"
+      data-testid="10_3,2"
+    />
+    <div
+      class="emotion-34"
+      data-testid="10_3,3"
+    />
+    <div
+      class="emotion-6"
+      data-testid="1_3,4"
+    >
+      1
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="0_3,5"
+    />
+    <div
+      class="emotion-6"
+      data-testid="1_3,6"
+    >
+      1
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9_3,7"
+    >
+      <div
+        class="emotion-2"
+      />
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_3,8"
+    >
+      1
+    </div>
+    <div
+      class="emotion-3"
+      data-testid="2_3,9"
+    >
+      2
+    </div>
+    <div
+      class="emotion-3"
+      data-testid="2_3,10"
+    >
+      2
+    </div>
+    <div
+      class="emotion-3"
+      data-testid="2_3,11"
+    >
+      2
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="0_4,0"
+    />
+    <div
+      class="emotion-6"
+      data-testid="1_4,1"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_4,2"
+    >
+      1
+    </div>
+    <div
+      class="emotion-3"
+      data-testid="2_4,3"
+    >
+      2
+    </div>
+    <div
+      class="emotion-3"
+      data-testid="2_4,4"
+    >
+      2
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9_4,5"
+    >
+      <div
+        class="emotion-2"
+      />
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_4,6"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_4,7"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_4,8"
+    >
+      1
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="0_4,9"
+    />
+    <div
+      class="emotion-7"
+      data-testid="0_4,10"
+    />
+    <div
+      class="emotion-7"
+      data-testid="0_4,11"
+    />
+    <div
+      class="emotion-7"
+      data-testid="0_5,0"
+    />
+    <div
+      class="emotion-6"
+      data-testid="1_5,1"
+    >
+      1
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9_5,2"
+    >
+      <div
+        class="emotion-2"
+      />
+    </div>
+    <div
+      class="emotion-72"
+      data-testid="3_5,3"
+    >
+      3
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9_5,4"
+    >
+      <div
+        class="emotion-2"
+      />
+    </div>
+    <div
+      class="emotion-3"
+      data-testid="2_5,5"
+    >
+      2
+    </div>
+    <div
+      class="emotion-34"
+      data-testid="10_5,6"
+    />
+    <div
+      class="emotion-7"
+      data-testid="0_5,7"
+    />
+    <div
+      class="emotion-7"
+      data-testid="0_5,8"
+    />
+    <div
+      class="emotion-3"
+      data-testid="2_5,9"
+    >
+      2
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_5,10"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_5,11"
+    >
+      1
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="0_6,0"
+    />
+    <div
+      class="emotion-3"
+      data-testid="2_6,1"
+    >
+      2
+    </div>
+    <div
+      class="emotion-3"
+      data-testid="2_6,2"
+    >
+      2
+    </div>
+    <div
+      class="emotion-85"
+      data-testid="4_6,3"
+    >
+      4
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9_6,4"
+    >
+      <div
+        class="emotion-2"
+      />
+    </div>
+    <div
+      class="emotion-3"
+      data-testid="2_6,5"
+    >
+      2
+    </div>
+    <div
+      class="emotion-34"
+      data-testid="10_6,6"
+    />
+    <div
+      class="emotion-6"
+      data-testid="1_6,7"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_6,8"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_6,9"
+    >
+      1
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9_6,10"
+    >
+      <div
+        class="emotion-2"
+      />
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_6,11"
+    >
+      1
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="0_7,0"
+    />
+    <div
+      class="emotion-6"
+      data-testid="1_7,1"
+    >
+      1
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9_7,2"
+    >
+      <div
+        class="emotion-2"
+      />
+    </div>
+    <div
+      class="emotion-3"
+      data-testid="2_7,3"
+    >
+      2
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_7,4"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_7,5"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_7,6"
+    >
+      1
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9_7,7"
+    >
+      <div
+        class="emotion-2"
+      />
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_7,8"
+    >
+      1
+    </div>
+    <div
+      class="emotion-3"
+      data-testid="2_7,9"
+    >
+      2
+    </div>
+    <div
+      class="emotion-3"
+      data-testid="2_7,10"
+    >
+      2
+    </div>
+    <div
+      class="emotion-3"
+      data-testid="2_7,11"
+    >
+      2
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="0_8,0"
+    />
+    <div
+      class="emotion-6"
+      data-testid="1_8,1"
+    >
+      1
+    </div>
+    <div
+      class="emotion-34"
+      data-testid="10_8,2"
+    />
+    <div
+      class="emotion-34"
+      data-testid="10_8,3"
+    />
+    <div
+      class="emotion-7"
+      data-testid="0_8,4"
+    />
+    <div
+      class="emotion-7"
+      data-testid="0_8,5"
+    />
+    <div
+      class="emotion-6"
+      data-testid="1_8,6"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_8,7"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_8,8"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_8,9"
+    >
+      1
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9_8,10"
+    >
+      <div
+        class="emotion-2"
+      />
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_8,11"
+    >
+      1
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="0_9,0"
+    />
+    <div
+      class="emotion-6"
+      data-testid="1_9,1"
+    >
+      1
+    </div>
+    <div
+      class="emotion-34"
+      data-testid="10_9,2"
+    />
+    <div
+      class="emotion-34"
+      data-testid="10_9,3"
+    />
+    <div
+      class="emotion-7"
+      data-testid="0_9,4"
+    />
+    <div
+      class="emotion-7"
+      data-testid="0_9,5"
+    />
+    <div
+      class="emotion-6"
+      data-testid="1_9,6"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_9,7"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_9,8"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_9,9"
+    >
+      1
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9_9,10"
+    >
+      <div
+        class="emotion-2"
+      />
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_9,11"
+    >
+      1
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="0_10,0"
+    />
+    <div
+      class="emotion-6"
+      data-testid="1_10,1"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_10,2"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_10,3"
+    >
+      1
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="0_10,4"
+    />
+    <div
+      class="emotion-7"
+      data-testid="0_10,5"
+    />
+    <div
+      class="emotion-6"
+      data-testid="1_10,6"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_10,7"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_10,8"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_10,9"
+    >
+      1
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9_10,10"
+    >
+      <div
+        class="emotion-2"
+      />
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_10,11"
+    >
+      1
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="0_11,0"
+    />
+    <div
+      class="emotion-6"
+      data-testid="1_11,1"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_11,2"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_11,3"
+    >
+      1
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="0_11,4"
+    />
+    <div
+      class="emotion-7"
+      data-testid="0_11,5"
+    />
+    <div
+      class="emotion-6"
+      data-testid="1_11,6"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_11,7"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_11,8"
+    >
+      1
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_11,9"
+    >
+      1
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9_11,10"
+    >
+      <div
+        class="emotion-2"
+      />
+    </div>
+    <div
+      class="emotion-6"
+      data-testid="1_11,11"
+    >
+      1
+    </div>
+  </div>
+</DocumentFragment>
+`;

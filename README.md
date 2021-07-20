@@ -133,5 +133,13 @@
 ### Cell component tests
 ### Custom hooks
 ### Game Field (grid) component
+### Components library review
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/18)
+
+## Section 7: Code quality and CI/CD
+
+### Test coverage report
+### Test quality tool Stryker-Mutator
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/19)

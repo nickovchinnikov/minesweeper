@@ -42,4 +42,4 @@ jobs:
         
       # Visual regression test
       - name: Chromatic
-        run: npm run chromatic
+        run: npm run chromatic -- --project-token=$CHROMATIC_PROJECT_TOKEN

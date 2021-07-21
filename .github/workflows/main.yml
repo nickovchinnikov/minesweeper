@@ -23,7 +23,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-            
+        with:
+            fetch-depth: 0
+
       # Install deps
       - name: Install npm deps
         run: npm i
@@ -39,7 +41,12 @@ jobs:
       # Run Stryker-Mutator check
       - name: Stryker-Mutator
         run: npm run test:mutate
-        
-      # Visual regression test
-      - name: Chromatic
-        run: npm run chromatic -- --project-token=$CHROMATIC_PROJECT_TOKEN
+
+      # Adds Chromatic as a step in the workflow
+      - name: Publish to Chromatic
+        uses: chromaui/action@v1
+        # Options required to the GitHub Chromatic Action
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # Chromatic projectToken, refer to the manage page to obtain it.
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}

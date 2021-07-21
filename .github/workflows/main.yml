@@ -23,7 +23,11 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
+            
+      # Install deps
+      - name: Install npm deps
+        run: npm i
+
       # Run project test
       - name: Tests
         run: npm test

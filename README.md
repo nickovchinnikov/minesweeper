@@ -147,3 +147,10 @@
 ### Githooks and Husky
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/20)
+
+### AWS Amplify deploy
+### CI/CD with Github Actions
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/21)
+
+[Pull request2](https://github.com/nickovchinnikov/minesweeper/pull/22)

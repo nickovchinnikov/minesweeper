@@ -154,3 +154,11 @@
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/21)
 
 [Pull request2](https://github.com/nickovchinnikov/minesweeper/pull/22)
+
+[Pull request3](https://github.com/nickovchinnikov/minesweeper/pull/23)
+
+## Section 8: React hooks advanced
+
+### Game logic
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/24)

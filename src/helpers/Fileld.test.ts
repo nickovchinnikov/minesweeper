@@ -1,28 +1,33 @@
-import { emptyFieldGenerator, fieldGenerator, CellState, Cell } from './Field';
+import {
+  generateFieldWithDefaultState,
+  fieldGenerator,
+  CellState,
+  Cell,
+} from './Field';
 
-const { empty, bomb, hidden } = CellState;
+const { empty: e, bomb: b, hidden: h } = CellState;
 
-const cellWithBombFilter = (cell: Cell) => cell === bomb;
+const cellWithBombFilter = (cell: Cell) => cell === b;
 
 describe('Field Generator', () => {
   describe('emptyFieldGenerator tests', () => {
     it('2x2', () => {
-      expect(emptyFieldGenerator(2)).toStrictEqual([
-        [empty, empty],
-        [empty, empty],
+      expect(generateFieldWithDefaultState(2)).toStrictEqual([
+        [e, e],
+        [e, e],
       ]);
     });
     it('3x3', () =>
-      expect(emptyFieldGenerator(3)).toStrictEqual([
-        [empty, empty, empty],
-        [empty, empty, empty],
-        [empty, empty, empty],
+      expect(generateFieldWithDefaultState(3)).toStrictEqual([
+        [e, e, e],
+        [e, e, e],
+        [e, e, e],
       ]));
     it('3x3 with hidden state', () =>
-      expect(emptyFieldGenerator(3, hidden)).toStrictEqual([
-        [hidden, hidden, hidden],
-        [hidden, hidden, hidden],
-        [hidden, hidden, hidden],
+      expect(generateFieldWithDefaultState(3, h)).toStrictEqual([
+        [h, h, h],
+        [h, h, h],
+        [h, h, h],
       ]));
   });
   describe('Simple cases', () => {
@@ -32,29 +37,29 @@ describe('Field Generator', () => {
       expect(() => fieldGenerator(1, 2)).toThrow(errorText);
     });
     it('Smallest possible field without mine', () => {
-      expect(fieldGenerator(1, 0)).toStrictEqual([[empty]]);
+      expect(fieldGenerator(1, 0)).toStrictEqual([[e]]);
     });
     it('Big field without mine', () => {
       expect(fieldGenerator(10, 0)).toStrictEqual([
-        [empty, empty, empty, empty, empty, empty, empty, empty, empty, empty],
-        [empty, empty, empty, empty, empty, empty, empty, empty, empty, empty],
-        [empty, empty, empty, empty, empty, empty, empty, empty, empty, empty],
-        [empty, empty, empty, empty, empty, empty, empty, empty, empty, empty],
-        [empty, empty, empty, empty, empty, empty, empty, empty, empty, empty],
-        [empty, empty, empty, empty, empty, empty, empty, empty, empty, empty],
-        [empty, empty, empty, empty, empty, empty, empty, empty, empty, empty],
-        [empty, empty, empty, empty, empty, empty, empty, empty, empty, empty],
-        [empty, empty, empty, empty, empty, empty, empty, empty, empty, empty],
-        [empty, empty, empty, empty, empty, empty, empty, empty, empty, empty],
+        [e, e, e, e, e, e, e, e, e, e],
+        [e, e, e, e, e, e, e, e, e, e],
+        [e, e, e, e, e, e, e, e, e, e],
+        [e, e, e, e, e, e, e, e, e, e],
+        [e, e, e, e, e, e, e, e, e, e],
+        [e, e, e, e, e, e, e, e, e, e],
+        [e, e, e, e, e, e, e, e, e, e],
+        [e, e, e, e, e, e, e, e, e, e],
+        [e, e, e, e, e, e, e, e, e, e],
+        [e, e, e, e, e, e, e, e, e, e],
       ]);
     });
     it('Smallest possible field with mine', () => {
-      expect(fieldGenerator(1, 1)).toStrictEqual([[bomb]]);
+      expect(fieldGenerator(1, 1)).toStrictEqual([[b]]);
     });
     it('2x2 field with mines', () => {
       expect(fieldGenerator(2, 1)).toStrictEqual([
-        [bomb, bomb],
-        [bomb, bomb],
+        [b, b],
+        [b, b],
       ]);
     });
     it('2x2 field with 50% probability', () => {

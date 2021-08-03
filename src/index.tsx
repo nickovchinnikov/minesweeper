@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { GameWithUseState } from './modules/GameWithUseState';
+import { GameWithHooks } from './modules/GameWithHooks';
 
-ReactDOM.render(<GameWithUseState />, document.getElementById('root'));
+ReactDOM.render(<GameWithHooks />, document.getElementById('root'));

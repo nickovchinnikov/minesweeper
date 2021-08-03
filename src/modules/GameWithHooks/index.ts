@@ -1,0 +1,1 @@
+export { GameWithHooks } from './GameWithHooks';

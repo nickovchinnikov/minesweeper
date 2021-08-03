@@ -20,7 +20,7 @@ export const openCell = (
   const gameCell = gameField[y][x];
 
   if (gameCell === bomb) {
-    throw new Error('Game Over');
+    throw new Error(JSON.stringify(gameField));
   }
 
   if (gameCell === empty) {

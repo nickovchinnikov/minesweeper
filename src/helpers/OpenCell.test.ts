@@ -6,19 +6,17 @@ const { empty: e, hidden: h, bomb: b, flag: f } = CellState;
 describe('Open cell action', () => {
   describe('Simple cases with loose', () => {
     it('Open cell with the bomb', () => {
-      expect(() =>
-        openCell(
-          [1, 1],
-          [
-            [h, h],
-            [h, h],
-          ],
-          [
-            [1, 1],
-            [1, b],
-          ]
-        )
-      ).toThrow('Game Over');
+      const playerField: Field = [
+        [h, h],
+        [h, h],
+      ];
+      const gameField: Field = [
+        [1, 1],
+        [1, b],
+      ];
+      expect(() => openCell([1, 1], playerField, gameField)).toThrow(
+        JSON.stringify(gameField)
+      );
     });
   });
   describe('Open cell with number', () => {

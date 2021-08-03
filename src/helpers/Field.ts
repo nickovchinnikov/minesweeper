@@ -12,6 +12,19 @@ export const CellState: Record<string, Cell> = {
   weakFlag: 12,
 };
 
+export type LvlNames = 'beginner' | 'intermediate' | 'expert';
+
+export type Size = number;
+export type Bombs = number;
+
+export type LvlSettings = [Size, Bombs];
+
+export const LvlMapper: Record<LvlNames, LvlSettings> = {
+  beginner: [9, 10],
+  intermediate: [16, 44],
+  expert: [22, 99],
+};
+
 /**
  * Create empty field
  *

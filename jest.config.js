@@ -32,4 +32,6 @@ module.exports = {
   // The test environment that will be used for testing
   testEnvironment: 'jsdom',
   snapshotSerializers: ['@emotion/jest/serializer'],
+
+  testPathIgnorePatterns: ['<rootDir>/.stryker-tmp'],
 };

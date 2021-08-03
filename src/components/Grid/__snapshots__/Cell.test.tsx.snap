@@ -42,7 +42,8 @@ exports[`Cell component check Cell renders correctly 1`] = `
 
 <div
     class="emotion-0"
-    data-testid="0_1,1"
+    data-testid="1,1"
+    role="cell"
   />
 </DocumentFragment>
 `;
@@ -89,7 +90,8 @@ exports[`Cell component check Cell renders correctly 2`] = `
 
 <div
     class="emotion-0"
-    data-testid="1_1,1"
+    data-testid="1,1"
+    role="cell"
   >
     1
   </div>
@@ -138,7 +140,8 @@ exports[`Cell component check Cell renders correctly 3`] = `
 
 <div
     class="emotion-0"
-    data-testid="2_1,1"
+    data-testid="1,1"
+    role="cell"
   >
     2
   </div>
@@ -187,7 +190,8 @@ exports[`Cell component check Cell renders correctly 4`] = `
 
 <div
     class="emotion-0"
-    data-testid="3_1,1"
+    data-testid="1,1"
+    role="cell"
   >
     3
   </div>
@@ -236,7 +240,8 @@ exports[`Cell component check Cell renders correctly 5`] = `
 
 <div
     class="emotion-0"
-    data-testid="4_1,1"
+    data-testid="1,1"
+    role="cell"
   >
     4
   </div>
@@ -285,7 +290,8 @@ exports[`Cell component check Cell renders correctly 6`] = `
 
 <div
     class="emotion-0"
-    data-testid="5_1,1"
+    data-testid="1,1"
+    role="cell"
   >
     5
   </div>
@@ -334,7 +340,8 @@ exports[`Cell component check Cell renders correctly 7`] = `
 
 <div
     class="emotion-0"
-    data-testid="6_1,1"
+    data-testid="1,1"
+    role="cell"
   >
     6
   </div>
@@ -383,7 +390,8 @@ exports[`Cell component check Cell renders correctly 8`] = `
 
 <div
     class="emotion-0"
-    data-testid="7_1,1"
+    data-testid="1,1"
+    role="cell"
   >
     7
   </div>
@@ -432,7 +440,8 @@ exports[`Cell component check Cell renders correctly 9`] = `
 
 <div
     class="emotion-0"
-    data-testid="8_1,1"
+    data-testid="1,1"
+    role="cell"
   >
     8
   </div>
@@ -489,7 +498,8 @@ exports[`Cell component check Cell renders correctly 10`] = `
 
 <div
     class="emotion-0"
-    data-testid="9_1,1"
+    data-testid="1,1"
+    role="cell"
   >
     <div
       class="emotion-1"
@@ -532,7 +542,8 @@ exports[`Cell component check Cell renders correctly 11`] = `
 
 <div
     class="emotion-0"
-    data-testid="10_1,1"
+    data-testid="1,1"
+    role="cell"
   />
 </DocumentFragment>
 `;
@@ -579,7 +590,8 @@ exports[`Cell component check Cell renders correctly 12`] = `
 
 <div
     class="emotion-0"
-    data-testid="11_1,1"
+    data-testid="1,1"
+    role="cell"
   >
     <div
       class="emotion-1"
@@ -631,7 +643,8 @@ exports[`Cell component check Cell renders correctly 13`] = `
 
 <div
     class="emotion-0"
-    data-testid="12_1,1"
+    data-testid="1,1"
+    role="cell"
   >
     <div
       class="emotion-1"

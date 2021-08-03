@@ -50,7 +50,8 @@ export const Cell: FC<CellProps> = ({ children, coords, ...rest }) => {
     onMouseUp,
     onMouseLeave: onMouseUp,
     mouseDown,
-    'data-testid': `${children}_${coords}`,
+    'data-testid': `${coords}`,
+    role: 'cell',
   };
 
   return <ComponentsMap {...props}>{children}</ComponentsMap>;
@@ -65,12 +66,14 @@ interface ComponentsMapProps {
   onMouseLeave: () => void;
   mouseDown: boolean;
   'data-testid'?: string;
+  role: string;
 }
 
 const ComponentsMap: FC<ComponentsMapProps> = ({ children, ...rest }) => {
   const nonActiveCellProps = {
     onContextMenu: rest.onContextMenu,
     'data-testid': rest['data-testid'],
+    role: rest.role,
   };
 
   switch (children) {

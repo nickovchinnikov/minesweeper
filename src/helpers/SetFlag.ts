@@ -6,13 +6,13 @@ import { detectSolvedPuzzle } from './DetectSolvedPullze';
  * @param {Coords} coords
  * @param {Field} playerField
  * @param {Field} gameField
- * @returns {Field}
+ * @returns {[Field, number]}
  */
 export const setFlag = (
   coords: Coords,
   playerField: Field,
   gameField: Field
-): Field => {
+): [Field, number] => {
   const [y, x] = coords;
   const cell = playerField[y][x];
 

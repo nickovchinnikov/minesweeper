@@ -2,17 +2,18 @@ import { CellState, Field } from './Field';
 
 /**
  * Detect solved puzzle based on the player and game fields coorelation
- * @param playerField
- * @param gameField
- * @returns
+ * @param {Field} playerField
+ * @param {Field} gameField
+ * @returns {[Field, number]}
  */
 export const detectSolvedPuzzle = (
   playerField: Field,
   gameField: Field
-): Field => {
-  const { hidden, bomb, flag } = CellState;
+): [Field, number] => {
+  const { hidden, bomb, flag, weakFlag } = CellState;
 
   let bombsCounter = 0;
+  let flagCounter = 0;
   let detectedBombsCounter = 0;
   let hiddenCells = 0;
 
@@ -23,6 +24,10 @@ export const detectSolvedPuzzle = (
 
       if (playerCell === hidden) {
         hiddenCells++;
+      }
+
+      if ([flag, weakFlag].includes(playerCell)) {
+        flagCounter++;
       }
 
       if (gameCell === bomb) {
@@ -38,5 +43,5 @@ export const detectSolvedPuzzle = (
   const solvedPuzzle =
     bombsCounter === detectedBombsCounter && hiddenCells === 0;
 
-  return solvedPuzzle ? gameField : playerField;
+  return [solvedPuzzle ? gameField : playerField, flagCounter];
 };

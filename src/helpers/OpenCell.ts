@@ -41,5 +41,7 @@ export const openCell = (
 
   playerField[y][x] = gameCell;
 
-  return detectSolvedPuzzle(playerField, gameField);
+  const [result] = detectSolvedPuzzle(playerField, gameField);
+
+  return result;
 };

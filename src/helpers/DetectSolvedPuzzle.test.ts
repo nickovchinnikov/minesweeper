@@ -17,7 +17,12 @@ describe('Detect solved puzzle function test cases', () => {
       [1, 1, e],
     ];
 
-    const newPlayerField = detectSolvedPuzzle(playerField, gameField);
+    const [newPlayerField, flagCounter] = detectSolvedPuzzle(
+      playerField,
+      gameField
+    );
+
+    expect(flagCounter).toBe(1);
 
     expect(newPlayerField).toStrictEqual(gameField);
   });
@@ -34,7 +39,12 @@ describe('Detect solved puzzle function test cases', () => {
       [1, 1, e],
     ];
 
-    const newPlayerField = detectSolvedPuzzle(playerField, gameField);
+    const [newPlayerField, flagCounter] = detectSolvedPuzzle(
+      playerField,
+      gameField
+    );
+
+    expect(flagCounter).toBe(1);
 
     expect(newPlayerField).toStrictEqual(playerField);
   });
@@ -51,7 +61,12 @@ describe('Detect solved puzzle function test cases', () => {
       [1, 1, h],
     ];
 
-    const newPlayerField = detectSolvedPuzzle(playerField, gameField);
+    const [newPlayerField, flagCounter] = detectSolvedPuzzle(
+      playerField,
+      gameField
+    );
+
+    expect(flagCounter).toBe(0);
 
     expect(newPlayerField).toStrictEqual(playerField);
   });
@@ -68,7 +83,12 @@ describe('Detect solved puzzle function test cases', () => {
       [1, 1, e],
     ];
 
-    const newPlayerField = detectSolvedPuzzle(playerField, gameField);
+    const [newPlayerField, flagCounter] = detectSolvedPuzzle(
+      playerField,
+      gameField
+    );
+
+    expect(flagCounter).toBe(1);
 
     expect(newPlayerField).toStrictEqual(playerField);
   });
@@ -89,7 +109,12 @@ describe('Detect solved puzzle function test cases', () => {
       [2, h, h, h, h],
     ];
 
-    const newPlayerField = detectSolvedPuzzle(playerField, gameField);
+    const [newPlayerField, flagCounter] = detectSolvedPuzzle(
+      playerField,
+      gameField
+    );
+
+    expect(flagCounter).toBe(3);
 
     expect(newPlayerField).toStrictEqual(playerField);
   });
@@ -110,7 +135,12 @@ describe('Detect solved puzzle function test cases', () => {
       [2, 1, 0, 1, 0],
     ];
 
-    const newPlayerField = detectSolvedPuzzle(playerField, gameField);
+    const [newPlayerField, flagCounter] = detectSolvedPuzzle(
+      playerField,
+      gameField
+    );
+
+    expect(flagCounter).toBe(4);
 
     expect(newPlayerField).toStrictEqual(gameField);
   });

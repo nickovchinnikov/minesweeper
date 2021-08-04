@@ -1479,6 +1479,635 @@ exports[`Dynamic game with react-hooks Cell context menu handler 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Dynamic game with react-hooks Loose scenario 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.emotion-2 {
+  font-size: 2em;
+}
+
+.emotion-3 {
+  font-size: 1em;
+  margin: 0 auto 2vw;
+  line-height: 1.25em;
+}
+
+.emotion-4 {
+  background: #e3e3e3;
+}
+
+.emotion-5 {
+  color: #ec433c;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 6px solid #e3e3e3;
+  background-color: #e3e3e3;
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.emotion-8 {
+  display: inline-block;
+  padding: 0 0.3vw;
+  color: #ec433c;
+  border: 0.15vw inset;
+  line-height: 2vw;
+  letter-spacing: 0.08em;
+  background: #333;
+  text-shadow: 0 0 0.1vw #ec433c;
+}
+
+.emotion-9 {
+  margin: 0;
+  height: 100%;
+  border-radius: 0;
+  border: 0.15vw solid;
+  border-color: white #9e9e9e #9e9e9e white;
+  background-color: #d1d1d1;
+}
+
+.emotion-10 {
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2em;
+  padding: 0 0.2vw 0.2vw;
+}
+
+.emotion-13 {
+  font-size: 1.1vw;
+  height: 100%;
+  cursor: pointer;
+  font-weight: 700;
+  border-width: 0.15vw;
+  border-style: solid;
+  background-color: #d1d1d1;
+  border-color: white #9e9e9e #9e9e9e white;
+}
+
+.emotion-15 {
+  top: 60%;
+  left: 50%;
+  z-index: 11;
+  width: 8vw;
+  height: 8vw;
+  font-size: 4vw;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  line-height: 8vw;
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: auto;
+  background-color: #d1d1d1;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(51, 51, 51, 0.25);
+}
+
+.emotion-16 {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1vw;
+}
+
+.emotion-17 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  color: transparent;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+  border-color: #dddddd;
+  cursor: default;
+  color: rgba(0,0,0,0);
+  background-color: #ec433c;
+}
+
+.emotion-17:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.emotion-17:hover {
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+.emotion-18 {
+  border-radius: 50%;
+  width: 1vw;
+  height: 1vw;
+  background-color: #333;
+}
+
+.emotion-21 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  color: transparent;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+  border-color: #dddddd;
+  cursor: default;
+  color: #2a48ec;
+}
+
+.emotion-21:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.emotion-21:hover {
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+.emotion-23 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  color: transparent;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+  border-color: #dddddd;
+  cursor: default;
+  color: #2bb13d;
+}
+
+.emotion-23:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.emotion-23:hover {
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+.emotion-26 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  color: transparent;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+  border-color: #dddddd;
+  cursor: default;
+  color: #ec6561;
+}
+
+.emotion-26:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.emotion-26:hover {
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+.emotion-28 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  color: transparent;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+  border-color: #dddddd;
+  cursor: default;
+  color: rgba(0,0,0,0);
+}
+
+.emotion-28:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.emotion-28:hover {
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+<div
+    class="emotion-0"
+  >
+    <header
+      class="emotion-1"
+    >
+      <h1
+        class="emotion-2"
+      >
+        Minesweeper
+      </h1>
+      <legend
+        class="emotion-3"
+      >
+        <strong>
+          Flag: 
+        </strong>
+        <code
+          class="emotion-4"
+        >
+          <span
+            class="emotion-5"
+          >
+            right click
+          </span>
+        </code>
+      </legend>
+    </header>
+    <div
+      class="emotion-6"
+    >
+      <div
+        class="emotion-7"
+      >
+        <div
+          class="emotion-8"
+        >
+          5
+        </div>
+        <div>
+          <select
+            class="emotion-9"
+          >
+            <option
+              class="emotion-10"
+              value="beginner"
+            >
+              beginner
+            </option>
+            <option
+              class="emotion-10"
+              value="intermediate"
+            >
+              intermediate
+            </option>
+            <option
+              class="emotion-10"
+              value="expert"
+            >
+              expert
+            </option>
+          </select>
+          <button
+            class="emotion-13"
+          >
+            🙂
+          </button>
+        </div>
+        <div
+          class="emotion-8"
+        >
+          10
+        </div>
+      </div>
+      <div
+        class="emotion-15"
+      >
+        🙁
+      </div>
+      <div
+        class="emotion-16"
+        role="grid"
+        size="5"
+      >
+        <div
+          class="emotion-17"
+          data-testid="0,0"
+          role="cell"
+        >
+          <div
+            class="emotion-18"
+            data-testid="bomb_0,0"
+          />
+        </div>
+        <div
+          class="emotion-17"
+          data-testid="0,1"
+          role="cell"
+        >
+          <div
+            class="emotion-18"
+            data-testid="bomb_0,1"
+          />
+        </div>
+        <div
+          class="emotion-21"
+          data-testid="0,2"
+          role="cell"
+        >
+          1
+        </div>
+        <div
+          class="emotion-21"
+          data-testid="0,3"
+          role="cell"
+        >
+          1
+        </div>
+        <div
+          class="emotion-23"
+          data-testid="0,4"
+          role="cell"
+        >
+          2
+        </div>
+        <div
+          class="emotion-17"
+          data-testid="1,0"
+          role="cell"
+        >
+          <div
+            class="emotion-18"
+            data-testid="bomb_1,0"
+          />
+        </div>
+        <div
+          class="emotion-26"
+          data-testid="1,1"
+          role="cell"
+        >
+          3
+        </div>
+        <div
+          class="emotion-21"
+          data-testid="1,2"
+          role="cell"
+        >
+          1
+        </div>
+        <div
+          class="emotion-28"
+          data-testid="1,3"
+          role="cell"
+        >
+          0
+        </div>
+        <div
+          class="emotion-28"
+          data-testid="1,4"
+          role="cell"
+        >
+          0
+        </div>
+        <div
+          class="emotion-21"
+          data-testid="2,0"
+          role="cell"
+        >
+          1
+        </div>
+        <div
+          class="emotion-21"
+          data-testid="2,1"
+          role="cell"
+        >
+          1
+        </div>
+        <div
+          class="emotion-28"
+          data-testid="2,2"
+          role="cell"
+        >
+          0
+        </div>
+        <div
+          class="emotion-21"
+          data-testid="2,3"
+          role="cell"
+        >
+          1
+        </div>
+        <div
+          class="emotion-21"
+          data-testid="2,4"
+          role="cell"
+        >
+          1
+        </div>
+        <div
+          class="emotion-21"
+          data-testid="3,0"
+          role="cell"
+        >
+          1
+        </div>
+        <div
+          class="emotion-28"
+          data-testid="3,1"
+          role="cell"
+        >
+          0
+        </div>
+        <div
+          class="emotion-28"
+          data-testid="3,2"
+          role="cell"
+        >
+          0
+        </div>
+        <div
+          class="emotion-21"
+          data-testid="3,3"
+          role="cell"
+        >
+          1
+        </div>
+        <div
+          class="emotion-17"
+          data-testid="3,4"
+          role="cell"
+        >
+          <div
+            class="emotion-18"
+            data-testid="bomb_3,4"
+          />
+        </div>
+        <div
+          class="emotion-23"
+          data-testid="4,0"
+          role="cell"
+        >
+          2
+        </div>
+        <div
+          class="emotion-21"
+          data-testid="4,1"
+          role="cell"
+        >
+          1
+        </div>
+        <div
+          class="emotion-28"
+          data-testid="4,2"
+          role="cell"
+        >
+          0
+        </div>
+        <div
+          class="emotion-21"
+          data-testid="4,3"
+          role="cell"
+        >
+          1
+        </div>
+        <div
+          class="emotion-28"
+          data-testid="4,4"
+          role="cell"
+        >
+          0
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Dynamic game with react-hooks Renders correctly with default field 1`] = `
 <DocumentFragment>
   .emotion-0 {

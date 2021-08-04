@@ -9,7 +9,7 @@ describe('Scoreboard test cases', () => {
       <Scoreboard
         time="000"
         levels={['beginner', 'intermediate', 'expert']}
-        mines="010"
+        bombs="010"
         onReset={() => null}
         onChange={() => null}
       />
@@ -24,7 +24,7 @@ describe('Scoreboard test cases', () => {
       <Scoreboard
         time="000"
         levels={['beginner', 'intermediate', 'expert']}
-        mines="010"
+        bombs="010"
         onReset={() => null}
         onChange={onChange}
       />

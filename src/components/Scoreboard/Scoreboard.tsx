@@ -25,13 +25,13 @@ export interface ScoreboardProps {
   /**
    * Bombs in the field
    */
-  mines: string;
+  bombs: string;
 }
 
 export const Scoreboard: FC<ScoreboardProps> = ({
   time,
   levels,
-  mines,
+  bombs,
   onReset,
   onChange,
 }) => (
@@ -39,7 +39,7 @@ export const Scoreboard: FC<ScoreboardProps> = ({
     <Counter>{time}</Counter>
     <Level onChange={onChange}>{levels}</Level>
     <Reset onReset={onReset} />
-    <Counter>{mines}</Counter>
+    <Counter>{bombs}</Counter>
   </Wrapper>
 );
 

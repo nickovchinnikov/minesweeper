@@ -77,8 +77,6 @@ const ComponentsMap: FC<ComponentsMapProps> = ({ children, ...rest }) => {
   };
 
   switch (children) {
-    case CellState.empty:
-      return <RevealedFrame {...nonActiveCellProps} />;
     case CellState.bomb:
       return (
         <BombFrame {...nonActiveCellProps}>
@@ -127,7 +125,7 @@ export const ClosedFrame = styled.div<ClosedFrameProps>`
 
 const transparent = 'rgba(0,0,0,0)';
 const colors: { [key in CellType]: string } = {
-  0: '#000',
+  0: transparent,
   1: '#2a48ec',
   2: '#2bb13d',
   3: '#ec6561',

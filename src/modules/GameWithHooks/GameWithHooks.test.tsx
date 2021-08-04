@@ -16,7 +16,7 @@ describe('Dynamic game with react-hooks', () => {
     [1, e, e, 1, b],
     [2, 1, e, 1, e],
   ];
-  it('Renders correctly with default field', () => {
+  it('Render correct with default field', () => {
     const { asFragment } = render(
       <GameWithHooks defaultField={defautGameField} />
     );
@@ -25,14 +25,14 @@ describe('Dynamic game with react-hooks', () => {
 
     expect(asFragment()).toMatchSnapshot();
   });
-  it('Renders correctly with generated field', () => {
+  it('Render correct with generated field', () => {
     const { asFragment } = render(<GameWithHooks />);
 
     expect(screen.getAllByRole('cell', { name: String(h) })).toHaveLength(81);
 
     expect(asFragment()).toMatchSnapshot();
   });
-  it('Cell click handler to the empty cells area', () => {
+  it('Click to the empty cells area', () => {
     const { asFragment } = render(
       <GameWithHooks defaultField={defautGameField} />
     );
@@ -43,7 +43,7 @@ describe('Dynamic game with react-hooks', () => {
 
     expect(asFragment()).toMatchSnapshot();
   });
-  it('Cell click handler to the non-empty cells area', () => {
+  it('Click to the non-empty cells area', () => {
     const { asFragment } = render(
       <GameWithHooks defaultField={defautGameField} />
     );
@@ -58,7 +58,7 @@ describe('Dynamic game with react-hooks', () => {
 
     expect(asFragment()).toMatchSnapshot();
   });
-  it('Cell context menu handler', () => {
+  it('Context menu handler', () => {
     const { asFragment } = render(
       <GameWithHooks defaultField={defautGameField} />
     );
@@ -78,7 +78,7 @@ describe('Dynamic game with react-hooks', () => {
 
     expect(asFragment()).toMatchSnapshot();
   });
-  it('onReset handler', () => {
+  it('onReset game handler', () => {
     const { asFragment } = render(
       <GameWithHooks defaultField={defautGameField} />
     );
@@ -102,7 +102,7 @@ describe('Dynamic game with react-hooks', () => {
 
     expect(asFragment()).toMatchSnapshot();
   });
-  it('onChange handler', () => {
+  it('onChange level handler', () => {
     const { asFragment } = render(<GameWithHooks />);
 
     expect(asFragment()).toMatchSnapshot();
@@ -125,7 +125,7 @@ describe('Dynamic game with react-hooks', () => {
 
     expect(asFragment()).toMatchSnapshot();
   });
-  it('Check bomb counter', () => {
+  it('Bomb counter check', () => {
     render(<GameWithHooks defaultField={defautGameField} />);
 
     userEvent.click(screen.getByTestId('2,2'));
@@ -136,7 +136,7 @@ describe('Dynamic game with react-hooks', () => {
 
     expect(screen.getByText(8)).toBeInTheDocument();
   });
-  it('Check timer has started by click', async () => {
+  it('Timer should start by click to a cell', () => {
     jest.useFakeTimers();
 
     render(<GameWithHooks defaultField={defautGameField} />);
@@ -160,9 +160,9 @@ describe('Dynamic game with react-hooks', () => {
       });
     }
 
-    expect(await screen.findByText(timeShouldBePassed)).toBeInTheDocument();
+    expect(screen.getByText(timeShouldBePassed)).toBeInTheDocument();
   });
-  it('Check timer shpuld has started by mark a cell by flag', async () => {
+  it('Timer should start by mark a cell by a flag', () => {
     jest.useFakeTimers();
 
     render(<GameWithHooks defaultField={defautGameField} />);
@@ -186,9 +186,9 @@ describe('Dynamic game with react-hooks', () => {
       });
     }
 
-    expect(await screen.findByText(timeShouldBePassed)).toBeInTheDocument();
+    expect(screen.getByText(timeShouldBePassed)).toBeInTheDocument();
   });
-  it('Loose scenario', async () => {
+  it('Loose game scenario', () => {
     jest.useFakeTimers();
 
     const { asFragment } = render(
@@ -205,7 +205,7 @@ describe('Dynamic game with react-hooks', () => {
       });
     }
 
-    expect(await screen.findByText(timeShouldBePassed)).toBeInTheDocument();
+    expect(screen.getByText(timeShouldBePassed)).toBeInTheDocument();
 
     userEvent.click(screen.getByTestId('0,0'));
 
@@ -218,11 +218,11 @@ describe('Dynamic game with react-hooks', () => {
     }
 
     // After loose time shoudn't change
-    expect(await screen.findByText(timeShouldBePassed)).toBeInTheDocument();
+    expect(screen.getByText(timeShouldBePassed)).toBeInTheDocument();
 
     expect(asFragment()).toMatchSnapshot();
   });
-  it('Win scenario', () => {
+  it('Win game scenario mark bombs then open empty cells', () => {
     render(<GameWithHooks defaultField={defautGameField} />);
 
     expect(screen.queryByText('😎')).not.toBeInTheDocument();
@@ -236,7 +236,7 @@ describe('Dynamic game with react-hooks', () => {
 
     expect(screen.getByText('😎')).toBeInTheDocument();
   });
-  it('Win scenario2', () => {
+  it('Win game scenario open empty cells then mark bombs', () => {
     render(<GameWithHooks defaultField={defautGameField} />);
 
     expect(screen.queryByText('😎')).not.toBeInTheDocument();

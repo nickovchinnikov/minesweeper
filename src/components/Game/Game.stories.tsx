@@ -12,7 +12,7 @@ import { Wrapper, WrapperProps } from './Wrapper';
 import { GameOver } from './GameOver';
 
 export default {
-  title: 'Game',
+  title: 'Game/Example',
   component: Wrapper,
 } as Meta;
 
@@ -44,7 +44,7 @@ GameExample.args = {
           onReset={() => null}
           onChange={() => null}
         />
-        <GameOver onClick={() => null} />
+        <GameOver onClick={() => null} isWin={true} />
         <Grid onClick={() => null} onContextMenu={() => null}>
           {defautGameField}
         </Grid>

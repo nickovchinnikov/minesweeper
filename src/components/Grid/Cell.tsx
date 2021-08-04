@@ -80,7 +80,7 @@ const ComponentsMap: FC<ComponentsMapProps> = ({ children, ...rest }) => {
     case CellState.bomb:
       return (
         <BombFrame {...nonActiveCellProps}>
-          <Bomb />
+          <Bomb data-testid={`bomb_${rest['data-testid']}`} />
         </BombFrame>
       );
     case CellState.hidden:
@@ -88,13 +88,13 @@ const ComponentsMap: FC<ComponentsMapProps> = ({ children, ...rest }) => {
     case CellState.flag:
       return (
         <ClosedFrame {...rest}>
-          <Flag />
+          <Flag data-testid={`flag_${rest['data-testid']}`} />
         </ClosedFrame>
       );
     case CellState.weakFlag:
       return (
         <ClosedFrame {...rest}>
-          <WeakFlag />
+          <WeakFlag data-testid={`weakFlag_${rest['data-testid']}`} />
         </ClosedFrame>
       );
     default:

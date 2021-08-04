@@ -13,6 +13,7 @@ export const Wrapper: FC<WrapperProps> = ({ children }) => (
 );
 
 const Frame = styled.div`
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;

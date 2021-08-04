@@ -9,6 +9,7 @@ import { Scoreboard } from '@/components/Scoreboard';
 
 import { GameArea } from './GameArea';
 import { Wrapper, WrapperProps } from './Wrapper';
+import { GameOver } from './GameOver';
 
 export default {
   title: 'Game',
@@ -43,6 +44,7 @@ GameExample.args = {
           onReset={() => null}
           onChange={() => null}
         />
+        <GameOver onClick={() => null} />
         <Grid onClick={() => null} onContextMenu={() => null}>
           {defautGameField}
         </Grid>

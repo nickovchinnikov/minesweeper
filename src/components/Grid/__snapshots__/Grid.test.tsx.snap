@@ -31,6 +31,7 @@ exports[`Grid renders correctly 1`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: white #9e9e9e #9e9e9e white;
@@ -77,6 +78,7 @@ exports[`Grid renders correctly 1`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: white #9e9e9e #9e9e9e white;
@@ -115,6 +117,7 @@ exports[`Grid renders correctly 1`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: white #9e9e9e #9e9e9e white;
@@ -153,6 +156,7 @@ exports[`Grid renders correctly 1`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: white #9e9e9e #9e9e9e white;
@@ -191,6 +195,7 @@ exports[`Grid renders correctly 1`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: white #9e9e9e #9e9e9e white;
@@ -221,6 +226,7 @@ exports[`Grid renders correctly 1`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: white #9e9e9e #9e9e9e white;
@@ -259,6 +265,7 @@ exports[`Grid renders correctly 1`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: white #9e9e9e #9e9e9e white;
@@ -497,7 +504,9 @@ exports[`Grid renders correctly 1`] = `
       class="emotion-34"
       data-testid="2,4"
       role="cell"
-    />
+    >
+      10
+    </div>
     <div
       class="emotion-7"
       data-testid="2,5"
@@ -565,12 +574,16 @@ exports[`Grid renders correctly 1`] = `
       class="emotion-34"
       data-testid="3,2"
       role="cell"
-    />
+    >
+      10
+    </div>
     <div
       class="emotion-34"
       data-testid="3,3"
       role="cell"
-    />
+    >
+      10
+    </div>
     <div
       class="emotion-6"
       data-testid="3,4"
@@ -769,7 +782,9 @@ exports[`Grid renders correctly 1`] = `
       class="emotion-34"
       data-testid="5,6"
       role="cell"
-    />
+    >
+      10
+    </div>
     <div
       class="emotion-7"
       data-testid="5,7"
@@ -854,7 +869,9 @@ exports[`Grid renders correctly 1`] = `
       class="emotion-34"
       data-testid="6,6"
       role="cell"
-    />
+    >
+      10
+    </div>
     <div
       class="emotion-6"
       data-testid="6,7"
@@ -1001,12 +1018,16 @@ exports[`Grid renders correctly 1`] = `
       class="emotion-34"
       data-testid="8,2"
       role="cell"
-    />
+    >
+      10
+    </div>
     <div
       class="emotion-34"
       data-testid="8,3"
       role="cell"
-    />
+    >
+      10
+    </div>
     <div
       class="emotion-7"
       data-testid="8,4"
@@ -1084,12 +1105,16 @@ exports[`Grid renders correctly 1`] = `
       class="emotion-34"
       data-testid="9,2"
       role="cell"
-    />
+    >
+      10
+    </div>
     <div
       class="emotion-34"
       data-testid="9,3"
       role="cell"
-    />
+    >
+      10
+    </div>
     <div
       class="emotion-7"
       data-testid="9,4"

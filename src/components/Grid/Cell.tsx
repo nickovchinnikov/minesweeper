@@ -84,11 +84,11 @@ const ComponentsMap: FC<ComponentsMapProps> = ({ children, ...rest }) => {
         </BombFrame>
       );
     case CellState.hidden:
-      return <ClosedFrame {...rest} />;
+      return <ClosedFrame {...rest}>{children}</ClosedFrame>;
     case CellState.flag:
       return (
         <ClosedFrame {...rest}>
-          <Flag data-testid={`flag_${rest['data-testid']}`} />
+          <Flag data-testid={`flag_${rest['data-testid']}`}>{children}</Flag>
         </ClosedFrame>
       );
     case CellState.weakFlag:
@@ -114,6 +114,7 @@ export const ClosedFrame = styled.div<ClosedFrameProps>`
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: ${({ mouseDown = false }) =>
@@ -163,6 +164,7 @@ const BombFrame = styled(RevealedFrame)`
 const Flag = styled.div`
   width: 0px;
   height: 0px;
+  color: ${transparent};
   border-top: 0.5vw solid transparent;
   border-bottom: 0.5vw solid transparent;
   border-left: 0.5vw solid #ec433c;

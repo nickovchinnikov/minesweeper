@@ -15,7 +15,7 @@ describe('Open cell action', () => {
         [1, b],
       ];
       expect(() => openCell([1, 1], playerField, gameField)).toThrow(
-        JSON.stringify(gameField)
+        'Game Over'
       );
     });
   });
@@ -127,7 +127,7 @@ describe('Open cell action', () => {
 
       expect(newPlayerField).toStrictEqual(gameField);
     });
-    it('5*5 case with weak mark', () => {
+    it('5*5 special with empty area on the center click', () => {
       const gameField: Field = [
         [9, 9, 1, 1, 2],
         [9, 3, 1, e, e],
@@ -147,6 +147,33 @@ describe('Open cell action', () => {
       const newPlayerField = openCell([2, 2], playerField, gameField);
 
       expect(newPlayerField).toStrictEqual(gameField);
+    });
+    it('5*5 special with empty cell on the corner click', () => {
+      const gameField: Field = [
+        [9, 9, 1, 1, 2],
+        [9, 3, 1, e, e],
+        [1, 1, e, 1, 1],
+        [1, e, e, 1, 9],
+        [2, 1, e, 1, e],
+      ];
+
+      const playerField: Field = [
+        [h, h, h, h, h],
+        [h, h, h, h, h],
+        [h, h, h, h, h],
+        [h, h, h, h, h],
+        [h, h, h, h, h],
+      ];
+
+      const newPlayerField = openCell([4, 4], playerField, gameField);
+
+      expect(newPlayerField).toStrictEqual([
+        [h, h, h, h, h],
+        [h, h, h, h, h],
+        [h, h, h, h, h],
+        [h, h, h, 1, h],
+        [h, h, h, 1, e],
+      ]);
     });
   });
 });

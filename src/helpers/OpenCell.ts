@@ -20,7 +20,7 @@ export const openCell = (
   const gameCell = gameField[y][x];
 
   if (gameCell === bomb) {
-    throw new Error(JSON.stringify(gameField));
+    throw new Error('Game Over');
   }
 
   if (gameCell === empty) {
@@ -31,8 +31,9 @@ export const openCell = (
     for (const [y, x] of Object.values(items)) {
       if (checkItemInField([y, x], gameField)) {
         const playerCell = playerField[y][x];
+        const gameCell = gameField[y][x];
 
-        if (playerCell === hidden) {
+        if (playerCell === hidden && gameCell !== bomb) {
           playerField = openCell([y, x], playerField, gameField);
         }
       }

@@ -1,10 +1,12 @@
 import { CellState, Field } from './Field';
 
+export type FlagCounter = number;
+
 /**
  * Detect solved puzzle based on the player and game fields coorelation
  * @param {Field} playerField
  * @param {Field} gameField
- * @returns {[Field, number]}
+ * @returns {[Field, FlagCounter]}
  */
 export const detectSolvedPuzzle = (
   playerField: Field,

@@ -34,11 +34,10 @@ exports[`Legend renders correctly 1`] = `
       >
         ctrl
       </span>
-       + 
       <span
         class="emotion-3"
       >
-        click
+         + click
       </span>
     </code>
   </legend>

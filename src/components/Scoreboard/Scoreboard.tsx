@@ -37,15 +37,16 @@ export const Scoreboard: FC<ScoreboardProps> = ({
 }) => (
   <Wrapper>
     <Counter>{time}</Counter>
-    <Level onChange={onChange}>{levels}</Level>
-    <Reset onReset={onReset} />
+    <div>
+      <Level onChange={onChange}>{levels}</Level>
+      <Reset onReset={onReset} />
+    </div>
     <Counter>{bombs}</Counter>
   </Wrapper>
 );
 
 const Wrapper = styled.div`
   display: flex;
-  width: max-content;
-  padding-bottom: 2vw;
+  width: 100%;
   justify-content: space-between;
 `;

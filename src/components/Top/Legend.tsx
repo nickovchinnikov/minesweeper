@@ -13,7 +13,7 @@ export interface LegendProps {
   /**
    * Second action
    */
-  secondAction: string;
+  secondAction?: string;
 }
 
 export const Legend: FC<LegendProps> = ({
@@ -24,8 +24,8 @@ export const Legend: FC<LegendProps> = ({
   <Parent>
     <strong>{feature}: </strong>
     <FlagComboParent>
-      <FirstAction>{firstAction}</FirstAction> +{' '}
-      <SecondAction>{secondAction}</SecondAction>
+      <FirstAction>{firstAction}</FirstAction>
+      {secondAction && <SecondAction> + {secondAction}</SecondAction>}
     </FlagComboParent>
   </Parent>
 );

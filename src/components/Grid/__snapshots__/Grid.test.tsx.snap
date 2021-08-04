@@ -289,6 +289,7 @@ exports[`Grid renders correctly 1`] = `
     >
       <div
         class="emotion-2"
+        data-testid="bomb_0,0"
       />
     </div>
     <div
@@ -305,6 +306,7 @@ exports[`Grid renders correctly 1`] = `
     >
       <div
         class="emotion-2"
+        data-testid="bomb_0,2"
       />
     </div>
     <div
@@ -318,12 +320,16 @@ exports[`Grid renders correctly 1`] = `
       class="emotion-7"
       data-testid="0,4"
       role="cell"
-    />
+    >
+      0
+    </div>
     <div
       class="emotion-7"
       data-testid="0,5"
       role="cell"
-    />
+    >
+      0
+    </div>
     <div
       class="emotion-6"
       data-testid="0,6"
@@ -405,7 +411,9 @@ exports[`Grid renders correctly 1`] = `
       class="emotion-7"
       data-testid="1,5"
       role="cell"
-    />
+    >
+      0
+    </div>
     <div
       class="emotion-6"
       data-testid="1,6"
@@ -420,6 +428,7 @@ exports[`Grid renders correctly 1`] = `
     >
       <div
         class="emotion-2"
+        data-testid="bomb_1,7"
       />
     </div>
     <div
@@ -443,6 +452,7 @@ exports[`Grid renders correctly 1`] = `
     >
       <div
         class="emotion-2"
+        data-testid="bomb_1,10"
       />
     </div>
     <div
@@ -456,12 +466,16 @@ exports[`Grid renders correctly 1`] = `
       class="emotion-7"
       data-testid="2,0"
       role="cell"
-    />
+    >
+      0
+    </div>
     <div
       class="emotion-7"
       data-testid="2,1"
       role="cell"
-    />
+    >
+      0
+    </div>
     <div
       class="emotion-6"
       data-testid="2,2"
@@ -476,6 +490,7 @@ exports[`Grid renders correctly 1`] = `
     >
       <div
         class="emotion-2"
+        data-testid="bomb_2,3"
       />
     </div>
     <div
@@ -487,7 +502,9 @@ exports[`Grid renders correctly 1`] = `
       class="emotion-7"
       data-testid="2,5"
       role="cell"
-    />
+    >
+      0
+    </div>
     <div
       class="emotion-3"
       data-testid="2,6"
@@ -534,12 +551,16 @@ exports[`Grid renders correctly 1`] = `
       class="emotion-7"
       data-testid="3,0"
       role="cell"
-    />
+    >
+      0
+    </div>
     <div
       class="emotion-7"
       data-testid="3,1"
       role="cell"
-    />
+    >
+      0
+    </div>
     <div
       class="emotion-34"
       data-testid="3,2"
@@ -561,7 +582,9 @@ exports[`Grid renders correctly 1`] = `
       class="emotion-7"
       data-testid="3,5"
       role="cell"
-    />
+    >
+      0
+    </div>
     <div
       class="emotion-6"
       data-testid="3,6"
@@ -576,6 +599,7 @@ exports[`Grid renders correctly 1`] = `
     >
       <div
         class="emotion-2"
+        data-testid="bomb_3,7"
       />
     </div>
     <div
@@ -610,7 +634,9 @@ exports[`Grid renders correctly 1`] = `
       class="emotion-7"
       data-testid="4,0"
       role="cell"
-    />
+    >
+      0
+    </div>
     <div
       class="emotion-6"
       data-testid="4,1"
@@ -646,6 +672,7 @@ exports[`Grid renders correctly 1`] = `
     >
       <div
         class="emotion-2"
+        data-testid="bomb_4,5"
       />
     </div>
     <div
@@ -673,22 +700,30 @@ exports[`Grid renders correctly 1`] = `
       class="emotion-7"
       data-testid="4,9"
       role="cell"
-    />
+    >
+      0
+    </div>
     <div
       class="emotion-7"
       data-testid="4,10"
       role="cell"
-    />
+    >
+      0
+    </div>
     <div
       class="emotion-7"
       data-testid="4,11"
       role="cell"
-    />
+    >
+      0
+    </div>
     <div
       class="emotion-7"
       data-testid="5,0"
       role="cell"
-    />
+    >
+      0
+    </div>
     <div
       class="emotion-6"
       data-testid="5,1"
@@ -703,6 +738,7 @@ exports[`Grid renders correctly 1`] = `
     >
       <div
         class="emotion-2"
+        data-testid="bomb_5,2"
       />
     </div>
     <div
@@ -719,6 +755,7 @@ exports[`Grid renders correctly 1`] = `
     >
       <div
         class="emotion-2"
+        data-testid="bomb_5,4"
       />
     </div>
     <div
@@ -737,12 +774,16 @@ exports[`Grid renders correctly 1`] = `
       class="emotion-7"
       data-testid="5,7"
       role="cell"
-    />
+    >
+      0
+    </div>
     <div
       class="emotion-7"
       data-testid="5,8"
       role="cell"
-    />
+    >
+      0
+    </div>
     <div
       class="emotion-3"
       data-testid="5,9"
@@ -768,7 +809,9 @@ exports[`Grid renders correctly 1`] = `
       class="emotion-7"
       data-testid="6,0"
       role="cell"
-    />
+    >
+      0
+    </div>
     <div
       class="emotion-3"
       data-testid="6,1"
@@ -797,6 +840,7 @@ exports[`Grid renders correctly 1`] = `
     >
       <div
         class="emotion-2"
+        data-testid="bomb_6,4"
       />
     </div>
     <div
@@ -839,6 +883,7 @@ exports[`Grid renders correctly 1`] = `
     >
       <div
         class="emotion-2"
+        data-testid="bomb_6,10"
       />
     </div>
     <div
@@ -852,7 +897,9 @@ exports[`Grid renders correctly 1`] = `
       class="emotion-7"
       data-testid="7,0"
       role="cell"
-    />
+    >
+      0
+    </div>
     <div
       class="emotion-6"
       data-testid="7,1"
@@ -867,6 +914,7 @@ exports[`Grid renders correctly 1`] = `
     >
       <div
         class="emotion-2"
+        data-testid="bomb_7,2"
       />
     </div>
     <div
@@ -904,6 +952,7 @@ exports[`Grid renders correctly 1`] = `
     >
       <div
         class="emotion-2"
+        data-testid="bomb_7,7"
       />
     </div>
     <div
@@ -938,7 +987,9 @@ exports[`Grid renders correctly 1`] = `
       class="emotion-7"
       data-testid="8,0"
       role="cell"
-    />
+    >
+      0
+    </div>
     <div
       class="emotion-6"
       data-testid="8,1"
@@ -960,12 +1011,16 @@ exports[`Grid renders correctly 1`] = `
       class="emotion-7"
       data-testid="8,4"
       role="cell"
-    />
+    >
+      0
+    </div>
     <div
       class="emotion-7"
       data-testid="8,5"
       role="cell"
-    />
+    >
+      0
+    </div>
     <div
       class="emotion-6"
       data-testid="8,6"
@@ -1001,6 +1056,7 @@ exports[`Grid renders correctly 1`] = `
     >
       <div
         class="emotion-2"
+        data-testid="bomb_8,10"
       />
     </div>
     <div
@@ -1014,7 +1070,9 @@ exports[`Grid renders correctly 1`] = `
       class="emotion-7"
       data-testid="9,0"
       role="cell"
-    />
+    >
+      0
+    </div>
     <div
       class="emotion-6"
       data-testid="9,1"
@@ -1036,12 +1094,16 @@ exports[`Grid renders correctly 1`] = `
       class="emotion-7"
       data-testid="9,4"
       role="cell"
-    />
+    >
+      0
+    </div>
     <div
       class="emotion-7"
       data-testid="9,5"
       role="cell"
-    />
+    >
+      0
+    </div>
     <div
       class="emotion-6"
       data-testid="9,6"
@@ -1077,6 +1139,7 @@ exports[`Grid renders correctly 1`] = `
     >
       <div
         class="emotion-2"
+        data-testid="bomb_9,10"
       />
     </div>
     <div
@@ -1090,7 +1153,9 @@ exports[`Grid renders correctly 1`] = `
       class="emotion-7"
       data-testid="10,0"
       role="cell"
-    />
+    >
+      0
+    </div>
     <div
       class="emotion-6"
       data-testid="10,1"
@@ -1116,12 +1181,16 @@ exports[`Grid renders correctly 1`] = `
       class="emotion-7"
       data-testid="10,4"
       role="cell"
-    />
+    >
+      0
+    </div>
     <div
       class="emotion-7"
       data-testid="10,5"
       role="cell"
-    />
+    >
+      0
+    </div>
     <div
       class="emotion-6"
       data-testid="10,6"
@@ -1157,6 +1226,7 @@ exports[`Grid renders correctly 1`] = `
     >
       <div
         class="emotion-2"
+        data-testid="bomb_10,10"
       />
     </div>
     <div
@@ -1170,7 +1240,9 @@ exports[`Grid renders correctly 1`] = `
       class="emotion-7"
       data-testid="11,0"
       role="cell"
-    />
+    >
+      0
+    </div>
     <div
       class="emotion-6"
       data-testid="11,1"
@@ -1196,12 +1268,16 @@ exports[`Grid renders correctly 1`] = `
       class="emotion-7"
       data-testid="11,4"
       role="cell"
-    />
+    >
+      0
+    </div>
     <div
       class="emotion-7"
       data-testid="11,5"
       role="cell"
-    />
+    >
+      0
+    </div>
     <div
       class="emotion-6"
       data-testid="11,6"
@@ -1237,6 +1313,7 @@ exports[`Grid renders correctly 1`] = `
     >
       <div
         class="emotion-2"
+        data-testid="bomb_11,10"
       />
     </div>
     <div

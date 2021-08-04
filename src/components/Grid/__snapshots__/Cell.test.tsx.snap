@@ -44,7 +44,9 @@ exports[`Cell component check Cell renders correctly 1`] = `
     class="emotion-0"
     data-testid="1,1"
     role="cell"
-  />
+  >
+    0
+  </div>
 </DocumentFragment>
 `;
 
@@ -503,6 +505,7 @@ exports[`Cell component check Cell renders correctly 10`] = `
   >
     <div
       class="emotion-1"
+      data-testid="bomb_1,1"
     />
   </div>
 </DocumentFragment>
@@ -595,6 +598,7 @@ exports[`Cell component check Cell renders correctly 12`] = `
   >
     <div
       class="emotion-1"
+      data-testid="flag_1,1"
     />
   </div>
 </DocumentFragment>
@@ -648,6 +652,7 @@ exports[`Cell component check Cell renders correctly 13`] = `
   >
     <div
       class="emotion-1"
+      data-testid="weakFlag_1,1"
     />
   </div>
 </DocumentFragment>

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Dynamic game with react-hooks Cell click handler to the empty cells area 1`] = `
+exports[`Dynamic game with react-hooks Click to the empty cells area 1`] = `
 <DocumentFragment>
   .emotion-0 {
   position: relative;
@@ -571,7 +571,7 @@ exports[`Dynamic game with react-hooks Cell click handler to the empty cells are
 </DocumentFragment>
 `;
 
-exports[`Dynamic game with react-hooks Cell click handler to the non-empty cells area 1`] = `
+exports[`Dynamic game with react-hooks Click to the non-empty cells area 1`] = `
 <DocumentFragment>
   .emotion-0 {
   position: relative;
@@ -1064,7 +1064,7 @@ exports[`Dynamic game with react-hooks Cell click handler to the non-empty cells
 </DocumentFragment>
 `;
 
-exports[`Dynamic game with react-hooks Cell context menu handler 1`] = `
+exports[`Dynamic game with react-hooks Context menu handler 1`] = `
 <DocumentFragment>
   .emotion-0 {
   position: relative;
@@ -1479,7 +1479,7 @@ exports[`Dynamic game with react-hooks Cell context menu handler 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Dynamic game with react-hooks Loose scenario 1`] = `
+exports[`Dynamic game with react-hooks Loose game scenario 1`] = `
 <DocumentFragment>
   .emotion-0 {
   position: relative;
@@ -2108,7 +2108,7 @@ exports[`Dynamic game with react-hooks Loose scenario 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Dynamic game with react-hooks Renders correctly with default field 1`] = `
+exports[`Dynamic game with react-hooks Render correct with default field 1`] = `
 <DocumentFragment>
   .emotion-0 {
   position: relative;
@@ -2523,7 +2523,7 @@ exports[`Dynamic game with react-hooks Renders correctly with default field 1`] 
 </DocumentFragment>
 `;
 
-exports[`Dynamic game with react-hooks Renders correctly with generated field 1`] = `
+exports[`Dynamic game with react-hooks Render correct with generated field 1`] = `
 <DocumentFragment>
   .emotion-0 {
   position: relative;
@@ -3330,7 +3330,7 @@ exports[`Dynamic game with react-hooks Renders correctly with generated field 1`
 </DocumentFragment>
 `;
 
-exports[`Dynamic game with react-hooks onChange handler 1`] = `
+exports[`Dynamic game with react-hooks onChange level handler 1`] = `
 <DocumentFragment>
   .emotion-0 {
   position: relative;
@@ -4137,7 +4137,7 @@ exports[`Dynamic game with react-hooks onChange handler 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Dynamic game with react-hooks onChange handler 2`] = `
+exports[`Dynamic game with react-hooks onChange level handler 2`] = `
 <DocumentFragment>
   .emotion-0 {
   position: relative;
@@ -4944,7 +4944,7 @@ exports[`Dynamic game with react-hooks onChange handler 2`] = `
 </DocumentFragment>
 `;
 
-exports[`Dynamic game with react-hooks onChange handler 3`] = `
+exports[`Dynamic game with react-hooks onChange level handler 3`] = `
 <DocumentFragment>
   .emotion-0 {
   position: relative;
@@ -6976,7 +6976,7 @@ exports[`Dynamic game with react-hooks onChange handler 3`] = `
 </DocumentFragment>
 `;
 
-exports[`Dynamic game with react-hooks onChange handler 4`] = `
+exports[`Dynamic game with react-hooks onChange level handler 4`] = `
 <DocumentFragment>
   .emotion-0 {
   position: relative;
@@ -10604,7 +10604,7 @@ exports[`Dynamic game with react-hooks onChange handler 4`] = `
 </DocumentFragment>
 `;
 
-exports[`Dynamic game with react-hooks onReset handler 1`] = `
+exports[`Dynamic game with react-hooks onReset game handler 1`] = `
 <DocumentFragment>
   .emotion-0 {
   position: relative;
@@ -11019,7 +11019,7 @@ exports[`Dynamic game with react-hooks onReset handler 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Dynamic game with react-hooks onReset handler 2`] = `
+exports[`Dynamic game with react-hooks onReset game handler 2`] = `
 <DocumentFragment>
   .emotion-0 {
   position: relative;

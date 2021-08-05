@@ -26,7 +26,8 @@ export const Reset: FC<ResetProps> = ({ onReset }) => {
 };
 
 const Button = styled.button`
-  font-size: 1.5vw;
+  font-size: 1.1vw;
+  height: 100%;
   cursor: pointer;
   font-weight: 700;
   border-width: 0.15vw;

@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Game Over test cases GameOver render fail correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  top: 60%;
+  left: 50%;
+  z-index: 11;
+  width: 8vw;
+  height: 8vw;
+  font-size: 4vw;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  line-height: 8vw;
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: auto;
+  background-color: #d1d1d1;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(51, 51, 51, 0.25);
+}
+
+<div
+    class="emotion-0"
+  >
+    🙁
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Game Over test cases GameOver render win correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  top: 60%;
+  left: 50%;
+  z-index: 11;
+  width: 8vw;
+  height: 8vw;
+  font-size: 4vw;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  line-height: 8vw;
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: auto;
+  background-color: #d1d1d1;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(51, 51, 51, 0.25);
+}
+
+<div
+    class="emotion-0"
+  >
+    😎
+  </div>
+</DocumentFragment>
+`;

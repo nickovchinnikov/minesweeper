@@ -133,6 +133,11 @@
 ### Cell component tests
 ### Custom hooks
 ### Game Field (grid) component
+
+### Static game
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/26)
+
 ### Components library review
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/18)

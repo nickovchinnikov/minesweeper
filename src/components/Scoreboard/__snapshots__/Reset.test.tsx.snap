@@ -3,7 +3,8 @@
 exports[`Reset button check Reset renders correctly 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  font-size: 1.5vw;
+  font-size: 1.1vw;
+  height: 100%;
   cursor: pointer;
   font-weight: 700;
   border-width: 0.15vw;

@@ -22,6 +22,7 @@ exports[`Cell component check Cell renders correctly 1`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: white #9e9e9e #9e9e9e white;
@@ -42,8 +43,11 @@ exports[`Cell component check Cell renders correctly 1`] = `
 
 <div
     class="emotion-0"
-    data-testid="0_1,1"
-  />
+    data-testid="1,1"
+    role="cell"
+  >
+    0
+  </div>
 </DocumentFragment>
 `;
 
@@ -69,6 +73,7 @@ exports[`Cell component check Cell renders correctly 2`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: white #9e9e9e #9e9e9e white;
@@ -89,7 +94,8 @@ exports[`Cell component check Cell renders correctly 2`] = `
 
 <div
     class="emotion-0"
-    data-testid="1_1,1"
+    data-testid="1,1"
+    role="cell"
   >
     1
   </div>
@@ -118,6 +124,7 @@ exports[`Cell component check Cell renders correctly 3`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: white #9e9e9e #9e9e9e white;
@@ -138,7 +145,8 @@ exports[`Cell component check Cell renders correctly 3`] = `
 
 <div
     class="emotion-0"
-    data-testid="2_1,1"
+    data-testid="1,1"
+    role="cell"
   >
     2
   </div>
@@ -167,6 +175,7 @@ exports[`Cell component check Cell renders correctly 4`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: white #9e9e9e #9e9e9e white;
@@ -187,7 +196,8 @@ exports[`Cell component check Cell renders correctly 4`] = `
 
 <div
     class="emotion-0"
-    data-testid="3_1,1"
+    data-testid="1,1"
+    role="cell"
   >
     3
   </div>
@@ -216,6 +226,7 @@ exports[`Cell component check Cell renders correctly 5`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: white #9e9e9e #9e9e9e white;
@@ -236,7 +247,8 @@ exports[`Cell component check Cell renders correctly 5`] = `
 
 <div
     class="emotion-0"
-    data-testid="4_1,1"
+    data-testid="1,1"
+    role="cell"
   >
     4
   </div>
@@ -265,6 +277,7 @@ exports[`Cell component check Cell renders correctly 6`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: white #9e9e9e #9e9e9e white;
@@ -285,7 +298,8 @@ exports[`Cell component check Cell renders correctly 6`] = `
 
 <div
     class="emotion-0"
-    data-testid="5_1,1"
+    data-testid="1,1"
+    role="cell"
   >
     5
   </div>
@@ -314,6 +328,7 @@ exports[`Cell component check Cell renders correctly 7`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: white #9e9e9e #9e9e9e white;
@@ -334,7 +349,8 @@ exports[`Cell component check Cell renders correctly 7`] = `
 
 <div
     class="emotion-0"
-    data-testid="6_1,1"
+    data-testid="1,1"
+    role="cell"
   >
     6
   </div>
@@ -363,6 +379,7 @@ exports[`Cell component check Cell renders correctly 8`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: white #9e9e9e #9e9e9e white;
@@ -383,7 +400,8 @@ exports[`Cell component check Cell renders correctly 8`] = `
 
 <div
     class="emotion-0"
-    data-testid="7_1,1"
+    data-testid="1,1"
+    role="cell"
   >
     7
   </div>
@@ -412,6 +430,7 @@ exports[`Cell component check Cell renders correctly 9`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: white #9e9e9e #9e9e9e white;
@@ -432,7 +451,8 @@ exports[`Cell component check Cell renders correctly 9`] = `
 
 <div
     class="emotion-0"
-    data-testid="8_1,1"
+    data-testid="1,1"
+    role="cell"
   >
     8
   </div>
@@ -461,6 +481,7 @@ exports[`Cell component check Cell renders correctly 10`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: white #9e9e9e #9e9e9e white;
@@ -489,10 +510,12 @@ exports[`Cell component check Cell renders correctly 10`] = `
 
 <div
     class="emotion-0"
-    data-testid="9_1,1"
+    data-testid="1,1"
+    role="cell"
   >
     <div
       class="emotion-1"
+      data-testid="bomb_1,1"
     />
   </div>
 </DocumentFragment>
@@ -520,6 +543,7 @@ exports[`Cell component check Cell renders correctly 11`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: white #9e9e9e #9e9e9e white;
@@ -532,8 +556,11 @@ exports[`Cell component check Cell renders correctly 11`] = `
 
 <div
     class="emotion-0"
-    data-testid="10_1,1"
-  />
+    data-testid="1,1"
+    role="cell"
+  >
+    10
+  </div>
 </DocumentFragment>
 `;
 
@@ -559,6 +586,7 @@ exports[`Cell component check Cell renders correctly 12`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: white #9e9e9e #9e9e9e white;
@@ -572,6 +600,7 @@ exports[`Cell component check Cell renders correctly 12`] = `
 .emotion-1 {
   width: 0px;
   height: 0px;
+  color: rgba(0,0,0,0);
   border-top: 0.5vw solid transparent;
   border-bottom: 0.5vw solid transparent;
   border-left: 0.5vw solid #ec433c;
@@ -579,11 +608,15 @@ exports[`Cell component check Cell renders correctly 12`] = `
 
 <div
     class="emotion-0"
-    data-testid="11_1,1"
+    data-testid="1,1"
+    role="cell"
   >
     <div
       class="emotion-1"
-    />
+      data-testid="flag_1,1"
+    >
+      11
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -610,6 +643,7 @@ exports[`Cell component check Cell renders correctly 13`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: white #9e9e9e #9e9e9e white;
@@ -623,6 +657,7 @@ exports[`Cell component check Cell renders correctly 13`] = `
 .emotion-1 {
   width: 0px;
   height: 0px;
+  color: rgba(0,0,0,0);
   border-top: 0.5vw solid transparent;
   border-bottom: 0.5vw solid transparent;
   border-left: 0.5vw solid #ec433c;
@@ -631,10 +666,12 @@ exports[`Cell component check Cell renders correctly 13`] = `
 
 <div
     class="emotion-0"
-    data-testid="12_1,1"
+    data-testid="1,1"
+    role="cell"
   >
     <div
       class="emotion-1"
+      data-testid="weakFlag_1,1"
     />
   </div>
 </DocumentFragment>
@@ -662,6 +699,7 @@ exports[`Cell component check Closed Frame renders correctly 1`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: transparent;
@@ -700,6 +738,7 @@ exports[`Cell component check Closed Frame renders correctly 2`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: transparent;
@@ -738,6 +777,7 @@ exports[`Cell component check Closed Frame renders correctly 3`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: transparent;
@@ -776,6 +816,7 @@ exports[`Cell component check Closed Frame renders correctly 4`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: transparent;
@@ -814,6 +855,7 @@ exports[`Cell component check Closed Frame renders correctly 5`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: transparent;
@@ -852,6 +894,7 @@ exports[`Cell component check Closed Frame renders correctly 6`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: transparent;
@@ -890,6 +933,7 @@ exports[`Cell component check Closed Frame renders correctly 7`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: transparent;
@@ -928,6 +972,7 @@ exports[`Cell component check Closed Frame renders correctly 8`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: transparent;
@@ -966,6 +1011,7 @@ exports[`Cell component check Closed Frame renders correctly 9`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: transparent;
@@ -1004,6 +1050,7 @@ exports[`Cell component check Closed Frame renders correctly 10`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: transparent;
@@ -1042,6 +1089,7 @@ exports[`Cell component check Closed Frame renders correctly 11`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: transparent;
@@ -1080,6 +1128,7 @@ exports[`Cell component check Closed Frame renders correctly 12`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: transparent;
@@ -1118,6 +1167,7 @@ exports[`Cell component check Closed Frame renders correctly 13`] = `
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: transparent;

@@ -166,3 +166,7 @@
 ### Game logic
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/24)
+
+#### Components refactoring and update dependencies
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/27/files)

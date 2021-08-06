@@ -11,7 +11,7 @@ describe('Scoreboard test cases', () => {
         levels={['beginner', 'intermediate', 'expert']}
         bombs="010"
         onReset={() => null}
-        onChange={() => null}
+        onChangeLevel={() => null}
       />
     );
 
@@ -26,7 +26,7 @@ describe('Scoreboard test cases', () => {
         levels={['beginner', 'intermediate', 'expert']}
         bombs="010"
         onReset={() => null}
-        onChange={onChange}
+        onChangeLevel={onChange}
       />
     );
 

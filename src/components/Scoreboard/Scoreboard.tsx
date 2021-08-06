@@ -15,13 +15,17 @@ export interface ScoreboardProps {
    */
   levels: string[];
   /**
+   * Default selected level
+   */
+  defaultLevel?: string;
+  /**
    * Action handler when the GameReset button is clicked
    */
   onReset: () => void;
   /**
    * Action handler when select new lvl
    */
-  onChange: (event: ChangeEvent<HTMLSelectElement>) => void;
+  onChangeLevel: (event: ChangeEvent<HTMLSelectElement>) => void;
   /**
    * Bombs in the field
    */
@@ -31,14 +35,17 @@ export interface ScoreboardProps {
 export const Scoreboard: FC<ScoreboardProps> = ({
   time,
   levels,
+  defaultLevel,
   bombs,
   onReset,
-  onChange,
+  onChangeLevel: onChange,
 }) => (
   <Wrapper>
     <Counter>{time}</Counter>
     <div>
-      <Level onChange={onChange}>{levels}</Level>
+      <Level onChange={onChange} value={defaultLevel}>
+        {levels}
+      </Level>
       <Reset onReset={onReset} />
     </div>
     <Counter>{bombs}</Counter>

@@ -76,5 +76,50 @@ describe('GameWithHooks test cases', () => {
       userEvent.click(screen.getByRole('button'));
       expect(screen.getAllByRole('cell', { name: String(h) })).toHaveLength(81);
     });
+    describe('Game over behavior', () => {
+      it('Player loose the game', () => {
+        render(<GameWithHooks />);
+
+        userEvent.click(screen.getByTestId('0,8'));
+        expect(screen.getAllByRole('cell', { name: String(1) })).toHaveLength(
+          1
+        );
+
+        userEvent.click(screen.getByTestId('0,0'));
+        expect(screen.getAllByRole('cell', { name: String(e) })).toHaveLength(
+          18
+        );
+
+        userEvent.click(screen.getByTestId('0,7'));
+
+        const gameLoosePopup = screen.getByText('🙁');
+
+        expect(gameLoosePopup).toBeInTheDocument();
+
+        expect(screen.queryAllByRole('cell', { name: String(h) })).toHaveLength(
+          0
+        );
+        expect(screen.getAllByRole('cell', { name: String(e) })).toHaveLength(
+          27
+        );
+        expect(screen.getAllByRole('cell', { name: String(1) })).toHaveLength(
+          30
+        );
+        expect(screen.getAllByRole('cell', { name: String(2) })).toHaveLength(
+          12
+        );
+        expect(screen.getAllByRole('cell', { name: String(3) })).toHaveLength(
+          2
+        );
+
+        userEvent.click(gameLoosePopup);
+
+        expect(screen.getAllByRole('cell', { name: String(h) })).toHaveLength(
+          81
+        );
+
+        expect(screen.queryByText('🙁')).not.toBeInTheDocument();
+      });
+    });
   });
 });

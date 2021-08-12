@@ -77,15 +77,11 @@ export const openCell = (
 
     for (const [y, x] of Object.values(items)) {
       if (checkItemInField([y, x], gameField)) {
-        const gameCell = gameField[y][x];
         const playerCell = playerField[y][x];
+        const gameCell = gameField[y][x];
 
-        if (gameCell === empty && playerCell === hidden) {
+        if (playerCell === hidden && gameCell !== bomb) {
           playerField = openCell([y, x], playerField, gameField);
-        }
-
-        if (gameCell < bomb) {
-          playerField[y][x] = gameCell;
         }
       }
     }

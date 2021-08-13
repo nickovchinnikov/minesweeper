@@ -187,3 +187,7 @@
 ### Game custom hook
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/30)
+
+### Test refactoring
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/31/files)

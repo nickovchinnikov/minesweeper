@@ -179,3 +179,7 @@
 ### Reset game by TDD
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/28/files)
+
+### Create game over behavior by TDD
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/29)

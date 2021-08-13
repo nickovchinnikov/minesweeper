@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`GameWithHooks test cases Render behaviour Render game field by default 1`] = `
+exports[`GameWithHooks test cases Render game field by default 1`] = `
 <DocumentFragment>
   .emotion-0 {
   position: relative;
@@ -116,15 +116,40 @@ exports[`GameWithHooks test cases Render behaviour Render game field by default 
 }
 
 .emotion-15 {
+  top: 60%;
+  left: 50%;
+  z-index: 11;
+  width: 8vw;
+  height: 8vw;
+  font-size: 4vw;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  line-height: 8vw;
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: auto;
+  background-color: #d1d1d1;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(51, 51, 51, 0.25);
+}
+
+.emotion-16 {
   display: grid;
-  grid-template-columns: repeat(9, auto);
+  grid-template-columns: repeat(2, auto);
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   padding: 1vw;
 }
 
-.emotion-16 {
+.emotion-17 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -150,7 +175,7 @@ exports[`GameWithHooks test cases Render behaviour Render game field by default 
   border-color: white #9e9e9e #9e9e9e white;
 }
 
-.emotion-16:hover {
+.emotion-17:hover {
   -webkit-filter: brightness(1.1);
   filter: brightness(1.1);
 }
@@ -231,572 +256,38 @@ exports[`GameWithHooks test cases Render behaviour Render game field by default 
       </div>
       <div
         class="emotion-15"
+      >
+        🙁
+      </div>
+      <div
+        class="emotion-16"
         role="grid"
-        size="9"
+        size="2"
       >
         <div
-          class="emotion-16"
+          class="emotion-17"
           data-testid="0,0"
           role="cell"
         >
           10
         </div>
         <div
-          class="emotion-16"
+          class="emotion-17"
           data-testid="0,1"
           role="cell"
         >
           10
         </div>
         <div
-          class="emotion-16"
-          data-testid="0,2"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="0,3"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="0,4"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="0,5"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="0,6"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="0,7"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="0,8"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
+          class="emotion-17"
           data-testid="1,0"
           role="cell"
         >
           10
         </div>
         <div
-          class="emotion-16"
+          class="emotion-17"
           data-testid="1,1"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="1,2"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="1,3"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="1,4"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="1,5"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="1,6"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="1,7"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="1,8"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="2,0"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="2,1"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="2,2"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="2,3"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="2,4"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="2,5"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="2,6"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="2,7"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="2,8"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="3,0"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="3,1"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="3,2"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="3,3"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="3,4"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="3,5"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="3,6"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="3,7"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="3,8"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="4,0"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="4,1"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="4,2"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="4,3"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="4,4"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="4,5"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="4,6"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="4,7"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="4,8"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="5,0"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="5,1"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="5,2"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="5,3"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="5,4"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="5,5"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="5,6"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="5,7"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="5,8"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="6,0"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="6,1"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="6,2"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="6,3"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="6,4"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="6,5"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="6,6"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="6,7"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="6,8"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="7,0"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="7,1"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="7,2"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="7,3"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="7,4"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="7,5"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="7,6"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="7,7"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="7,8"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="8,0"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="8,1"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="8,2"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="8,3"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="8,4"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="8,5"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="8,6"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="8,7"
-          role="cell"
-        >
-          10
-        </div>
-        <div
-          class="emotion-16"
-          data-testid="8,8"
           role="cell"
         >
           10

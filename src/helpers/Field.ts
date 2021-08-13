@@ -25,7 +25,7 @@ export const CellState: Record<string, Cell> = {
  * @param {Cell} state
  * @returns {Field}
  */
-export const emptyFieldGenerator = (
+export const generateFieldWithDefaultState = (
   size: number,
   state: Cell = CellState.empty
 ): Field => new Array(size).fill(null).map(() => new Array(size).fill(state));
@@ -57,7 +57,7 @@ export const fieldGenerator = (size: number, probability: number): Field => {
   let unprocessedCells = size * size;
   let restCellsWithBombs = unprocessedCells * probability;
 
-  const result: Field = emptyFieldGenerator(size);
+  const result: Field = generateFieldWithDefaultState(size);
 
   for (let y = 0; y < size; y++) {
     for (let x = 0; x < size; x++) {

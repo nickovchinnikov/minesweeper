@@ -42,7 +42,7 @@ GameExample.args = {
           bombs="000"
           levels={['beginner', 'intermediate', 'expert']}
           onReset={() => null}
-          onChange={() => null}
+          onChangeLevel={() => null}
         />
         <GameOver onClick={() => null} isWin={true} />
         <Grid onClick={() => null} onContextMenu={() => null}>

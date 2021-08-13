@@ -170,3 +170,12 @@
 #### Components refactoring and update dependencies
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/27/files)
+
+### useState and player field generator
+### Test player field generator
+### Generate game field and open cell handler
+### Debug session and useMemo
+### Click to the cell test cases
+### Reset game by TDD
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/28/files)

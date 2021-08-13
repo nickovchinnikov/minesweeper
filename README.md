@@ -183,3 +183,7 @@
 ### Create game over behavior by TDD
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/29)
+
+### Game custom hook
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/30)

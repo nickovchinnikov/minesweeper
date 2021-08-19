@@ -1,18 +1,19 @@
 import { CellState, Coords, Field } from './Field';
 import { checkItemInField, getNeigboursItems } from './CellsManipulator';
+import { detectSolvedPuzzle } from './detectSolvedPullze';
 
 /**
  * Open cell in the player field using game field info
  * @param {Coords} coords
  * @param {Field} playerField
  * @param {Field} gameField
- * @returns {Field}
+ * @returns {[Field, boolean, number]}
  */
 export const openCell = (
   coords: Coords,
   playerField: Field,
   gameField: Field
-): Field => {
+): [Field, boolean, number] => {
   const { empty, hidden, bomb } = CellState;
 
   const [y, x] = coords;
@@ -33,7 +34,7 @@ export const openCell = (
         const gameCell = gameField[y][x];
 
         if (playerCell === hidden && gameCell !== bomb) {
-          playerField = openCell([y, x], playerField, gameField);
+          [playerField] = openCell([y, x], playerField, gameField);
         }
       }
     }
@@ -41,5 +42,7 @@ export const openCell = (
 
   playerField[y][x] = gameCell;
 
-  return playerField;
+  const [isSolved, flagCounter] = detectSolvedPuzzle(playerField, gameField);
+
+  return [playerField, isSolved, flagCounter];
 };

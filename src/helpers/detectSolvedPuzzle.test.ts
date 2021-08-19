@@ -1,5 +1,5 @@
 import { CellState, Field } from './Field';
-import { detectSolvedPuzzle } from './DetectSolvedPullze';
+import { detectSolvedPuzzle } from './detectSolvedPullze';
 
 const { empty: e, hidden: h, bomb: b, flag: f, weakFlag: w } = CellState;
 

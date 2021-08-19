@@ -1,7 +1,7 @@
 import { CellState } from './Field';
 import { openCell } from './openCell';
 
-const { empty: e, hidden: h, bomb: b } = CellState;
+const { empty: e, hidden: h, bomb: b, flag: f } = CellState;
 
 describe('Open cell action', () => {
   describe('Simple cases with loose', () => {
@@ -23,7 +23,7 @@ describe('Open cell action', () => {
   });
   describe('Open cell with number', () => {
     it('Open cell with state == 1', () => {
-      const playerField = openCell(
+      const [playerField] = openCell(
         [1, 1],
         [
           [h, h, h],
@@ -43,7 +43,7 @@ describe('Open cell action', () => {
       ]);
     });
     it('Open cell with state == 3', () => {
-      const playerField = openCell(
+      const [playerField] = openCell(
         [1, 1],
         [
           [h, h, h],
@@ -65,7 +65,7 @@ describe('Open cell action', () => {
   });
   describe('Open empty cell', () => {
     it('Open empty cell, simple 3*3 case', () => {
-      const playerField = openCell(
+      const [playerField] = openCell(
         [1, 2],
         [
           [h, h, h],
@@ -85,7 +85,7 @@ describe('Open cell action', () => {
       ]);
     });
     it('Open empty cell 5*5 case', () => {
-      const playerField = openCell(
+      const [playerField] = openCell(
         [2, 2],
         [
           [h, h, h, h, h],
@@ -108,6 +108,37 @@ describe('Open cell action', () => {
         [1, 1, 0, 1, 1],
         [1, 0, 0, 1, h],
         [2, 1, 0, 1, h],
+      ]);
+    });
+  });
+  describe('Detect win state', () => {
+    it('5*5 solved case', () => {
+      const [playerField, isSolved, flagCounter] = openCell(
+        [4, 0],
+        [
+          [f, f, 1, 1, 2],
+          [f, 3, 1, 0, 0],
+          [1, 1, 0, 1, 1],
+          [1, 0, 0, 1, f],
+          [h, 1, 0, 1, 0],
+        ],
+        [
+          [9, 9, 1, 1, 2],
+          [9, 3, 1, 0, 0],
+          [1, 1, 0, 1, 1],
+          [1, 0, 0, 1, 9],
+          [2, 1, 0, 1, 0],
+        ]
+      );
+
+      expect(flagCounter).toBe(4);
+      expect(isSolved).toStrictEqual(true);
+      expect(playerField).toStrictEqual([
+        [f, f, 1, 1, 2],
+        [f, 3, 1, 0, 0],
+        [1, 1, 0, 1, 1],
+        [1, 0, 0, 1, f],
+        [2, 1, 0, 1, 0],
       ]);
     });
   });

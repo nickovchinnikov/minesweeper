@@ -65,6 +65,17 @@ describe('useGame test cases', () => {
 
       expect(flatWithFilter(newPlayerField, e)).toHaveLength(18);
     });
+    it('Context menu handler', () => {
+      const { result } = renderHook(useGame);
+
+      const { onContextMenu } = result.current;
+
+      act(() => onContextMenu([0, 0]));
+
+      const { playerField: newPlayerField } = result.current;
+
+      expect(flatWithFilter(newPlayerField, f)).toHaveLength(1);
+    });
     it('Click to the non-empty cells area', () => {
       const { result } = renderHook(useGame);
 

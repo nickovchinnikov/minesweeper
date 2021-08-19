@@ -191,3 +191,7 @@
 ### Test refactoring
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/31/files)
+
+### Set flag action
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/32/files)

@@ -201,3 +201,7 @@
 ### Add test cases for the useGame hook win state
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/33/files)
+
+### Game timer and useEffect
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/34/files)

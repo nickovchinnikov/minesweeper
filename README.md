@@ -198,5 +198,6 @@
 
 ### Solved puzzle detector
 ### Create win game state handler
+### Add test cases for the useGame hook win state
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/33/files)

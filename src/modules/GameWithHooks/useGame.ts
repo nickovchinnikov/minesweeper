@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 
 import {
   Field,
@@ -14,6 +14,7 @@ import { LevelNames, GameSettings } from '@/modules/GameSettings';
 
 interface ReturnType {
   level: LevelNames;
+  time: number;
   isGameOver: boolean;
   isWin: boolean;
   settings: [number, number];
@@ -30,6 +31,9 @@ export const useGame = (): ReturnType => {
 
   const [isGameOver, setIsGameOver] = useState(false);
   const [isWin, setIsWin] = useState(false);
+  const [isGameStarted, setIsGameStarted] = useState(false);
+
+  const [time, setTime] = useState(0);
 
   const setGameOver = (isSolved = false) => {
     setIsGameOver(true);
@@ -46,9 +50,28 @@ export const useGame = (): ReturnType => {
     fieldGenerator(size, bombs / (size * size))
   );
 
+  useEffect(() => {
+    let interval: NodeJS.Timeout;
+
+    if (isGameStarted) {
+      interval = setInterval(() => {
+        setTime(time + 1);
+      }, 1000);
+
+      if (isGameOver) {
+        clearInterval(interval);
+      }
+    }
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [isGameOver, isGameStarted, time]);
+
   useMemo(() => console.log(gameField), []);
 
   const onClick = (coords: Coords) => {
+    !isGameStarted && setIsGameStarted(true);
     try {
       const [newPlayerField, isSolved, flagCounter] = openCell(
         coords,
@@ -66,6 +89,7 @@ export const useGame = (): ReturnType => {
   };
 
   const onContextMenu = (coords: Coords) => {
+    !isGameStarted && setIsGameStarted(true);
     const [newPlayerField, isSolved, flagCounter] = setFlag(
       coords,
       playerField,
@@ -88,6 +112,8 @@ export const useGame = (): ReturnType => {
     setPlayerField([...newPlayerField]);
     setIsGameOver(false);
     setIsWin(false);
+    setIsGameStarted(false);
+    setTime(0);
   };
 
   const onChangeLevel = (level: LevelNames) => {
@@ -100,6 +126,7 @@ export const useGame = (): ReturnType => {
 
   return {
     level,
+    time,
     isGameOver,
     isWin,
     settings: [size, bombs],

@@ -12,6 +12,7 @@ import { useGame } from './useGame';
 export const GameWithHooks: FC = () => {
   const {
     level,
+    time,
     isGameOver,
     isWin,
     settings,
@@ -31,7 +32,7 @@ export const GameWithHooks: FC = () => {
       </Top>
       <GameArea>
         <Scoreboard
-          time="0"
+          time={String(time)}
           bombs={String(bombs)}
           levels={GameLevels as unknown as string[]}
           defaultLevel={level}

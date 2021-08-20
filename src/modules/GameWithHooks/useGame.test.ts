@@ -206,4 +206,80 @@ describe('useGame test cases', () => {
       expect(isGameOver).toBe(true);
     });
   });
+  describe('Scoreboard behavior - timer and bomb counter', () => {
+    it('Timer should start by click to a cell', () => {
+      jest.useFakeTimers();
+
+      const { result } = renderHook(useGame);
+
+      const timeMustPass = 5;
+
+      for (let i = 0; i < timeMustPass; i++) {
+        act(() => {
+          jest.advanceTimersByTime(1000);
+        });
+      }
+
+      // Timer shouldn't works before game has started
+      expect(result.current.time).toBe(0);
+
+      act(() => result.current.onClick([0, 0]));
+
+      for (let i = 0; i < timeMustPass; i++) {
+        act(() => {
+          jest.advanceTimersByTime(1000);
+        });
+      }
+
+      expect(result.current.time).toBe(5);
+    });
+    it('Timer should start by mark a cell by a flag', () => {
+      jest.useFakeTimers();
+
+      const { result } = renderHook(useGame);
+
+      const timeMustPass = 5;
+
+      for (let i = 0; i < timeMustPass; i++) {
+        act(() => {
+          jest.advanceTimersByTime(1000);
+        });
+      }
+
+      // Timer shouldn't works before game has started
+      expect(result.current.time).toBe(0);
+
+      act(() => result.current.onContextMenu([0, 0]));
+
+      for (let i = 0; i < timeMustPass; i++) {
+        act(() => {
+          jest.advanceTimersByTime(1000);
+        });
+      }
+
+      expect(result.current.time).toBe(timeMustPass);
+    });
+    it('Time should reset value when onReset have been called', () => {
+      jest.useFakeTimers();
+
+      const { result } = renderHook(useGame);
+
+      expect(result.current.time).toBe(0);
+
+      act(() => result.current.onContextMenu([0, 0]));
+
+      const timeMustPass = 5;
+      for (let i = 0; i < timeMustPass; i++) {
+        act(() => {
+          jest.advanceTimersByTime(1000);
+        });
+      }
+
+      expect(result.current.time).toBe(timeMustPass);
+
+      act(result.current.onReset);
+
+      expect(result.current.time).toBe(0);
+    });
+  });
 });

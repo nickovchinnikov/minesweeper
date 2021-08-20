@@ -217,7 +217,7 @@ exports[`GameWithHooks test cases Render game field by default 1`] = `
         <div
           class="emotion-8"
         >
-          0
+          undefined
         </div>
         <div>
           <select

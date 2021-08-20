@@ -157,7 +157,7 @@
 
 [Pull request3](https://github.com/nickovchinnikov/minesweeper/pull/23)
 
-## Section 8: React hooks advanced
+## Section 8: React hooks and react testing library
 
 ### Static game
 
@@ -191,6 +191,8 @@
 ### Test refactoring
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/31/files)
+
+## Section 9: Game behavior and useEffect
 
 ### Set flag action
 

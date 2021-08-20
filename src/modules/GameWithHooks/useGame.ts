@@ -31,6 +31,11 @@ export const useGame = (): ReturnType => {
   const [isGameOver, setIsGameOver] = useState(false);
   const [isWin, setIsWin] = useState(false);
 
+  const setGameOver = (isSolved = false) => {
+    setIsGameOver(true);
+    setIsWin(isSolved);
+  };
+
   const [size, bombs] = GameSettings[level];
 
   const [playerField, setPlayerField] = useState<Field>(
@@ -51,13 +56,12 @@ export const useGame = (): ReturnType => {
         gameField
       );
       if (isSolved) {
-        setIsWin(true);
-        setIsGameOver(true);
+        setGameOver(isSolved);
       }
       setPlayerField([...newPlayerField]);
     } catch (e) {
       setPlayerField([...gameField]);
-      setIsGameOver(true);
+      setGameOver(false);
     }
   };
 
@@ -68,8 +72,7 @@ export const useGame = (): ReturnType => {
       gameField
     );
     if (isSolved) {
-      setIsWin(true);
-      setIsGameOver(true);
+      setGameOver(isSolved);
     }
     setPlayerField([...newPlayerField]);
   };

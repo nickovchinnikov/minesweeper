@@ -20,6 +20,7 @@ interface ReturnType {
   settings: [number, number];
   playerField: Field;
   gameField: Field;
+  flagCounter: number;
   onClick: (coords: Coords) => void;
   onContextMenu: (coords: Coords) => void;
   onChangeLevel: (level: LevelNames) => void;
@@ -34,6 +35,7 @@ export const useGame = (): ReturnType => {
   const [isGameStarted, setIsGameStarted] = useState(false);
 
   const [time, setTime] = useState(0);
+  const [flagCounter, setFlagCounter] = useState(0);
 
   const setGameOver = (isSolved = false) => {
     setIsGameOver(true);
@@ -90,11 +92,14 @@ export const useGame = (): ReturnType => {
 
   const onContextMenu = (coords: Coords) => {
     !isGameStarted && setIsGameStarted(true);
-    const [newPlayerField, isSolved, flagCounter] = setFlag(
+    const [newPlayerField, isSolved, newFlagCounter] = setFlag(
       coords,
       playerField,
-      gameField
+      gameField,
+      flagCounter,
+      bombs
     );
+    setFlagCounter(newFlagCounter);
     if (isSolved) {
       setGameOver(isSolved);
     }
@@ -132,6 +137,7 @@ export const useGame = (): ReturnType => {
     settings: [size, bombs],
     playerField,
     gameField,
+    flagCounter,
     onClick,
     onContextMenu,
     onChangeLevel,

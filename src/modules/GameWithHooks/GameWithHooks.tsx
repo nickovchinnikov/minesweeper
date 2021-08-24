@@ -17,6 +17,7 @@ export const GameWithHooks: FC = () => {
     isWin,
     settings,
     playerField,
+    flagCounter,
     onClick,
     onContextMenu,
     onChangeLevel,
@@ -33,7 +34,7 @@ export const GameWithHooks: FC = () => {
       <GameArea>
         <Scoreboard
           time={String(time)}
-          bombs={String(bombs)}
+          bombs={String(bombs - flagCounter)}
           levels={GameLevels as unknown as string[]}
           defaultLevel={level}
           onChangeLevel={({

@@ -251,7 +251,7 @@ exports[`GameWithHooks test cases Render game field by default 1`] = `
         <div
           class="emotion-8"
         >
-          10
+          NaN
         </div>
       </div>
       <div

@@ -207,3 +207,7 @@
 ### Game timer and useEffect
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/34/files)
+
+### Bombs counter
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/35/files)

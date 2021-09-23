@@ -137,6 +137,10 @@
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/18)
 
+### useDebugValue
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/38)
+
 ## Section 7: Code quality and CI/CD
 
 ### Test coverage report

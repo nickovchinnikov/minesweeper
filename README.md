@@ -4,6 +4,8 @@
 
 ### Minesweeper presentation
 
+### Purpose of the course
+
 ### Github repository overview
 
 [Creating a new repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/creating-a-new-repository)
@@ -12,7 +14,8 @@
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/1)
 
-### Code-style tools Eslint and Prettier
+### Code-style and Eslint 
+### Prettier
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/2)
 
@@ -71,11 +74,16 @@
 
 [Jest and TDD](https://medium.com/@suvodeep4119/javascript-tdd-using-jest-9b535c6be7be)
 
-### Basic game functionality
+### Field generator part1, part2, part3, part4 (Basic game functionality)
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/7)
 
 [Pull request2](https://github.com/nickovchinnikov/minesweeper/pull/8)
+
+### VSCode debug configuration
+### Debug basic game logic
+
+[config for vscode](https://gist.github.com/nickovchinnikov/ace62c117e6b6ff87f0fbfe96bb04164)
 
 ## Section 5: Storybook and Components Library
 
@@ -86,6 +94,8 @@
 [Minesweeper codepen](https://codepen.io/poopsplat/pen/XOBQEe)
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/11/files)
+
+### Styled components API
 
 ### Storybook intro
 
@@ -107,11 +117,13 @@
 
 ## Section 6: React Hooks intro
 
+### useState
+
 ### Dynamic components with useState Hook
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/15)
 
-### React-testing-library
+### Testing-library for ReactJS components
 
 [Jest-dom](https://github.com/testing-library/jest-dom)
 
@@ -141,12 +153,14 @@
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/38)
 
-## Section 7: Code quality and CI/CD
+## Section 7: Code quality, app deploy and CI/CD
 
 ### Test coverage report
 ### Test quality tool Stryker-Mutator
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/19)
+
+### Snapshot testing
 
 ### Githooks and Husky
 
@@ -176,13 +190,20 @@
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/27/files)
 
 ### useState and player field generator
-### Test player field generator
+
+### Testing library user-event
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/39/files)
+
 ### Generate game field and open cell handler
+### Test player field generator
 ### Debug session and useMemo
 ### Click to the cell test cases
 ### Reset game by TDD
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/28/files)
+
+## Section 9: Game Hook
 
 ### Create game over behavior by TDD
 
@@ -204,9 +225,11 @@
 
 ### Solved puzzle detector
 ### Create win game state handler
-### Add test cases for the useGame hook win state
+### Add test cases for win state
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/33/files)
+
+## Section 10: useEffect and useCallback
 
 ### Game timer and useEffect
 

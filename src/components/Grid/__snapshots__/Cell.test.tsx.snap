@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Cell component check Cell renders correctly 1`] = `
+exports[`Cell component check Cell renders correct 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -51,7 +51,7 @@ exports[`Cell component check Cell renders correctly 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Cell component check Cell renders correctly 2`] = `
+exports[`Cell component check Cell renders correct 2`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -102,7 +102,7 @@ exports[`Cell component check Cell renders correctly 2`] = `
 </DocumentFragment>
 `;
 
-exports[`Cell component check Cell renders correctly 3`] = `
+exports[`Cell component check Cell renders correct 3`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -153,7 +153,7 @@ exports[`Cell component check Cell renders correctly 3`] = `
 </DocumentFragment>
 `;
 
-exports[`Cell component check Cell renders correctly 4`] = `
+exports[`Cell component check Cell renders correct 4`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -204,7 +204,7 @@ exports[`Cell component check Cell renders correctly 4`] = `
 </DocumentFragment>
 `;
 
-exports[`Cell component check Cell renders correctly 5`] = `
+exports[`Cell component check Cell renders correct 5`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -255,7 +255,7 @@ exports[`Cell component check Cell renders correctly 5`] = `
 </DocumentFragment>
 `;
 
-exports[`Cell component check Cell renders correctly 6`] = `
+exports[`Cell component check Cell renders correct 6`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -306,7 +306,7 @@ exports[`Cell component check Cell renders correctly 6`] = `
 </DocumentFragment>
 `;
 
-exports[`Cell component check Cell renders correctly 7`] = `
+exports[`Cell component check Cell renders correct 7`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -357,7 +357,7 @@ exports[`Cell component check Cell renders correctly 7`] = `
 </DocumentFragment>
 `;
 
-exports[`Cell component check Cell renders correctly 8`] = `
+exports[`Cell component check Cell renders correct 8`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -408,7 +408,7 @@ exports[`Cell component check Cell renders correctly 8`] = `
 </DocumentFragment>
 `;
 
-exports[`Cell component check Cell renders correctly 9`] = `
+exports[`Cell component check Cell renders correct 9`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -459,7 +459,7 @@ exports[`Cell component check Cell renders correctly 9`] = `
 </DocumentFragment>
 `;
 
-exports[`Cell component check Cell renders correctly 10`] = `
+exports[`Cell component check Cell renders correct 10`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -521,7 +521,7 @@ exports[`Cell component check Cell renders correctly 10`] = `
 </DocumentFragment>
 `;
 
-exports[`Cell component check Cell renders correctly 11`] = `
+exports[`Cell component check Cell renders correct 11`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -564,7 +564,7 @@ exports[`Cell component check Cell renders correctly 11`] = `
 </DocumentFragment>
 `;
 
-exports[`Cell component check Cell renders correctly 12`] = `
+exports[`Cell component check Cell renders correct 12`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -621,7 +621,7 @@ exports[`Cell component check Cell renders correctly 12`] = `
 </DocumentFragment>
 `;
 
-exports[`Cell component check Cell renders correctly 13`] = `
+exports[`Cell component check Cell renders correct 13`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -677,7 +677,7 @@ exports[`Cell component check Cell renders correctly 13`] = `
 </DocumentFragment>
 `;
 
-exports[`Cell component check Closed Frame renders correctly 1`] = `
+exports[`Cell component check Closed Frame renders correct 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -716,7 +716,7 @@ exports[`Cell component check Closed Frame renders correctly 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Cell component check Closed Frame renders correctly 2`] = `
+exports[`Cell component check Closed Frame renders correct 2`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -755,7 +755,7 @@ exports[`Cell component check Closed Frame renders correctly 2`] = `
 </DocumentFragment>
 `;
 
-exports[`Cell component check Closed Frame renders correctly 3`] = `
+exports[`Cell component check Closed Frame renders correct 3`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -794,7 +794,7 @@ exports[`Cell component check Closed Frame renders correctly 3`] = `
 </DocumentFragment>
 `;
 
-exports[`Cell component check Closed Frame renders correctly 4`] = `
+exports[`Cell component check Closed Frame renders correct 4`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -833,7 +833,7 @@ exports[`Cell component check Closed Frame renders correctly 4`] = `
 </DocumentFragment>
 `;
 
-exports[`Cell component check Closed Frame renders correctly 5`] = `
+exports[`Cell component check Closed Frame renders correct 5`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -872,7 +872,7 @@ exports[`Cell component check Closed Frame renders correctly 5`] = `
 </DocumentFragment>
 `;
 
-exports[`Cell component check Closed Frame renders correctly 6`] = `
+exports[`Cell component check Closed Frame renders correct 6`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -911,7 +911,7 @@ exports[`Cell component check Closed Frame renders correctly 6`] = `
 </DocumentFragment>
 `;
 
-exports[`Cell component check Closed Frame renders correctly 7`] = `
+exports[`Cell component check Closed Frame renders correct 7`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -950,7 +950,7 @@ exports[`Cell component check Closed Frame renders correctly 7`] = `
 </DocumentFragment>
 `;
 
-exports[`Cell component check Closed Frame renders correctly 8`] = `
+exports[`Cell component check Closed Frame renders correct 8`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -989,7 +989,7 @@ exports[`Cell component check Closed Frame renders correctly 8`] = `
 </DocumentFragment>
 `;
 
-exports[`Cell component check Closed Frame renders correctly 9`] = `
+exports[`Cell component check Closed Frame renders correct 9`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -1028,7 +1028,7 @@ exports[`Cell component check Closed Frame renders correctly 9`] = `
 </DocumentFragment>
 `;
 
-exports[`Cell component check Closed Frame renders correctly 10`] = `
+exports[`Cell component check Closed Frame renders correct 10`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -1067,7 +1067,7 @@ exports[`Cell component check Closed Frame renders correctly 10`] = `
 </DocumentFragment>
 `;
 
-exports[`Cell component check Closed Frame renders correctly 11`] = `
+exports[`Cell component check Closed Frame renders correct 11`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -1106,7 +1106,7 @@ exports[`Cell component check Closed Frame renders correctly 11`] = `
 </DocumentFragment>
 `;
 
-exports[`Cell component check Closed Frame renders correctly 12`] = `
+exports[`Cell component check Closed Frame renders correct 12`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -1145,7 +1145,7 @@ exports[`Cell component check Closed Frame renders correctly 12`] = `
 </DocumentFragment>
 `;
 
-exports[`Cell component check Closed Frame renders correctly 13`] = `
+exports[`Cell component check Closed Frame renders correct 13`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;

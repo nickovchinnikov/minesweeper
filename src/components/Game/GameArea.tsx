@@ -1,16 +1,7 @@
-import React, { FC, ReactNode } from 'react';
+import React, { FC } from 'react';
 import styled from '@emotion/styled';
 
-export interface GameAreaProps {
-  /**
-   * Game items
-   */
-  children: ReactNode;
-}
-
-export const GameArea: FC<GameAreaProps> = ({ children }) => (
-  <Frame>{children}</Frame>
-);
+export const GameArea: FC = ({ children }) => <Frame>{children}</Frame>;
 
 const Frame = styled.div`
   display: flex;

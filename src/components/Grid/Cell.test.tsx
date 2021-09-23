@@ -9,7 +9,7 @@ describe('Cell component check', () => {
   const coords: Coords = [1, 1];
 
   for (let cell = CellState.empty; cell <= CellState.weakFlag; cell++) {
-    it('Cell renders correctly', () => {
+    it('Cell renders correct', () => {
       const props = {
         coords,
         onClick: jest.fn(),
@@ -20,7 +20,7 @@ describe('Cell component check', () => {
 
       expect(asFragment()).toMatchSnapshot();
     });
-    it('Closed Frame renders correctly', () => {
+    it('Closed Frame renders correct', () => {
       const { asFragment } = render(<ClosedFrame mouseDown={true} />);
       expect(asFragment()).toMatchSnapshot();
     });

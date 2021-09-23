@@ -1,6 +1,6 @@
 # Minesweeper
 
-## Section 1: Introduction
+## Section: Introduction
 
 ### Minesweeper presentation
 
@@ -19,7 +19,7 @@
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/2)
 
-## Section 2: Typescript recap
+## Section: Typescript recap
 
 ### Typescript basic
 ### Parametric typing with generics
@@ -35,7 +35,7 @@
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/4)
 
-## Section 3: React intro
+## Section: React intro
 
 ### Create React App
 
@@ -64,7 +64,7 @@
 
 [React intro examples pull request](https://github.com/nickovchinnikov/minesweeper/pull/10/files)
 
-## Section 4: Jest, TDD and basic game logic
+## Section: Jest, TDD and basic game logic
 
 ### Jest testing framework (TDD vs TLD)
 
@@ -85,7 +85,7 @@
 
 [config for vscode](https://gist.github.com/nickovchinnikov/ace62c117e6b6ff87f0fbfe96bb04164)
 
-## Section 5: Storybook and Components Library
+## Section: Storybook and Components Library
 
 ### Library Emotion for css-in-js
 
@@ -115,9 +115,11 @@
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/14)
 
-## Section 6: React Hooks intro
+## Section: React Hooks intro
 
 ### useState
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/41)
 
 ### Dynamic components with useState Hook
 
@@ -153,7 +155,7 @@
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/38)
 
-## Section 7: Code quality, app deploy and CI/CD
+## Section: Code quality, app deploy and CI/CD
 
 ### Test coverage report
 ### Test quality tool Stryker-Mutator
@@ -175,7 +177,7 @@
 
 [Pull request3](https://github.com/nickovchinnikov/minesweeper/pull/23)
 
-## Section 8: React hooks and react testing library
+## Section: React hooks and react testing library
 
 ### Static game
 
@@ -203,7 +205,7 @@
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/28/files)
 
-## Section 9: Game Hook
+## Section: Game Hook
 
 ### Create game over behavior by TDD
 
@@ -217,7 +219,7 @@
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/31/files)
 
-## Section 9: Game behavior and useEffect
+## Section: Game behavior and useEffect
 
 ### Set flag action
 
@@ -229,7 +231,7 @@
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/33/files)
 
-## Section 10: useEffect and useCallback
+## Section: useEffect and useCallback
 
 ### Game timer and useEffect
 

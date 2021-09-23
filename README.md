@@ -238,3 +238,7 @@
 ### Bombs counter
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/35/files)
+
+#### Refactoring and update dependencies
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/40)

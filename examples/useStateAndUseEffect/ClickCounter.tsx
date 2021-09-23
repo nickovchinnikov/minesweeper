@@ -1,11 +1,24 @@
-import React, { FC, useState } from 'react';
+import React, { FC, useState, useEffect } from 'react';
 
 interface Props {
   defaultCount?: number;
+  documentClickHandler: () => void;
 }
 
-export const ClickCounter: FC<Props> = ({ defaultCount = 0 }) => {
+export const ClickCounter: FC<Props> = ({
+  defaultCount = 0,
+  documentClickHandler,
+}) => {
   const [count, setCount] = useState(defaultCount);
+
+  useEffect(() => {
+    document.title = `Counter: ${count}`;
+
+    document.addEventListener('click', documentClickHandler);
+    return () => {
+      document.removeEventListener('click', documentClickHandler);
+    };
+  });
 
   return (
     <div>

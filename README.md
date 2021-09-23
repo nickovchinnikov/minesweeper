@@ -219,8 +219,6 @@
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/31/files)
 
-## Section: Game behavior and useEffect
-
 ### Set flag action
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/32/files)
@@ -232,6 +230,10 @@
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/33/files)
 
 ## Section: useEffect and useCallback
+
+### useEffect
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/42)
 
 ### Game timer and useEffect
 

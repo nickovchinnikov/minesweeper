@@ -1,7 +1,7 @@
 import { CellState } from './Field';
 import { openCell } from './openCell';
 
-const { empty: e, hidden: h, bomb: b, flag: f } = CellState;
+const { empty: e, hidden: h, bomb: b, weakFlag: w, flag: f } = CellState;
 
 describe('Open cell action', () => {
   describe('Simple cases with loose', () => {
@@ -19,6 +19,48 @@ describe('Open cell action', () => {
           ]
         )
       ).toThrow('Game Over');
+    });
+    it("Open cell with the flag it shouldn't open", () => {
+      const [playerField, isSolved] = openCell(
+        [1, 1],
+        [
+          [h, h, h],
+          [h, f, h],
+          [h, h, h],
+        ],
+        [
+          [1, 1, 0],
+          [9, 1, 0],
+          [1, 1, 0],
+        ]
+      );
+
+      expect(isSolved).toBe(false);
+      expect(playerField).toStrictEqual([
+        [h, h, h],
+        [h, f, h],
+        [h, h, h],
+      ]);
+    });
+    it('Open cell with the weak flag should open', () => {
+      const [playerField] = openCell(
+        [1, 1],
+        [
+          [h, h, h],
+          [h, w, h],
+          [h, h, h],
+        ],
+        [
+          [1, 1, 0],
+          [9, 1, 0],
+          [1, 1, 0],
+        ]
+      );
+      expect(playerField).toStrictEqual([
+        [h, h, h],
+        [h, 1, h],
+        [h, h, h],
+      ]);
     });
   });
   describe('Open cell with number', () => {
@@ -113,7 +155,7 @@ describe('Open cell action', () => {
   });
   describe('Detect win state', () => {
     it('5*5 solved case', () => {
-      const [playerField, isSolved, flagCounter] = openCell(
+      const [playerField, isSolved] = openCell(
         [4, 0],
         [
           [f, f, 1, 1, 2],
@@ -131,7 +173,6 @@ describe('Open cell action', () => {
         ]
       );
 
-      expect(flagCounter).toBe(4);
       expect(isSolved).toStrictEqual(true);
       expect(playerField).toStrictEqual([
         [f, f, 1, 1, 2],

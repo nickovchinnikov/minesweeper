@@ -40,7 +40,7 @@ describe('Detect solved puzzle function test cases', () => {
     expect(flagCounter).toBe(0);
     expect(isSolved).toBe(false);
   });
-  it('Wrong 3*3 hidden cell case', () => {
+  it('Wrong 3*3 without hidden cells case', () => {
     const gameField: Field = [
       [1, 1, e],
       [b, 1, e],
@@ -48,8 +48,44 @@ describe('Detect solved puzzle function test cases', () => {
     ];
 
     const playerField: Field = [
-      [1, h, e],
+      [1, f, e],
       [f, 1, e],
+      [1, 1, e],
+    ];
+
+    const [isSolved, flagCounter] = detectSolvedPuzzle(playerField, gameField);
+
+    expect(flagCounter).toBe(2);
+    expect(isSolved).toBe(false);
+  });
+  it('Loose 3*3 case', () => {
+    const gameField: Field = [
+      [1, 1, e],
+      [b, 1, e],
+      [1, 1, e],
+    ];
+
+    const playerField: Field = [
+      [1, 1, e],
+      [b, 1, e],
+      [1, 1, e],
+    ];
+
+    const [isSolved, flagCounter] = detectSolvedPuzzle(playerField, gameField);
+
+    expect(flagCounter).toBe(0);
+    expect(isSolved).toBe(false);
+  });
+  it('Wrong flag on 3*3 case', () => {
+    const gameField: Field = [
+      [1, 1, e],
+      [b, 1, e],
+      [1, 1, e],
+    ];
+
+    const playerField: Field = [
+      [1, f, e],
+      [b, 1, e],
       [1, 1, e],
     ];
 
@@ -71,13 +107,13 @@ describe('Detect solved puzzle function test cases', () => {
       [f, f, 1, h, h],
       [f, 3, 1, h, h],
       [1, 1, h, h, h],
-      [1, h, h, h, h],
+      [1, h, h, h, f],
       [2, h, h, h, h],
     ];
 
     const [isSolved, flagCounter] = detectSolvedPuzzle(playerField, gameField);
 
-    expect(flagCounter).toBe(3);
+    expect(flagCounter).toBe(4);
     expect(isSolved).toStrictEqual(false);
   });
   it('5*5 solved case', () => {

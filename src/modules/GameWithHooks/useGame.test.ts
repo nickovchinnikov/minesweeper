@@ -7,7 +7,7 @@ import { useGame } from './useGame';
 
 jest.mock('@/helpers/Field');
 
-const { empty: e, hidden: h, bomb: b, flag: f } = CellState;
+const { empty: e, hidden: h, bomb: b, flag: f, weakFlag: w } = CellState;
 
 const [beginner, intermediate, expert] = GameLevels;
 
@@ -123,11 +123,12 @@ describe('useGame test cases', () => {
     });
     it('onReset game handler', () => {
       const { result } = renderHook(useGame);
-      const { playerField, onClick, onReset } = result.current;
+      const { playerField, onClick, onReset, onContextMenu } = result.current;
 
       expect(playerField).toHaveLength(9);
 
       act(() => onClick([0, 8]));
+      act(() => onContextMenu([8, 8]));
 
       expect(flatWithFilter(playerField, 1)).toHaveLength(1);
 
@@ -140,23 +141,38 @@ describe('useGame test cases', () => {
       const {
         playerField: finalPlayerField,
         isWin,
+        isGameStarted,
         isGameOver,
         gameField,
+        flagCounter,
       } = result.current;
 
       expect(isWin).toBe(false);
       expect(isGameOver).toBe(false);
+      expect(isGameStarted).toBe(false);
+      expect(flagCounter).toBe(0);
       expect(flatWithFilter(finalPlayerField, h)).toHaveLength(81);
       expect(flatWithFilter(gameField, b)).toHaveLength(10);
     });
   });
   describe('Game over behavior', () => {
     it('Player loose the game', () => {
+      jest.useFakeTimers();
       const { result } = renderHook(useGame);
 
       const { playerField, onClick } = result.current;
 
       act(() => onClick([0, 8]));
+
+      const timeMustPass = 5;
+
+      for (let i = 0; i < timeMustPass; i++) {
+        act(() => {
+          jest.advanceTimersByTime(1000);
+        });
+      }
+
+      expect(result.current.time).toBe(5);
 
       expect(flatWithFilter(playerField, 1)).toHaveLength(1);
 
@@ -166,13 +182,21 @@ describe('useGame test cases', () => {
 
       act(() => onClick([0, 7]));
 
+      for (let i = 0; i < timeMustPass; i++) {
+        act(() => {
+          jest.advanceTimersByTime(1000);
+        });
+      }
+
       const {
         isWin,
         isGameOver,
+        time,
         playerField: newPlayerField,
         onReset,
       } = result.current;
 
+      expect(time).toBe(5);
       expect(isGameOver).toBe(true);
       expect(isWin).toBe(false);
       expect(flatWithFilter(newPlayerField, h)).toHaveLength(0);
@@ -186,7 +210,7 @@ describe('useGame test cases', () => {
 
       expect(flatWithFilter(latestPlayerField, h)).toHaveLength(81);
     });
-    it('Player win the game', () => {
+    it('Player win a game when open the last cell', () => {
       const { result } = renderHook(useGame);
 
       const { gameField, onClick, onContextMenu } = result.current;
@@ -195,7 +219,44 @@ describe('useGame test cases', () => {
         for (const x of gameField[y].keys()) {
           const gameCell = gameField[y][x];
           act(() => {
-            gameCell !== b ? onClick([y, x]) : onContextMenu([y, x]);
+            gameCell === b && onContextMenu([y, x]);
+          });
+        }
+      }
+
+      for (const y of gameField.keys()) {
+        for (const x of gameField[y].keys()) {
+          const gameCell = gameField[y][x];
+          act(() => {
+            gameCell !== b && onClick([y, x]);
+          });
+        }
+      }
+
+      const { isGameOver, isWin } = result.current;
+
+      expect(isWin).toBe(true);
+      expect(isGameOver).toBe(true);
+    });
+    it('Player win the game when setup flag to the last cell', () => {
+      const { result } = renderHook(useGame);
+
+      const { gameField, onClick, onContextMenu } = result.current;
+
+      for (const y of gameField.keys()) {
+        for (const x of gameField[y].keys()) {
+          const gameCell = gameField[y][x];
+          act(() => {
+            gameCell !== b && onClick([y, x]);
+          });
+        }
+      }
+
+      for (const y of gameField.keys()) {
+        for (const x of gameField[y].keys()) {
+          const gameCell = gameField[y][x];
+          act(() => {
+            gameCell === b && onContextMenu([y, x]);
           });
         }
       }

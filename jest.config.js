@@ -26,6 +26,8 @@ module.exports = {
     '^@/(.*)$': '<rootDir>/src/$1',
   },
 
+  modulePathIgnorePatterns: ['<rootDir>/.stryker-tmp'],
+
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
   setupFilesAfterEnv: ['<rootDir>/settings/JestSetup.js'],
 

@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 import {
   Field,
@@ -16,6 +16,7 @@ interface ReturnType {
   level: LevelNames;
   time: number;
   isGameOver: boolean;
+  isGameStarted: boolean;
   isWin: boolean;
   settings: [number, number];
   playerField: Field;
@@ -70,12 +71,10 @@ export const useGame = (): ReturnType => {
     };
   }, [isGameOver, isGameStarted, time]);
 
-  useMemo(() => console.log(gameField), []);
-
   const onClick = (coords: Coords) => {
     !isGameStarted && setIsGameStarted(true);
     try {
-      const [newPlayerField, isSolved, flagCounter] = openCell(
+      const [newPlayerField, isSolved] = openCell(
         coords,
         playerField,
         gameField
@@ -86,7 +85,7 @@ export const useGame = (): ReturnType => {
       setPlayerField([...newPlayerField]);
     } catch (e) {
       setPlayerField([...gameField]);
-      setGameOver(false);
+      setGameOver();
     }
   };
 
@@ -119,6 +118,7 @@ export const useGame = (): ReturnType => {
     setIsWin(false);
     setIsGameStarted(false);
     setTime(0);
+    setFlagCounter(0);
   };
 
   const onChangeLevel = (level: LevelNames) => {
@@ -133,6 +133,7 @@ export const useGame = (): ReturnType => {
     level,
     time,
     isGameOver,
+    isGameStarted,
     isWin,
     settings: [size, bombs],
     playerField,

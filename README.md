@@ -246,3 +246,9 @@
 #### Refactoring and update dependencies
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/40)
+
+### Test reports and refactoring session
+
+### Test reports and refactoring session2
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/43)

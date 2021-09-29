@@ -10,7 +10,7 @@ export interface ResetProps {
   onReset: () => void;
 }
 
-export const Reset: FC<ResetProps> = ({ onReset }) => {
+export const Reset: FC<ResetProps> = React.memo(({ onReset }) => {
   const [mouseDown, onMouseDown, onMouseUp] = useMouseDown();
 
   return (
@@ -23,7 +23,9 @@ export const Reset: FC<ResetProps> = ({ onReset }) => {
       {mouseDown ? '😯' : '🙂'}
     </Button>
   );
-};
+});
+
+Reset.displayName = 'Reset';
 
 const Button = styled.button`
   font-size: 1.1vw;

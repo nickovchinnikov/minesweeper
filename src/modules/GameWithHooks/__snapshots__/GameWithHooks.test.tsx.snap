@@ -104,7 +104,7 @@ exports[`GameWithHooks test cases Render game field by default 1`] = `
   padding: 0 0.2vw 0.2vw;
 }
 
-.emotion-13 {
+.emotion-14 {
   font-size: 1.1vw;
   height: 100%;
   cursor: pointer;
@@ -115,7 +115,7 @@ exports[`GameWithHooks test cases Render game field by default 1`] = `
   border-color: white #9e9e9e #9e9e9e white;
 }
 
-.emotion-15 {
+.emotion-16 {
   top: 60%;
   left: 50%;
   z-index: 11;
@@ -140,7 +140,7 @@ exports[`GameWithHooks test cases Render game field by default 1`] = `
   border: 1px solid rgba(51, 51, 51, 0.25);
 }
 
-.emotion-16 {
+.emotion-17 {
   display: grid;
   grid-template-columns: repeat(2, auto);
   width: -webkit-max-content;
@@ -149,7 +149,7 @@ exports[`GameWithHooks test cases Render game field by default 1`] = `
   padding: 1vw;
 }
 
-.emotion-17 {
+.emotion-18 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -175,7 +175,7 @@ exports[`GameWithHooks test cases Render game field by default 1`] = `
   border-color: white #9e9e9e #9e9e9e white;
 }
 
-.emotion-17:hover {
+.emotion-18:hover {
   -webkit-filter: brightness(1.1);
   filter: brightness(1.1);
 }
@@ -241,9 +241,15 @@ exports[`GameWithHooks test cases Render game field by default 1`] = `
             >
               expert
             </option>
+            <option
+              class="emotion-10"
+              value="maestro"
+            >
+              maestro
+            </option>
           </select>
           <button
-            class="emotion-13"
+            class="emotion-14"
           >
             🙂
           </button>
@@ -255,38 +261,38 @@ exports[`GameWithHooks test cases Render game field by default 1`] = `
         </div>
       </div>
       <div
-        class="emotion-15"
+        class="emotion-16"
       >
         🙁
       </div>
       <div
-        class="emotion-16"
+        class="emotion-17"
         role="grid"
         size="2"
       >
         <div
-          class="emotion-17"
+          class="emotion-18"
           data-testid="0,0"
           role="cell"
         >
           10
         </div>
         <div
-          class="emotion-17"
+          class="emotion-18"
           data-testid="0,1"
           role="cell"
         >
           10
         </div>
         <div
-          class="emotion-17"
+          class="emotion-18"
           data-testid="1,0"
           role="cell"
         >
           10
         </div>
         <div
-          class="emotion-17"
+          class="emotion-18"
           data-testid="1,1"
           role="cell"
         >

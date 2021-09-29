@@ -11,13 +11,21 @@ export interface GridProps {
    */
   children: Field;
   /**
+   * Flag counter
+   */
+  flagCounter: number;
+  /**
+   * Bombs counter
+   */
+  bombs: number;
+  /**
    * onClick handler
    */
   onClick: (coords: Coords) => void;
   /**
    * onContextMenu handler
    */
-  onContextMenu: (coords: Coords) => void;
+  onContextMenu: (coords: Coords, flagCounter: number, bombs: number) => void;
 }
 
 export const Grid: FC<GridProps> = ({ children, ...rest }) => (

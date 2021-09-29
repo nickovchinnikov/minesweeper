@@ -70,7 +70,13 @@ describe('useGame test cases', () => {
 
       const { onContextMenu } = result.current;
 
-      act(() => onContextMenu([0, 0]));
+      act(() =>
+        onContextMenu(
+          [0, 0],
+          result.current.flagCounter,
+          result.current.settings[1]
+        )
+      );
 
       const { playerField: newPlayerField } = result.current;
 
@@ -93,33 +99,24 @@ describe('useGame test cases', () => {
   describe('OnClick with OnChangeGameLevel', () => {
     it('Check click to the cell when the level is changed', () => {
       const { result } = renderHook(useGame);
-      const { playerField, onChangeLevel } = result.current;
 
-      expect(playerField).toHaveLength(9);
+      expect(result.current.playerField).toHaveLength(9);
 
-      act(() => onChangeLevel(intermediate));
+      act(() => result.current.onChangeLevel(intermediate));
 
-      const {
-        playerField: intermediatePlayerField,
-        onClick: onClickIntermediate,
-      } = result.current;
+      act(() => result.current.onClick([15, 15]));
 
-      act(() => onClickIntermediate([15, 15]));
+      expect(result.current.playerField).toHaveLength(16);
+      expect(flatWithFilter(result.current.playerField, e)).toHaveLength(2);
 
-      expect(intermediatePlayerField).toHaveLength(16);
-      expect(flatWithFilter(intermediatePlayerField, e)).toHaveLength(2);
+      act(() => result.current.onChangeLevel(expert));
 
-      act(() => onChangeLevel(expert));
+      act(() => result.current.onClick([21, 21]));
 
-      const { playerField: expertPlayerField, onClick: onClickExpert } =
-        result.current;
-
-      act(() => onClickExpert([21, 21]));
-
-      expect(expertPlayerField).toHaveLength(22);
-      expect(flatWithFilter(expertPlayerField, e)).toHaveLength(1);
-      expect(flatWithFilter(expertPlayerField, 1)).toHaveLength(2);
-      expect(flatWithFilter(expertPlayerField, 2)).toHaveLength(1);
+      expect(result.current.playerField).toHaveLength(22);
+      expect(flatWithFilter(result.current.playerField, e)).toHaveLength(1);
+      expect(flatWithFilter(result.current.playerField, 1)).toHaveLength(2);
+      expect(flatWithFilter(result.current.playerField, 2)).toHaveLength(1);
     });
     it('onReset game handler', () => {
       const { result } = renderHook(useGame);
@@ -128,7 +125,13 @@ describe('useGame test cases', () => {
       expect(playerField).toHaveLength(9);
 
       act(() => onClick([0, 8]));
-      act(() => onContextMenu([8, 8]));
+      act(() =>
+        onContextMenu(
+          [8, 8],
+          result.current.flagCounter,
+          result.current.settings[1]
+        )
+      );
 
       expect(flatWithFilter(playerField, 1)).toHaveLength(1);
 
@@ -219,7 +222,12 @@ describe('useGame test cases', () => {
         for (const x of gameField[y].keys()) {
           const gameCell = gameField[y][x];
           act(() => {
-            gameCell === b && onContextMenu([y, x]);
+            gameCell === b &&
+              onContextMenu(
+                [y, x],
+                result.current.flagCounter,
+                result.current.settings[1]
+              );
           });
         }
       }
@@ -256,7 +264,12 @@ describe('useGame test cases', () => {
         for (const x of gameField[y].keys()) {
           const gameCell = gameField[y][x];
           act(() => {
-            gameCell === b && onContextMenu([y, x]);
+            gameCell === b &&
+              onContextMenu(
+                [y, x],
+                result.current.flagCounter,
+                result.current.settings[1]
+              );
           });
         }
       }
@@ -310,7 +323,13 @@ describe('useGame test cases', () => {
       // Timer shouldn't works before game has started
       expect(result.current.time).toBe(0);
 
-      act(() => result.current.onContextMenu([0, 0]));
+      act(() =>
+        result.current.onContextMenu(
+          [0, 0],
+          result.current.flagCounter,
+          result.current.settings[1]
+        )
+      );
 
       for (let i = 0; i < timeMustPass; i++) {
         act(() => {
@@ -327,7 +346,13 @@ describe('useGame test cases', () => {
 
       expect(result.current.time).toBe(0);
 
-      act(() => result.current.onContextMenu([0, 0]));
+      act(() =>
+        result.current.onContextMenu(
+          [0, 0],
+          result.current.flagCounter,
+          result.current.settings[1]
+        )
+      );
 
       const timeMustPass = 5;
       for (let i = 0; i < timeMustPass; i++) {
@@ -345,7 +370,13 @@ describe('useGame test cases', () => {
     it('flagCounter counter increase when onContextMenu calls', () => {
       const { result } = renderHook(useGame);
 
-      act(() => result.current.onContextMenu([0, 0]));
+      act(() =>
+        result.current.onContextMenu(
+          [0, 0],
+          result.current.flagCounter,
+          result.current.settings[1]
+        )
+      );
 
       expect(result.current.flagCounter).toBe(1);
     });
@@ -356,7 +387,13 @@ describe('useGame test cases', () => {
 
       for (let y = 0; y < 3; y++) {
         for (let x = 0; x < 4; x++) {
-          act(() => result.current.onContextMenu([y, x]));
+          act(() =>
+            result.current.onContextMenu(
+              [y, x],
+              result.current.flagCounter,
+              result.current.settings[1]
+            )
+          );
         }
       }
 

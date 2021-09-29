@@ -15,47 +15,71 @@ export interface CellProps {
    */
   coords: Coords;
   /**
+   * Flag counter
+   */
+  flagCounter: number;
+  /**
+   * Bombs counter
+   */
+  bombs: number;
+  /**
    * onClick by cell handler
    */
   onClick: (coords: Coords) => void;
   /**
    * onContextMenu by cell handler
    */
-  onContextMenu: (coords: Coords) => void;
+  onContextMenu: (coords: Coords, flagCounter: number, bombs: number) => void;
 }
 
 export const isActiveCell = (cell: CellType): boolean =>
   [CellState.hidden, CellState.flag, CellState.weakFlag].includes(cell);
 
-export const Cell: FC<CellProps> = ({ children, coords, ...rest }) => {
-  const [mouseDown, onMouseDown, onMouseUp] = useMouseDown();
+export const Cell: FC<CellProps> = React.memo(
+  ({ children, coords, flagCounter, bombs, ...rest }) => {
+    const [mouseDown, onMouseDown, onMouseUp] = useMouseDown();
 
-  const onClick = () => rest.onClick(coords);
+    const onClick = () => rest.onClick(coords);
 
-  const onContextMenu = (event: React.MouseEvent<HTMLDivElement>) => {
-    /**
-     * Prevent context menu by default
-     */
-    event.preventDefault();
+    const onContextMenu = (event: React.MouseEvent<HTMLDivElement>) => {
+      /**
+       * Prevent context menu by default
+       */
+      event.preventDefault();
 
-    if (isActiveCell(children)) {
-      rest.onContextMenu(coords);
-    }
-  };
+      if (isActiveCell(children)) {
+        rest.onContextMenu(coords, flagCounter, bombs);
+      }
+    };
 
-  const props = {
-    onClick,
-    onContextMenu,
-    onMouseDown,
-    onMouseUp,
-    onMouseLeave: onMouseUp,
-    mouseDown,
-    'data-testid': `${coords}`,
-    role: 'cell',
-  };
+    const props = {
+      onClick,
+      onContextMenu,
+      onMouseDown,
+      onMouseUp,
+      onMouseLeave: onMouseUp,
+      mouseDown,
+      'data-testid': `${coords}`,
+      role: 'cell',
+    };
 
-  return <ComponentsMap {...props}>{children}</ComponentsMap>;
-};
+    return <ComponentsMap {...props}>{children}</ComponentsMap>;
+  },
+  (prevProps, nextProps) => {
+    const [nextX, nextY] = nextProps.coords;
+    const [prevX, prevY] = prevProps.coords;
+
+    return (
+      prevProps.children === nextProps.children &&
+      nextX === prevX &&
+      nextY === prevY &&
+      prevProps.onClick === nextProps.onClick &&
+      prevProps.onContextMenu === nextProps.onContextMenu
+    );
+  }
+);
+
+Cell.displayName = 'Cell';
 
 interface ComponentsMapProps {
   children: CellType;

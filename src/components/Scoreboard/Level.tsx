@@ -16,15 +16,19 @@ export interface LevelProps {
   onChange: (event: ChangeEvent<HTMLSelectElement>) => void;
 }
 
-export const Level: FC<LevelProps> = ({ children, value, onChange }) => (
-  <Select onChange={onChange} value={value}>
-    {children.map((item: string) => (
-      <Option key={item} value={item}>
-        {item}
-      </Option>
-    ))}
-  </Select>
+export const Level: FC<LevelProps> = React.memo(
+  ({ children, value, onChange }) => (
+    <Select onChange={onChange} value={value}>
+      {children.map((item: string) => (
+        <Option key={item} value={item}>
+          {item}
+        </Option>
+      ))}
+    </Select>
+  )
 );
+
+Level.displayName = 'Level';
 
 const Select = styled.select`
   margin: 0;

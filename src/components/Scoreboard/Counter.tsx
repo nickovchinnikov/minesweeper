@@ -8,9 +8,11 @@ export interface CounterProps {
   children: string;
 }
 
-export const Counter: FC<CounterProps> = ({ children }) => (
+export const Counter: FC<CounterProps> = React.memo(({ children }) => (
   <Frame>{children}</Frame>
-);
+));
+
+Counter.displayName = 'Counter';
 
 const Frame = styled.div`
   display: inline-block;

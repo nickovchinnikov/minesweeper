@@ -1,13 +1,12 @@
 import React, { FC, useCallback } from 'react';
 
 import { GameLevels, LevelNames } from '@/modules/GameSettings';
+import { useGame } from '@/modules/hooks/useGame';
 
 import { Top } from '@/components/Top';
 import { Scoreboard } from '@/components/Scoreboard';
 import { Grid } from '@/components/Grid';
 import { GameArea, Wrapper, GameOver } from '@/components/Game';
-
-import { useGame } from './useGame';
 
 export const GameWithHooks: FC = () => {
   const {

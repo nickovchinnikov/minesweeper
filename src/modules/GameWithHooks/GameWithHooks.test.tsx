@@ -9,7 +9,7 @@ const mockOnChangeLevel = jest.fn();
 const mockOnReset = jest.fn();
 const mockOnContextMenu = jest.fn();
 
-jest.mock('./useGame', () => ({
+jest.mock('@/modules/hooks/useGame', () => ({
   __esModule: true,
   useGame: () => ({
     level: 'beginner',

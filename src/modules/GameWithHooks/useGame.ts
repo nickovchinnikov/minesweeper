@@ -6,9 +6,9 @@ import {
   generateFieldWithDefaultState,
   fieldGenerator,
   Coords,
-} from '@/helpers/Field';
-import { openCell } from '@/helpers/openCell';
-import { setFlag } from '@/helpers/setFlag';
+} from '@/core/Field';
+import { openCell } from '@/core/openCell';
+import { setFlag } from '@/core/setFlag';
 
 import { LevelNames, GameSettings } from '@/modules/GameSettings';
 

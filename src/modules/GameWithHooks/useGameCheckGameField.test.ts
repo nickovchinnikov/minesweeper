@@ -1,6 +1,6 @@
 import { renderHook, act } from '@testing-library/react-hooks';
 
-import { CellState, Field } from '@/helpers/Field';
+import { CellState, Field } from '@/core/Field';
 
 import { useGame } from './useGame';
 

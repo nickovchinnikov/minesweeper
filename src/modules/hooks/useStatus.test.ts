@@ -1,10 +1,10 @@
 import { renderHook, act } from '@testing-library/react-hooks';
 
-import { useGameStatus } from './useGameStatus';
+import { useStatus } from './useStatus';
 
 describe('useGameStatus test cases', () => {
   it('Check default state', () => {
-    const { result } = renderHook(useGameStatus);
+    const { result } = renderHook(useStatus);
 
     const { isGameStarted, isWin, isGameOver } = result.current;
 
@@ -15,7 +15,7 @@ describe('useGameStatus test cases', () => {
     });
   });
   it('Check setNewGame handler', () => {
-    const { result } = renderHook(useGameStatus);
+    const { result } = renderHook(useStatus);
 
     act(() => result.current.setNewGame());
 
@@ -28,7 +28,7 @@ describe('useGameStatus test cases', () => {
     });
   });
   it('Check setInProgress handler', () => {
-    const { result } = renderHook(useGameStatus);
+    const { result } = renderHook(useStatus);
 
     act(() => result.current.setInProgress());
 
@@ -41,7 +41,7 @@ describe('useGameStatus test cases', () => {
     });
   });
   it('Check setGameWin handler', () => {
-    const { result } = renderHook(useGameStatus);
+    const { result } = renderHook(useStatus);
 
     act(() => result.current.setGameWin());
 
@@ -54,7 +54,7 @@ describe('useGameStatus test cases', () => {
     });
   });
   it('Check setGameLoose handler', () => {
-    const { result } = renderHook(useGameStatus);
+    const { result } = renderHook(useStatus);
 
     act(() => result.current.setGameLoose());
 
@@ -67,7 +67,7 @@ describe('useGameStatus test cases', () => {
     });
   });
   it('Full game statuses flow', () => {
-    const { result } = renderHook(useGameStatus);
+    const { result } = renderHook(useStatus);
 
     act(() => result.current.setInProgress());
 

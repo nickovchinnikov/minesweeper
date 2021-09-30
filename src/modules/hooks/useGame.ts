@@ -13,8 +13,8 @@ import { setFlag } from '@/core/setFlag';
 import { LevelNames } from '@/modules/GameSettings';
 
 import { useTime } from './useTime';
-import { useGameSettings } from './useGameSettings';
-import { useGameStatus } from './useGameStatus';
+import { useSettings } from './useSettings';
+import { useStatus } from './useStatus';
 
 interface ReturnType {
   level: LevelNames;
@@ -37,7 +37,7 @@ export const useGame = (): ReturnType => {
     settings: [size, bombs],
     level,
     setLevel,
-  } = useGameSettings();
+  } = useSettings();
 
   const [playerField, setPlayerField] = useState<Field>(
     generateFieldWithDefaultState(size, CellState.hidden)
@@ -57,7 +57,7 @@ export const useGame = (): ReturnType => {
     setInProgress,
     setGameWin,
     setGameLoose,
-  } = useGameStatus();
+  } = useStatus();
   const [time, resetTime] = useTime(isGameStarted, isGameOver);
 
   const onClick = useCallback(

@@ -8,7 +8,7 @@ interface ReturnType {
   setLevel: (level: LevelNames) => Settings;
 }
 
-export const useGameSettings = (
+export const useSettings = (
   defaultLevel = 'beginner' as LevelNames
 ): ReturnType => {
   const [level, setLevel] = useState<LevelNames>(defaultLevel);

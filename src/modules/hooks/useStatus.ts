@@ -17,7 +17,7 @@ export enum GameStatuses {
   Loose,
 }
 
-export const useGameStatus = (): ReturnType => {
+export const useStatus = (): ReturnType => {
   const { NewGame, InProgress, Win, Loose } = GameStatuses;
 
   const [isGameOver, setIsGameOver] = useState(false);

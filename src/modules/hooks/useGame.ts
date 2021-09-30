@@ -13,6 +13,7 @@ import { setFlag } from '@/core/setFlag';
 import { LevelNames, GameSettings } from '@/modules/GameSettings';
 
 import { useTime } from './useTime';
+import { useGameStatus } from './useGameStatus';
 
 interface ReturnType {
   level: LevelNames;
@@ -32,19 +33,6 @@ interface ReturnType {
 
 export const useGame = (): ReturnType => {
   const [level, setLevel] = useState<LevelNames>('beginner');
-
-  const [isGameOver, setIsGameOver] = useState(false);
-  const [isWin, setIsWin] = useState(false);
-  const [isGameStarted, setIsGameStarted] = useState(false);
-
-  const [flagCounter, setFlagCounter] = useState(0);
-  const [time, resetTime] = useTime(isGameStarted, isGameOver);
-
-  const setGameOver = (isSolved = false) => {
-    setIsGameOver(true);
-    setIsWin(isSolved);
-  };
-
   const [size, bombs] = GameSettings[level];
 
   const [playerField, setPlayerField] = useState<Field>(
@@ -55,9 +43,22 @@ export const useGame = (): ReturnType => {
     fieldGenerator(size, bombs / (size * size))
   );
 
+  const [flagCounter, setFlagCounter] = useState(0);
+
+  const {
+    isGameStarted,
+    isWin,
+    isGameOver,
+    setNewGame,
+    setInProgress,
+    setGameWin,
+    setGameLoose,
+  } = useGameStatus();
+  const [time, resetTime] = useTime(isGameStarted, isGameOver);
+
   const onClick = useCallback(
     (coords: Coords) => {
-      !isGameStarted && setIsGameStarted(true);
+      !isGameStarted && setInProgress();
       try {
         const [newPlayerField, isSolved] = openCell(
           coords,
@@ -65,12 +66,12 @@ export const useGame = (): ReturnType => {
           gameField
         );
         if (isSolved) {
-          setGameOver(isSolved);
+          setGameWin();
         }
         setPlayerField([...newPlayerField]);
       } catch (e) {
         setPlayerField([...gameField]);
-        setGameOver();
+        setGameLoose();
       }
     },
     [isGameStarted, level]
@@ -78,7 +79,7 @@ export const useGame = (): ReturnType => {
 
   const onContextMenu = useCallback(
     (coords: Coords, flagCounter: number, bombs: number) => {
-      !isGameStarted && setIsGameStarted(true);
+      !isGameStarted && setInProgress();
       const [newPlayerField, isSolved, newFlagCounter] = setFlag(
         coords,
         playerField,
@@ -88,7 +89,7 @@ export const useGame = (): ReturnType => {
       );
       setFlagCounter(newFlagCounter);
       if (isSolved) {
-        setGameOver(isSolved);
+        setGameWin();
       }
       setPlayerField([...newPlayerField]);
     },
@@ -104,9 +105,7 @@ export const useGame = (): ReturnType => {
 
     setGameField([...newGameField]);
     setPlayerField([...newPlayerField]);
-    setIsGameOver(false);
-    setIsWin(false);
-    setIsGameStarted(false);
+    setNewGame();
     setFlagCounter(0);
     resetTime();
   }, []);

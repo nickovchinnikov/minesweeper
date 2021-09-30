@@ -10,9 +10,10 @@ import {
 import { openCell } from '@/core/openCell';
 import { setFlag } from '@/core/setFlag';
 
-import { LevelNames, GameSettings } from '@/modules/GameSettings';
+import { LevelNames } from '@/modules/GameSettings';
 
 import { useTime } from './useTime';
+import { useGameSettings } from './useGameSettings';
 import { useGameStatus } from './useGameStatus';
 
 interface ReturnType {
@@ -32,8 +33,11 @@ interface ReturnType {
 }
 
 export const useGame = (): ReturnType => {
-  const [level, setLevel] = useState<LevelNames>('beginner');
-  const [size, bombs] = GameSettings[level];
+  const {
+    settings: [size, bombs],
+    level,
+    setLevel,
+  } = useGameSettings();
 
   const [playerField, setPlayerField] = useState<Field>(
     generateFieldWithDefaultState(size, CellState.hidden)
@@ -74,7 +78,7 @@ export const useGame = (): ReturnType => {
         setGameLoose();
       }
     },
-    [isGameStarted, level]
+    [isGameStarted, isGameOver, isWin, level]
   );
 
   const onContextMenu = useCallback(
@@ -93,7 +97,7 @@ export const useGame = (): ReturnType => {
       }
       setPlayerField([...newPlayerField]);
     },
-    [isGameStarted, level]
+    [isGameStarted, isGameOver, isWin, level]
   );
 
   const resetHandler = useCallback(([size, bombs]: [number, number]) => {
@@ -105,21 +109,17 @@ export const useGame = (): ReturnType => {
 
     setGameField([...newGameField]);
     setPlayerField([...newPlayerField]);
-    setNewGame();
     setFlagCounter(0);
+    setNewGame();
     resetTime();
   }, []);
 
   const onChangeLevel = useCallback((level: LevelNames) => {
-    setLevel(level);
-    const newSettings = GameSettings[level];
+    const newSettings = setLevel(level);
     resetHandler(newSettings);
   }, []);
 
-  const onReset = useCallback(
-    () => resetHandler([size, bombs]),
-    [size, bombs, resetHandler]
-  );
+  const onReset = useCallback(() => resetHandler([size, bombs]), [size, bombs]);
 
   return {
     level,

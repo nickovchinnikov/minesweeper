@@ -35,6 +35,22 @@ export interface CellProps {
 export const isActiveCell = (cell: CellType): boolean =>
   [CellState.hidden, CellState.flag, CellState.weakFlag].includes(cell);
 
+export const areEqual = (
+  prevProps: CellProps,
+  nextProps: CellProps
+): boolean => {
+  const areEqualCoords =
+    prevProps.coords.filter((coord, idx) => nextProps.coords[idx] !== coord)
+      .length === 0;
+
+  return (
+    prevProps.children === nextProps.children &&
+    areEqualCoords &&
+    prevProps.onClick === nextProps.onClick &&
+    prevProps.onContextMenu === nextProps.onContextMenu
+  );
+};
+
 export const Cell: FC<CellProps> = React.memo(
   ({ children, coords, flagCounter, bombs, ...rest }) => {
     const [mouseDown, onMouseDown, onMouseUp] = useMouseDown();
@@ -65,20 +81,10 @@ export const Cell: FC<CellProps> = React.memo(
 
     return <ComponentsMap {...props}>{children}</ComponentsMap>;
   },
-  (prevProps, nextProps) => {
-    const [nextX, nextY] = nextProps.coords;
-    const [prevX, prevY] = prevProps.coords;
-
-    return (
-      prevProps.children === nextProps.children &&
-      nextX === prevX &&
-      nextY === prevY &&
-      prevProps.onClick === nextProps.onClick &&
-      prevProps.onContextMenu === nextProps.onContextMenu
-    );
-  }
+  areEqual
 );
 
+// Stryker disable next-line StringLiteral
 Cell.displayName = 'Cell';
 
 interface ComponentsMapProps {

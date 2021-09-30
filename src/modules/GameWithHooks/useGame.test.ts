@@ -9,7 +9,7 @@ jest.mock('@/core/Field');
 
 const { empty: e, hidden: h, bomb: b, flag: f, weakFlag: w } = CellState;
 
-const [beginner, intermediate, expert] = GameLevels;
+const [beginner, intermediate, expert, maestro] = GameLevels;
 
 const flatWithFilter = (field: Field, cond: number) =>
   field.flat().filter((v) => v === cond);
@@ -48,6 +48,12 @@ describe('useGame test cases', () => {
       const { playerField: expertPlayerField } = result.current;
 
       expect(expertPlayerField).toHaveLength(22);
+
+      act(() => onChangeLevel(maestro));
+
+      const { playerField: maestroPlayerField } = result.current;
+
+      expect(maestroPlayerField).toHaveLength(30);
     });
   });
   describe('Open cell test cases', () => {

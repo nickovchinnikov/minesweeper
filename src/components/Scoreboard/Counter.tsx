@@ -12,6 +12,7 @@ export const Counter: FC<CounterProps> = React.memo(({ children }) => (
   <Frame>{children}</Frame>
 ));
 
+// Stryker disable next-line StringLiteral
 Counter.displayName = 'Counter';
 
 const Frame = styled.div`

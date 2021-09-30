@@ -28,6 +28,7 @@ export const Level: FC<LevelProps> = React.memo(
   )
 );
 
+// Stryker disable next-line StringLiteral
 Level.displayName = 'Level';
 
 const Select = styled.select`

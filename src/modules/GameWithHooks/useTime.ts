@@ -6,7 +6,11 @@ export const useTime = (
 ): [number, () => void] => {
   const [time, setTime] = useState(0);
 
-  const onReset = useCallback(() => setTime(0), []);
+  const onReset = useCallback(
+    () => setTime(0),
+    // Stryker disable next-line ArrayDeclaration
+    []
+  );
 
   useEffect(() => {
     let interval: NodeJS.Timeout;

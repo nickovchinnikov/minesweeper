@@ -10,8 +10,16 @@ export const useMouseDown = (): [
 ] => {
   const [mouseDown, setMouseDown] = useState(false);
 
-  const onMouseDown = useCallback(() => setMouseDown(true), []);
-  const onMouseUp = useCallback(() => setMouseDown(false), []);
+  const onMouseDown = useCallback(
+    () => setMouseDown(true),
+    // Stryker disable next-line ArrayDeclaration
+    []
+  );
+  const onMouseUp = useCallback(
+    () => setMouseDown(false),
+    // Stryker disable next-line ArrayDeclaration
+    []
+  );
 
   return [mouseDown, onMouseDown, onMouseUp];
 };

@@ -97,29 +97,42 @@ export const useGame = (): ReturnType => {
       }
       setPlayerField([...newPlayerField]);
     },
+    // Stryker disable next-line ArrayDeclaration
     [isGameStarted, isGameOver, isWin, level]
   );
 
-  const resetHandler = useCallback(([size, bombs]: [number, number]) => {
-    const newGameField = fieldGenerator(size, bombs / (size * size));
-    const newPlayerField = generateFieldWithDefaultState(
-      size,
-      CellState.hidden
-    );
+  const resetHandler = useCallback(
+    ([size, bombs]: [number, number]) => {
+      const newGameField = fieldGenerator(size, bombs / (size * size));
+      const newPlayerField = generateFieldWithDefaultState(
+        size,
+        CellState.hidden
+      );
 
-    setGameField([...newGameField]);
-    setPlayerField([...newPlayerField]);
-    setFlagCounter(0);
-    setNewGame();
-    resetTime();
-  }, []);
+      setGameField([...newGameField]);
+      setPlayerField([...newPlayerField]);
+      setFlagCounter(0);
+      setNewGame();
+      resetTime();
+    },
+    // Stryker disable next-line ArrayDeclaration
+    []
+  );
 
-  const onChangeLevel = useCallback((level: LevelNames) => {
-    const newSettings = setLevel(level);
-    resetHandler(newSettings);
-  }, []);
+  const onChangeLevel = useCallback(
+    (level: LevelNames) => {
+      const newSettings = setLevel(level);
+      resetHandler(newSettings);
+    },
+    // Stryker disable next-line ArrayDeclaration
+    []
+  );
 
-  const onReset = useCallback(() => resetHandler([size, bombs]), [size, bombs]);
+  const onReset = useCallback(
+    () => resetHandler([size, bombs]),
+    // Stryker disable next-line ArrayDeclaration
+    [size, bombs]
+  );
 
   return {
     level,

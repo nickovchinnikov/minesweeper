@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import { Field } from '@/helpers/Field';
+import { Field } from '@/core/Field';
 
 import { Grid } from './Grid';
 

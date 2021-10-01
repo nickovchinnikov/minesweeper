@@ -1,8 +1,8 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import { Field } from '@/helpers/Field';
-import { fieldGenerator } from '@/helpers/__mocks__/Field';
+import { Field } from '@/core/Field';
+import { fieldGenerator } from '@/core/__mocks__/Field';
 
 import { Grid } from '@/components/Grid';
 import { Top } from '@/components/Top';

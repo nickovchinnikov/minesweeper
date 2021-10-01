@@ -252,3 +252,9 @@
 ### Test reports and refactoring session2
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/43)
+
+### Refactoring useGame
+
+### Refactoring useGame 2
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/46/files)

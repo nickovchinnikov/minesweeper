@@ -12,4 +12,6 @@ module.exports = {
     '!src/**/*@(.test|.spec|Spec|stories|styled).ts?(x)',
     '!src/**/__mocks__/**/*',
   ],
+  // Unknown memory leak 🤷‍♀️
+  maxTestRunnerReuse: 20,
 };

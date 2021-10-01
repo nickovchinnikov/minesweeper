@@ -1,11 +1,11 @@
 import { renderHook, act } from '@testing-library/react-hooks';
 
-import { CellState, Field } from '@/helpers/Field';
+import { CellState, Field } from '@/core/Field';
 import { GameLevels, GameSettings } from '@/modules/GameSettings';
 
 import { useGame } from './useGame';
 
-jest.mock('@/helpers/Field');
+jest.mock('@/core/Field');
 
 const { empty: e, hidden: h, bomb: b, flag: f, weakFlag: w } = CellState;
 

@@ -258,3 +258,9 @@
 ### Refactoring useGame 2
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/46/files)
+
+### RDT profiler and React.memo + useCallback intro
+
+### React.memo + useCallback optimization
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/47/files)

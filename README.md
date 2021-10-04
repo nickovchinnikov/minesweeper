@@ -268,3 +268,7 @@
 ### React.memo + useCallback optimization
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/47/files)
+
+### Stryker disable mutants
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/49/files)

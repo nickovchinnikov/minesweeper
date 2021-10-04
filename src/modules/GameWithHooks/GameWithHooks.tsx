@@ -29,6 +29,7 @@ export const GameWithHooks: FC = () => {
   const onChangeLevelHandler = useCallback(
     ({ target: { value: level } }: React.ChangeEvent<HTMLSelectElement>) =>
       onChangeLevel(level as LevelNames),
+    // Stryker disable next-line ArrayDeclaration
     []
   );
 

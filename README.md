@@ -177,6 +177,10 @@
 
 [Pull request3](https://github.com/nickovchinnikov/minesweeper/pull/23)
 
+#### Fix jobs for CI
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/48)
+
 ## Section: React hooks and react testing library
 
 ### Static game

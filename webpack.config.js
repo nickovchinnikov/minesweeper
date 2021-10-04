@@ -3,7 +3,7 @@ const BundleAnalyzerPlugin =
   require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = {
+const config = {
   entry: './src/index.tsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -44,6 +44,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './public/index.html',
     }),
-    new BundleAnalyzerPlugin(),
   ],
 };
+
+if (process.env.analyze) {
+  config.plugins.push(new BundleAnalyzerPlugin());
+}
+
+module.exports = config;

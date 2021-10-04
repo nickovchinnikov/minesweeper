@@ -24,6 +24,7 @@ export const Grid: FC<GridProps> = ({ children, ...rest }) => (
   <Wrapper size={children.length} role="grid">
     {children.map((row, y) =>
       row.map((cell, x) => (
+        // Stryker disable next-line StringLiteral
         <Cell key={`${y}_${x}_${cell}`} coords={[y, x]} {...rest}>
           {cell}
         </Cell>

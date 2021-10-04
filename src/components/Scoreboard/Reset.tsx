@@ -25,6 +25,7 @@ export const Reset: FC<ResetProps> = memo(({ onReset }) => {
   );
 });
 
+// Stryker disable next-line StringLiteral
 Reset.displayName = 'Reset';
 
 const Button = styled.button`

@@ -118,9 +118,14 @@ export const useGame = (): ReturnType => {
   const onChangeLevel = useCallback((level: LevelNames) => {
     const newSettings = setLevel(level);
     resetHandler(newSettings);
+    // Stryker disable next-line ArrayDeclaration
   }, []);
 
-  const onReset = useCallback(() => resetHandler([size, bombs]), [size, bombs]);
+  const onReset = useCallback(
+    () => resetHandler([size, bombs]),
+    // Stryker disable next-line ArrayDeclaration
+    [size, bombs]
+  );
 
   return {
     level,

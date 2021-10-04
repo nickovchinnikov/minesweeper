@@ -73,6 +73,7 @@ export const Cell: FC<CellProps> = memo(({ children, coords, ...rest }) => {
   return <ComponentsMap {...props}>{children}</ComponentsMap>;
 }, areEqual);
 
+// Stryker disable next-line StringLiteral
 Cell.displayName = 'Cell';
 
 interface ComponentsMapProps {

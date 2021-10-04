@@ -15,6 +15,7 @@ export const Top: FC<TopComponentType> = memo(
   )
 );
 
+// Stryker disable next-line StringLiteral
 Top.displayName = 'Top';
 
 const Header = styled.header`

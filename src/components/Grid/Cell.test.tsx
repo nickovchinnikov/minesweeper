@@ -1,21 +1,22 @@
 import React from 'react';
 import { render, screen, fireEvent, createEvent } from '@testing-library/react';
 
-import { CellState, Coords } from '@/core/Field';
+import { CellState, Cell as CellType, Coords } from '@/core/Field';
 
-import { Cell, ClosedFrame, isActiveCell } from './Cell';
+import { Cell, ClosedFrame, isActiveCell, areEqual } from './Cell';
 
 describe('Cell component check', () => {
   const coords: Coords = [1, 1];
+  const props = {
+    coords,
+    flagCounter: 0,
+    bombs: 10,
+    onClick: jest.fn(),
+    onContextMenu: jest.fn(),
+  };
 
   for (let cell = CellState.empty; cell <= CellState.weakFlag; cell++) {
     it('Cell renders correct', () => {
-      const props = {
-        coords,
-        onClick: jest.fn(),
-        onContextMenu: jest.fn(),
-      };
-
       const { asFragment } = render(<Cell {...props}>{cell}</Cell>);
 
       expect(asFragment()).toMatchSnapshot();
@@ -25,12 +26,6 @@ describe('Cell component check', () => {
       expect(asFragment()).toMatchSnapshot();
     });
     it('Check prevent default contextMenu for every type of cell', () => {
-      const props = {
-        coords,
-        onClick: jest.fn(),
-        onContextMenu: jest.fn(),
-      };
-
       render(<Cell {...props}>{cell}</Cell>);
 
       const cellComp = screen.getByTestId(`${coords}`);
@@ -42,12 +37,6 @@ describe('Cell component check', () => {
     });
 
     it('onClick and onContextMenu handler should be called for active cells', () => {
-      const props = {
-        coords,
-        onClick: jest.fn(),
-        onContextMenu: jest.fn(),
-      };
-
       render(<Cell {...props}>{cell}</Cell>);
 
       const cellComp = screen.getByTestId(`${coords}`);
@@ -64,4 +53,27 @@ describe('Cell component check', () => {
       }
     });
   }
+  it('Check areEqual', () => {
+    const prevProps = {
+      ...props,
+      children: 0 as CellType,
+    };
+
+    expect(areEqual(prevProps, { ...prevProps })).toBe(true);
+
+    expect(areEqual(prevProps, { ...prevProps, coords: [2, 1] })).toBe(false);
+    expect(areEqual(prevProps, { ...prevProps, coords: [1, 2] })).toBe(false);
+    expect(areEqual(prevProps, { ...prevProps, coords: [2, 2] })).toBe(false);
+    expect(areEqual(prevProps, { ...prevProps, coords: [1, 0] })).toBe(false);
+
+    expect(areEqual(prevProps, { ...prevProps, children: 1 as CellType })).toBe(
+      false
+    );
+    expect(areEqual(prevProps, { ...prevProps, onClick: jest.fn() })).toBe(
+      false
+    );
+    expect(
+      areEqual(prevProps, { ...prevProps, onContextMenu: jest.fn() })
+    ).toBe(false);
+  });
 });

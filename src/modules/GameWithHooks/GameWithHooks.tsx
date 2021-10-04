@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, useCallback } from 'react';
 
 import { GameLevels, LevelNames } from '@/modules/GameSettings';
 
@@ -26,6 +26,12 @@ export const GameWithHooks: FC = () => {
 
   const [, bombs] = settings;
 
+  const onChangeLevelHandler = useCallback(
+    ({ target: { value: level } }: React.ChangeEvent<HTMLSelectElement>) =>
+      onChangeLevel(level as LevelNames),
+    []
+  );
+
   return (
     <Wrapper>
       <Top feature="Flag" firstAction="right click">
@@ -37,11 +43,7 @@ export const GameWithHooks: FC = () => {
           bombs={String(bombs - flagCounter)}
           levels={GameLevels as unknown as string[]}
           defaultLevel={level}
-          onChangeLevel={({
-            target: { value: level },
-          }: React.ChangeEvent<HTMLSelectElement>) =>
-            onChangeLevel(level as LevelNames)
-          }
+          onChangeLevel={onChangeLevelHandler}
           onReset={onReset}
         />
         {isGameOver && <GameOver onClick={onReset} isWin={isWin} />}

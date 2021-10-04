@@ -177,6 +177,10 @@
 
 [Pull request3](https://github.com/nickovchinnikov/minesweeper/pull/23)
 
+#### Fix jobs for CI
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/48)
+
 ## Section: React hooks and react testing library
 
 ### Static game
@@ -258,3 +262,9 @@
 ### Refactoring useGame 2
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/46/files)
+
+### RDT profiler and React.memo + useCallback intro
+
+### React.memo + useCallback optimization
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/47/files)

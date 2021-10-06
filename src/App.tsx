@@ -1,6 +1,12 @@
 import React, { FC } from 'react';
 
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Redirect,
+} from 'react-router-dom';
 
 import { MinesweeperWithHooks } from '@/pages/MinesweeperWithHooks';
 
@@ -17,11 +23,14 @@ export const App: FC = () => (
       </ul>
     </nav>
     <Switch>
-      <Route path="/game-with-hooks">
+      <Route exact path="/">
+        <Home />
+      </Route>
+      <Route path="/game-with-hooks/:username?">
         <MinesweeperWithHooks />
       </Route>
-      <Route path="/">
-        <Home />
+      <Route path="*">
+        <Redirect to="/" />
       </Route>
     </Switch>
   </Router>

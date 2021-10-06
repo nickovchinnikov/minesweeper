@@ -1,0 +1,1 @@
+export { MinesweeperWithHooks } from './MinesweeperWithHooks';

@@ -2,10 +2,9 @@ import React, { FC, useCallback } from 'react';
 
 import { GameLevels, LevelNames } from '@/modules/GameSettings';
 
-import { Top } from '@/components/Top';
 import { Scoreboard } from '@/components/Scoreboard';
 import { Grid } from '@/components/Grid';
-import { GameArea, Wrapper, GameOver } from '@/components/Game';
+import { GameOver } from '@/components/Game';
 
 import { useGame } from './useGame';
 
@@ -34,24 +33,19 @@ export const GameWithHooks: FC = () => {
   );
 
   return (
-    <Wrapper>
-      <Top feature="Flag" firstAction="right click">
-        Minesweeper
-      </Top>
-      <GameArea>
-        <Scoreboard
-          time={String(time)}
-          bombs={String(bombs - flagCounter)}
-          levels={GameLevels as unknown as string[]}
-          defaultLevel={level}
-          onChangeLevel={onChangeLevelHandler}
-          onReset={onReset}
-        />
-        {isGameOver && <GameOver onClick={onReset} isWin={isWin} />}
-        <Grid onClick={onClick} onContextMenu={onContextMenu}>
-          {playerField}
-        </Grid>
-      </GameArea>
-    </Wrapper>
+    <>
+      <Scoreboard
+        time={String(time)}
+        bombs={String(bombs - flagCounter)}
+        levels={GameLevels as unknown as string[]}
+        defaultLevel={level}
+        onChangeLevel={onChangeLevelHandler}
+        onReset={onReset}
+      />
+      {isGameOver && <GameOver onClick={onReset} isWin={isWin} />}
+      <Grid onClick={onClick} onContextMenu={onContextMenu}>
+        {playerField}
+      </Grid>
+    </>
   );
 };

@@ -272,3 +272,13 @@
 ### Stryker disable mutants
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/49/files)
+
+## Section: React-Router
+
+### What is URL?
+
+### ReactRouter and Webpack-Dev-Server
+
+### URL Params
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/50/files)

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { GameWithHooks } from './modules/GameWithHooks';
+import { MinesweeperWithHooks } from './pages/MinesweeperWithHooks';
 
-ReactDOM.render(<GameWithHooks />, document.getElementById('root'));
+ReactDOM.render(<MinesweeperWithHooks />, document.getElementById('root'));

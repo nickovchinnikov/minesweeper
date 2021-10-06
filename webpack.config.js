@@ -10,6 +10,9 @@ const config = {
     filename: 'bundle.js',
   },
   devtool: 'eval-source-map',
+  devServer: {
+    historyApiFallback: true,
+  },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
     alias: {

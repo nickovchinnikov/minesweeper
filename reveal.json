@@ -1,0 +1,7 @@
+{
+  "slideNumber": true,
+  "hash": true,
+  "history": true,
+  "backgroundTransition": "fade",
+  "width": "80%"
+}

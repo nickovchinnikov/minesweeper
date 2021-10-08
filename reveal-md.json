@@ -1,0 +1,6 @@
+{
+  "separator": "<!--\\s*s\\s*-->",
+  "verticalSeparator": "<!--\\s*v\\s*-->",
+  "watch": true,
+  "css": ".reveal-md/styles.css"
+}

@@ -282,3 +282,12 @@
 ### URL Params
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/50/files)
+
+
+## Redux intro
+
+### Pure functions benifits
+
+[slides](./slides/PureFunctions.md)
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/51/files)

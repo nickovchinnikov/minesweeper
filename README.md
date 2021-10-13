@@ -283,7 +283,6 @@
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/50/files)
 
-
 ## Redux intro
 
 ### Pure functions benifits
@@ -292,5 +291,10 @@
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/51/files)
 
-### 
+### Referential transparency
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/52/files)
+
 ### Redux basic example
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/53/files)

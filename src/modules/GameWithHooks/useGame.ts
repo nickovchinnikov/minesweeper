@@ -79,7 +79,15 @@ export const useGame = (): ReturnType => {
         setGameLoose();
       }
     },
-    [isGameStarted, isGameOver, isWin, level, flagCounter]
+    [
+      isGameStarted,
+      isGameOver,
+      isWin,
+      level,
+      flagCounter,
+      playerField,
+      gameField,
+    ]
   );
 
   const onContextMenu = useCallback(
@@ -98,7 +106,15 @@ export const useGame = (): ReturnType => {
       }
       setPlayerField([...newPlayerField]);
     },
-    [isGameStarted, isGameOver, isWin, level, flagCounter]
+    [
+      isGameStarted,
+      isGameOver,
+      isWin,
+      level,
+      flagCounter,
+      playerField,
+      gameField,
+    ]
   );
 
   const resetHandler = ([size, bombs]: [number, number]) => {

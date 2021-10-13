@@ -291,3 +291,6 @@
 [slides](./slides/PureFunctions.md)
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/51/files)
+
+### 
+### Redux basic example

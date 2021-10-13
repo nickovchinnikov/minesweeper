@@ -298,3 +298,7 @@
 ### Redux basic example
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/53/files)
+
+### Game module by TDD (Ducks)
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/54/files)

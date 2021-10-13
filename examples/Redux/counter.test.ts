@@ -1,5 +1,3 @@
-import '@testing-library/jest-dom/extend-expect';
-
 import { initialState, reducer, increment, decrement } from './counter';
 
 describe('Counter redux module test', () => {

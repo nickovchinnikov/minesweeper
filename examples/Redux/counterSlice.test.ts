@@ -1,5 +1,3 @@
-import '@testing-library/jest-dom/extend-expect';
-
 import { reducer, actions, initialState } from './counterSlice';
 
 describe('Counter redux module test', () => {

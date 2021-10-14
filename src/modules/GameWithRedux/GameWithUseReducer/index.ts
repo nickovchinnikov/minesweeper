@@ -1,0 +1,1 @@
+export { GameWithUseReducer } from './GameWithUseReducer';

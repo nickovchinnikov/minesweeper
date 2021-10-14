@@ -311,3 +311,9 @@
 ### useReducer
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/56/files)
+
+## Minesweeper with Redux
+
+### React-Redux
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/57/files)

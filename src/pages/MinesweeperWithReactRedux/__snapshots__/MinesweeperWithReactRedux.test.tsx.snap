@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Top renders correctly 1`] = `
+exports[`MinesweeperWithReactRedux renders correctly 1`] = `
 <DocumentFragment>
   .emotion-0 {
   position: relative;
@@ -164,7 +164,7 @@ exports[`Top renders correctly 1`] = `
       <h1
         class="emotion-2"
       >
-        Minesweeper with React+Redux and useReducer special for you
+        Minesweeper with ReactRedux special for you
       </h1>
       <legend
         class="emotion-3"

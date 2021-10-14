@@ -9,6 +9,7 @@ import {
 } from 'react-router-dom';
 
 import { MinesweeperWithHooks } from '@/pages/MinesweeperWithHooks';
+import { MinesweeperWithRedux } from '@/pages/MinesweeperWithRedux';
 
 export const App: FC = () => (
   <Router>
@@ -20,6 +21,9 @@ export const App: FC = () => (
         <li>
           <Link to="/game-with-hooks">Game With Hooks</Link>
         </li>
+        <li>
+          <Link to="/game-with-redux">Game With Redux</Link>
+        </li>
       </ul>
     </nav>
     <Switch>
@@ -28,6 +32,9 @@ export const App: FC = () => (
       </Route>
       <Route path="/game-with-hooks/:username?">
         <MinesweeperWithHooks />
+      </Route>
+      <Route path="/game-with-redux">
+        <MinesweeperWithRedux />
       </Route>
       <Route path="*">
         <Redirect to="/" />

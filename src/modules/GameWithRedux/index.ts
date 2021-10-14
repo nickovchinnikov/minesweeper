@@ -1,0 +1,1 @@
+export { GameWithRedux } from './GameWithRedux';

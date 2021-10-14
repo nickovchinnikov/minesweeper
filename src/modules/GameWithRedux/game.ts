@@ -24,7 +24,7 @@ export interface State {
   flagCounter: number;
 }
 
-export const getInitialState = (level = 'beginner' as LevelNames): State => {
+export const getInitialState = (level: LevelNames = 'beginner'): State => {
   const settings = GameSettings[level];
   const [size, bombs] = settings;
 

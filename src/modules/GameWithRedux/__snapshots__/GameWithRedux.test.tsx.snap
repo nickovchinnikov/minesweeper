@@ -1,0 +1,7396 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GameWithHooks test cases Cell click works fine 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.emotion-1 {
+  display: inline-block;
+  padding: 0 0.3vw;
+  color: #ec433c;
+  border: 0.15vw inset;
+  line-height: 2vw;
+  letter-spacing: 0.08em;
+  background: #333;
+  text-shadow: 0 0 0.1vw #ec433c;
+}
+
+.emotion-2 {
+  margin: 0;
+  height: 100%;
+  border-radius: 0;
+  border: 0.15vw solid;
+  border-color: white #9e9e9e #9e9e9e white;
+  background-color: #d1d1d1;
+}
+
+.emotion-3 {
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2em;
+  padding: 0 0.2vw 0.2vw;
+}
+
+.emotion-6 {
+  font-size: 1.1vw;
+  height: 100%;
+  cursor: pointer;
+  font-weight: 700;
+  border-width: 0.15vw;
+  border-style: solid;
+  background-color: #d1d1d1;
+  border-color: white #9e9e9e #9e9e9e white;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      0
+    </div>
+    <div>
+      <select
+        class="emotion-2"
+      >
+        <option
+          class="emotion-3"
+          value="beginner"
+        >
+          beginner
+        </option>
+        <option
+          class="emotion-3"
+          value="intermediate"
+        >
+          intermediate
+        </option>
+        <option
+          class="emotion-3"
+          value="expert"
+        >
+          expert
+        </option>
+      </select>
+      <button
+        class="emotion-6"
+      >
+        🙂
+      </button>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      10
+    </div>
+  </div>
+  .emotion-0 {
+  display: grid;
+  grid-template-columns: repeat(9, auto);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1vw;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  color: transparent;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+  border-color: #dddddd;
+  cursor: default;
+  color: rgba(0,0,0,0);
+}
+
+.emotion-1:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.emotion-1:hover {
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  color: transparent;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+  border-color: #dddddd;
+  cursor: default;
+  color: #2a48ec;
+}
+
+.emotion-7:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.emotion-7:hover {
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  color: transparent;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+}
+
+.emotion-8:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.emotion-16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  color: transparent;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+  border-color: #dddddd;
+  cursor: default;
+  color: #2bb13d;
+}
+
+.emotion-16:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.emotion-16:hover {
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+.emotion-32 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  color: transparent;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+  border-color: #dddddd;
+  cursor: default;
+  color: #ec6561;
+}
+
+.emotion-32:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.emotion-32:hover {
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+<div
+    class="emotion-0"
+    role="grid"
+    size="9"
+  >
+    <div
+      class="emotion-1"
+      data-testid="0,0"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,1"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,2"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,3"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,4"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,5"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="0,6"
+      role="cell"
+    >
+      1
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="0,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="0,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,0"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,1"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,2"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,3"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="1,4"
+      role="cell"
+    >
+      1
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="1,5"
+      role="cell"
+    >
+      1
+    </div>
+    <div
+      class="emotion-16"
+      data-testid="1,6"
+      role="cell"
+    >
+      2
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="1,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="1,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,0"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,1"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,2"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,3"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="2,4"
+      role="cell"
+    >
+      1
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="2,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="2,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="2,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="2,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,0"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,1"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="3,2"
+      role="cell"
+    >
+      1
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="3,3"
+      role="cell"
+    >
+      1
+    </div>
+    <div
+      class="emotion-32"
+      data-testid="3,4"
+      role="cell"
+    >
+      3
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="3,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="3,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="3,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="3,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,0"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,1"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="4,2"
+      role="cell"
+    >
+      1
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="4,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="4,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="4,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="4,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="4,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="4,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="5,0"
+      role="cell"
+    >
+      1
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="5,1"
+      role="cell"
+    >
+      1
+    </div>
+    <div
+      class="emotion-16"
+      data-testid="5,2"
+      role="cell"
+    >
+      2
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="5,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="5,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="5,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="5,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="5,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="5,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="6,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="6,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="6,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="6,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="6,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="6,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="6,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="6,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="6,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="7,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="7,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="7,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="7,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="7,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="7,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="7,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="7,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="7,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="8,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="8,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="8,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="8,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="8,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="8,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="8,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="8,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="8,8"
+      role="cell"
+    >
+      10
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`GameWithHooks test cases Change level works fine 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.emotion-1 {
+  display: inline-block;
+  padding: 0 0.3vw;
+  color: #ec433c;
+  border: 0.15vw inset;
+  line-height: 2vw;
+  letter-spacing: 0.08em;
+  background: #333;
+  text-shadow: 0 0 0.1vw #ec433c;
+}
+
+.emotion-2 {
+  margin: 0;
+  height: 100%;
+  border-radius: 0;
+  border: 0.15vw solid;
+  border-color: white #9e9e9e #9e9e9e white;
+  background-color: #d1d1d1;
+}
+
+.emotion-3 {
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2em;
+  padding: 0 0.2vw 0.2vw;
+}
+
+.emotion-6 {
+  font-size: 1.1vw;
+  height: 100%;
+  cursor: pointer;
+  font-weight: 700;
+  border-width: 0.15vw;
+  border-style: solid;
+  background-color: #d1d1d1;
+  border-color: white #9e9e9e #9e9e9e white;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      0
+    </div>
+    <div>
+      <select
+        class="emotion-2"
+      >
+        <option
+          class="emotion-3"
+          value="beginner"
+        >
+          beginner
+        </option>
+        <option
+          class="emotion-3"
+          value="intermediate"
+        >
+          intermediate
+        </option>
+        <option
+          class="emotion-3"
+          value="expert"
+        >
+          expert
+        </option>
+      </select>
+      <button
+        class="emotion-6"
+      >
+        🙂
+      </button>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      44
+    </div>
+  </div>
+  .emotion-0 {
+  display: grid;
+  grid-template-columns: repeat(16, auto);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1vw;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  color: transparent;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+}
+
+.emotion-1:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+<div
+    class="emotion-0"
+    role="grid"
+    size="16"
+  >
+    <div
+      class="emotion-1"
+      data-testid="0,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,9"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,10"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,11"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,12"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,13"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,14"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,15"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,9"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,10"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,11"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,12"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,13"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,14"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,15"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,9"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,10"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,11"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,12"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,13"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,14"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,15"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,9"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,10"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,11"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,12"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,13"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,14"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,15"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,9"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,10"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,11"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,12"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,13"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,14"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,15"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,9"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,10"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,11"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,12"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,13"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,14"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,15"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,9"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,10"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,11"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,12"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,13"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,14"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,15"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,9"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,10"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,11"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,12"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,13"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,14"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,15"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,9"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,10"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,11"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,12"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,13"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,14"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,15"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9,9"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9,10"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9,11"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9,12"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9,13"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9,14"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="9,15"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="10,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="10,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="10,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="10,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="10,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="10,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="10,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="10,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="10,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="10,9"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="10,10"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="10,11"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="10,12"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="10,13"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="10,14"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="10,15"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="11,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="11,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="11,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="11,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="11,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="11,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="11,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="11,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="11,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="11,9"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="11,10"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="11,11"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="11,12"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="11,13"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="11,14"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="11,15"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="12,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="12,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="12,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="12,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="12,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="12,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="12,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="12,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="12,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="12,9"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="12,10"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="12,11"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="12,12"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="12,13"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="12,14"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="12,15"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="13,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="13,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="13,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="13,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="13,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="13,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="13,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="13,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="13,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="13,9"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="13,10"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="13,11"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="13,12"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="13,13"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="13,14"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="13,15"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="14,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="14,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="14,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="14,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="14,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="14,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="14,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="14,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="14,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="14,9"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="14,10"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="14,11"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="14,12"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="14,13"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="14,14"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="14,15"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="15,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="15,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="15,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="15,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="15,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="15,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="15,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="15,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="15,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="15,9"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="15,10"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="15,11"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="15,12"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="15,13"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="15,14"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="15,15"
+      role="cell"
+    >
+      10
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`GameWithHooks test cases Context menu handler on a cell works fine 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.emotion-1 {
+  display: inline-block;
+  padding: 0 0.3vw;
+  color: #ec433c;
+  border: 0.15vw inset;
+  line-height: 2vw;
+  letter-spacing: 0.08em;
+  background: #333;
+  text-shadow: 0 0 0.1vw #ec433c;
+}
+
+.emotion-2 {
+  margin: 0;
+  height: 100%;
+  border-radius: 0;
+  border: 0.15vw solid;
+  border-color: white #9e9e9e #9e9e9e white;
+  background-color: #d1d1d1;
+}
+
+.emotion-3 {
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2em;
+  padding: 0 0.2vw 0.2vw;
+}
+
+.emotion-6 {
+  font-size: 1.1vw;
+  height: 100%;
+  cursor: pointer;
+  font-weight: 700;
+  border-width: 0.15vw;
+  border-style: solid;
+  background-color: #d1d1d1;
+  border-color: white #9e9e9e #9e9e9e white;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      0
+    </div>
+    <div>
+      <select
+        class="emotion-2"
+      >
+        <option
+          class="emotion-3"
+          value="beginner"
+        >
+          beginner
+        </option>
+        <option
+          class="emotion-3"
+          value="intermediate"
+        >
+          intermediate
+        </option>
+        <option
+          class="emotion-3"
+          value="expert"
+        >
+          expert
+        </option>
+      </select>
+      <button
+        class="emotion-6"
+      >
+        🙂
+      </button>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      9
+    </div>
+  </div>
+  .emotion-0 {
+  display: grid;
+  grid-template-columns: repeat(9, auto);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1vw;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  color: transparent;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+}
+
+.emotion-1:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.emotion-2 {
+  width: 0px;
+  height: 0px;
+  color: rgba(0,0,0,0);
+  border-top: 0.5vw solid transparent;
+  border-bottom: 0.5vw solid transparent;
+  border-left: 0.5vw solid #ec433c;
+}
+
+<div
+    class="emotion-0"
+    role="grid"
+    size="9"
+  >
+    <div
+      class="emotion-1"
+      data-testid="0,0"
+      role="cell"
+    >
+      <div
+        class="emotion-2"
+        data-testid="flag_0,0"
+      >
+        11
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,8"
+      role="cell"
+    >
+      10
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`GameWithHooks test cases Game over reset the game state 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.emotion-1 {
+  display: inline-block;
+  padding: 0 0.3vw;
+  color: #ec433c;
+  border: 0.15vw inset;
+  line-height: 2vw;
+  letter-spacing: 0.08em;
+  background: #333;
+  text-shadow: 0 0 0.1vw #ec433c;
+}
+
+.emotion-2 {
+  margin: 0;
+  height: 100%;
+  border-radius: 0;
+  border: 0.15vw solid;
+  border-color: white #9e9e9e #9e9e9e white;
+  background-color: #d1d1d1;
+}
+
+.emotion-3 {
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2em;
+  padding: 0 0.2vw 0.2vw;
+}
+
+.emotion-6 {
+  font-size: 1.1vw;
+  height: 100%;
+  cursor: pointer;
+  font-weight: 700;
+  border-width: 0.15vw;
+  border-style: solid;
+  background-color: #d1d1d1;
+  border-color: white #9e9e9e #9e9e9e white;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      0
+    </div>
+    <div>
+      <select
+        class="emotion-2"
+      >
+        <option
+          class="emotion-3"
+          value="beginner"
+        >
+          beginner
+        </option>
+        <option
+          class="emotion-3"
+          value="intermediate"
+        >
+          intermediate
+        </option>
+        <option
+          class="emotion-3"
+          value="expert"
+        >
+          expert
+        </option>
+      </select>
+      <button
+        class="emotion-6"
+      >
+        🙂
+      </button>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      10
+    </div>
+  </div>
+  .emotion-0 {
+  display: grid;
+  grid-template-columns: repeat(9, auto);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1vw;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  color: transparent;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+  border-color: #dddddd;
+  cursor: default;
+  color: rgba(0,0,0,0);
+}
+
+.emotion-1:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.emotion-1:hover {
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  color: transparent;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+  border-color: #dddddd;
+  cursor: default;
+  color: #2a48ec;
+}
+
+.emotion-7:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.emotion-7:hover {
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  color: transparent;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+}
+
+.emotion-8:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.emotion-16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  color: transparent;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+  border-color: #dddddd;
+  cursor: default;
+  color: #2bb13d;
+}
+
+.emotion-16:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.emotion-16:hover {
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+.emotion-32 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  color: transparent;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+  border-color: #dddddd;
+  cursor: default;
+  color: #ec6561;
+}
+
+.emotion-32:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.emotion-32:hover {
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+<div
+    class="emotion-0"
+    role="grid"
+    size="9"
+  >
+    <div
+      class="emotion-1"
+      data-testid="0,0"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,1"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,2"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,3"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,4"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,5"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="0,6"
+      role="cell"
+    >
+      1
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="0,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="0,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,0"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,1"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,2"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,3"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="1,4"
+      role="cell"
+    >
+      1
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="1,5"
+      role="cell"
+    >
+      1
+    </div>
+    <div
+      class="emotion-16"
+      data-testid="1,6"
+      role="cell"
+    >
+      2
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="1,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="1,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,0"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,1"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,2"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,3"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="2,4"
+      role="cell"
+    >
+      1
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="2,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="2,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="2,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="2,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,0"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,1"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="3,2"
+      role="cell"
+    >
+      1
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="3,3"
+      role="cell"
+    >
+      1
+    </div>
+    <div
+      class="emotion-32"
+      data-testid="3,4"
+      role="cell"
+    >
+      3
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="3,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="3,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="3,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="3,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,0"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,1"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="4,2"
+      role="cell"
+    >
+      1
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="4,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="4,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="4,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="4,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="4,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="4,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="5,0"
+      role="cell"
+    >
+      1
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="5,1"
+      role="cell"
+    >
+      1
+    </div>
+    <div
+      class="emotion-16"
+      data-testid="5,2"
+      role="cell"
+    >
+      2
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="5,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="5,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="5,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="5,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="5,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="5,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="6,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="6,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="6,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="6,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="6,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="6,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="6,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="6,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="6,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="7,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="7,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="7,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="7,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="7,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="7,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="7,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="7,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="7,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="8,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="8,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="8,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="8,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="8,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="8,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="8,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="8,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="8,8"
+      role="cell"
+    >
+      10
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`GameWithHooks test cases Game over reset the game state 2`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.emotion-1 {
+  display: inline-block;
+  padding: 0 0.3vw;
+  color: #ec433c;
+  border: 0.15vw inset;
+  line-height: 2vw;
+  letter-spacing: 0.08em;
+  background: #333;
+  text-shadow: 0 0 0.1vw #ec433c;
+}
+
+.emotion-2 {
+  margin: 0;
+  height: 100%;
+  border-radius: 0;
+  border: 0.15vw solid;
+  border-color: white #9e9e9e #9e9e9e white;
+  background-color: #d1d1d1;
+}
+
+.emotion-3 {
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2em;
+  padding: 0 0.2vw 0.2vw;
+}
+
+.emotion-6 {
+  font-size: 1.1vw;
+  height: 100%;
+  cursor: pointer;
+  font-weight: 700;
+  border-width: 0.15vw;
+  border-style: solid;
+  background-color: #d1d1d1;
+  border-color: white #9e9e9e #9e9e9e white;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      0
+    </div>
+    <div>
+      <select
+        class="emotion-2"
+      >
+        <option
+          class="emotion-3"
+          value="beginner"
+        >
+          beginner
+        </option>
+        <option
+          class="emotion-3"
+          value="intermediate"
+        >
+          intermediate
+        </option>
+        <option
+          class="emotion-3"
+          value="expert"
+        >
+          expert
+        </option>
+      </select>
+      <button
+        class="emotion-6"
+      >
+        🙂
+      </button>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      10
+    </div>
+  </div>
+  .emotion-0 {
+  display: grid;
+  grid-template-columns: repeat(9, auto);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1vw;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  color: transparent;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+}
+
+.emotion-1:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+<div
+    class="emotion-0"
+    role="grid"
+    size="9"
+  >
+    <div
+      class="emotion-1"
+      data-testid="0,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,8"
+      role="cell"
+    >
+      10
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`GameWithHooks test cases Render game field by default 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.emotion-1 {
+  display: inline-block;
+  padding: 0 0.3vw;
+  color: #ec433c;
+  border: 0.15vw inset;
+  line-height: 2vw;
+  letter-spacing: 0.08em;
+  background: #333;
+  text-shadow: 0 0 0.1vw #ec433c;
+}
+
+.emotion-2 {
+  margin: 0;
+  height: 100%;
+  border-radius: 0;
+  border: 0.15vw solid;
+  border-color: white #9e9e9e #9e9e9e white;
+  background-color: #d1d1d1;
+}
+
+.emotion-3 {
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2em;
+  padding: 0 0.2vw 0.2vw;
+}
+
+.emotion-6 {
+  font-size: 1.1vw;
+  height: 100%;
+  cursor: pointer;
+  font-weight: 700;
+  border-width: 0.15vw;
+  border-style: solid;
+  background-color: #d1d1d1;
+  border-color: white #9e9e9e #9e9e9e white;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      0
+    </div>
+    <div>
+      <select
+        class="emotion-2"
+      >
+        <option
+          class="emotion-3"
+          value="beginner"
+        >
+          beginner
+        </option>
+        <option
+          class="emotion-3"
+          value="intermediate"
+        >
+          intermediate
+        </option>
+        <option
+          class="emotion-3"
+          value="expert"
+        >
+          expert
+        </option>
+      </select>
+      <button
+        class="emotion-6"
+      >
+        🙂
+      </button>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      10
+    </div>
+  </div>
+  .emotion-0 {
+  display: grid;
+  grid-template-columns: repeat(9, auto);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1vw;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  color: transparent;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+}
+
+.emotion-1:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+<div
+    class="emotion-0"
+    role="grid"
+    size="9"
+  >
+    <div
+      class="emotion-1"
+      data-testid="0,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,8"
+      role="cell"
+    >
+      10
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`GameWithHooks test cases Reset handler works fine 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.emotion-1 {
+  display: inline-block;
+  padding: 0 0.3vw;
+  color: #ec433c;
+  border: 0.15vw inset;
+  line-height: 2vw;
+  letter-spacing: 0.08em;
+  background: #333;
+  text-shadow: 0 0 0.1vw #ec433c;
+}
+
+.emotion-2 {
+  margin: 0;
+  height: 100%;
+  border-radius: 0;
+  border: 0.15vw solid;
+  border-color: white #9e9e9e #9e9e9e white;
+  background-color: #d1d1d1;
+}
+
+.emotion-3 {
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2em;
+  padding: 0 0.2vw 0.2vw;
+}
+
+.emotion-6 {
+  font-size: 1.1vw;
+  height: 100%;
+  cursor: pointer;
+  font-weight: 700;
+  border-width: 0.15vw;
+  border-style: solid;
+  background-color: #d1d1d1;
+  border-color: white #9e9e9e #9e9e9e white;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      0
+    </div>
+    <div>
+      <select
+        class="emotion-2"
+      >
+        <option
+          class="emotion-3"
+          value="beginner"
+        >
+          beginner
+        </option>
+        <option
+          class="emotion-3"
+          value="intermediate"
+        >
+          intermediate
+        </option>
+        <option
+          class="emotion-3"
+          value="expert"
+        >
+          expert
+        </option>
+      </select>
+      <button
+        class="emotion-6"
+      >
+        🙂
+      </button>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      10
+    </div>
+  </div>
+  .emotion-0 {
+  display: grid;
+  grid-template-columns: repeat(9, auto);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1vw;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  color: transparent;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+  border-color: #dddddd;
+  cursor: default;
+  color: rgba(0,0,0,0);
+}
+
+.emotion-1:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.emotion-1:hover {
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  color: transparent;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+  border-color: #dddddd;
+  cursor: default;
+  color: #2a48ec;
+}
+
+.emotion-7:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.emotion-7:hover {
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  color: transparent;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+}
+
+.emotion-8:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.emotion-16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  color: transparent;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+  border-color: #dddddd;
+  cursor: default;
+  color: #2bb13d;
+}
+
+.emotion-16:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.emotion-16:hover {
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+.emotion-32 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  color: transparent;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+  border-color: #dddddd;
+  cursor: default;
+  color: #ec6561;
+}
+
+.emotion-32:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.emotion-32:hover {
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+<div
+    class="emotion-0"
+    role="grid"
+    size="9"
+  >
+    <div
+      class="emotion-1"
+      data-testid="0,0"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,1"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,2"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,3"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,4"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,5"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="0,6"
+      role="cell"
+    >
+      1
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="0,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="0,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,0"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,1"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,2"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,3"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="1,4"
+      role="cell"
+    >
+      1
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="1,5"
+      role="cell"
+    >
+      1
+    </div>
+    <div
+      class="emotion-16"
+      data-testid="1,6"
+      role="cell"
+    >
+      2
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="1,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="1,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,0"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,1"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,2"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,3"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="2,4"
+      role="cell"
+    >
+      1
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="2,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="2,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="2,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="2,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,0"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,1"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="3,2"
+      role="cell"
+    >
+      1
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="3,3"
+      role="cell"
+    >
+      1
+    </div>
+    <div
+      class="emotion-32"
+      data-testid="3,4"
+      role="cell"
+    >
+      3
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="3,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="3,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="3,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="3,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,0"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,1"
+      role="cell"
+    >
+      0
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="4,2"
+      role="cell"
+    >
+      1
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="4,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="4,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="4,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="4,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="4,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="4,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="5,0"
+      role="cell"
+    >
+      1
+    </div>
+    <div
+      class="emotion-7"
+      data-testid="5,1"
+      role="cell"
+    >
+      1
+    </div>
+    <div
+      class="emotion-16"
+      data-testid="5,2"
+      role="cell"
+    >
+      2
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="5,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="5,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="5,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="5,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="5,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="5,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="6,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="6,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="6,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="6,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="6,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="6,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="6,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="6,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="6,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="7,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="7,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="7,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="7,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="7,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="7,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="7,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="7,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="7,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="8,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="8,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="8,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="8,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="8,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="8,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="8,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="8,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-8"
+      data-testid="8,8"
+      role="cell"
+    >
+      10
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`GameWithHooks test cases Reset handler works fine 2`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.emotion-1 {
+  display: inline-block;
+  padding: 0 0.3vw;
+  color: #ec433c;
+  border: 0.15vw inset;
+  line-height: 2vw;
+  letter-spacing: 0.08em;
+  background: #333;
+  text-shadow: 0 0 0.1vw #ec433c;
+}
+
+.emotion-2 {
+  margin: 0;
+  height: 100%;
+  border-radius: 0;
+  border: 0.15vw solid;
+  border-color: white #9e9e9e #9e9e9e white;
+  background-color: #d1d1d1;
+}
+
+.emotion-3 {
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2em;
+  padding: 0 0.2vw 0.2vw;
+}
+
+.emotion-6 {
+  font-size: 1.1vw;
+  height: 100%;
+  cursor: pointer;
+  font-weight: 700;
+  border-width: 0.15vw;
+  border-style: solid;
+  background-color: #d1d1d1;
+  border-color: white #9e9e9e #9e9e9e white;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      0
+    </div>
+    <div>
+      <select
+        class="emotion-2"
+      >
+        <option
+          class="emotion-3"
+          value="beginner"
+        >
+          beginner
+        </option>
+        <option
+          class="emotion-3"
+          value="intermediate"
+        >
+          intermediate
+        </option>
+        <option
+          class="emotion-3"
+          value="expert"
+        >
+          expert
+        </option>
+      </select>
+      <button
+        class="emotion-6"
+      >
+        🙂
+      </button>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      10
+    </div>
+  </div>
+  .emotion-0 {
+  display: grid;
+  grid-template-columns: repeat(9, auto);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1vw;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  color: transparent;
+  background-color: #d1d1d1;
+  border: 0.6vh solid transparent;
+  border-color: white #9e9e9e #9e9e9e white;
+}
+
+.emotion-1:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+<div
+    class="emotion-0"
+    role="grid"
+    size="9"
+  >
+    <div
+      class="emotion-1"
+      data-testid="0,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="0,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="1,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="2,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="3,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="4,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="5,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="6,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="7,8"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,0"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,1"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,2"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,3"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,4"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,5"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,6"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,7"
+      role="cell"
+    >
+      10
+    </div>
+    <div
+      class="emotion-1"
+      data-testid="8,8"
+      role="cell"
+    >
+      10
+    </div>
+  </div>
+</DocumentFragment>
+`;

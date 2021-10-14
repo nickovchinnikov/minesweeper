@@ -304,5 +304,10 @@
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/54/files)
 
 ### Game module by TDD with createSlice
+### Game module by TDD with createSlice 2
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/55/files)
+
+### useReducer
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/56/files)

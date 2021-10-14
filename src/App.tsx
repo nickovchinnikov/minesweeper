@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { Provider } from 'react-redux';
 
 import {
   BrowserRouter as Router,
@@ -9,7 +10,10 @@ import {
 } from 'react-router-dom';
 
 import { MinesweeperWithHooks } from '@/pages/MinesweeperWithHooks';
-import { MinesweeperWithRedux } from '@/pages/MinesweeperWithRedux';
+import { MinesweeperWithUseReducer } from '@/pages/MinesweeperWithUseReducer';
+import { MinesweeperWithReactRedux } from '@/pages/MinesweeperWithReactRedux';
+
+import { store } from '@/store';
 
 export const App: FC = () => (
   <Router>
@@ -22,7 +26,10 @@ export const App: FC = () => (
           <Link to="/game-with-hooks">Game With Hooks</Link>
         </li>
         <li>
-          <Link to="/game-with-redux">Game With Redux</Link>
+          <Link to="/game-with-usereducer">Game With useReducer</Link>
+        </li>
+        <li>
+          <Link to="/game-with-reactredux">Game With ReactRedux</Link>
         </li>
       </ul>
     </nav>
@@ -33,8 +40,13 @@ export const App: FC = () => (
       <Route path="/game-with-hooks/:username?">
         <MinesweeperWithHooks />
       </Route>
-      <Route path="/game-with-redux">
-        <MinesweeperWithRedux />
+      <Route path="/game-with-usereducer">
+        <MinesweeperWithUseReducer />
+      </Route>
+      <Route path="/game-with-reactredux">
+        <Provider store={store}>
+          <MinesweeperWithReactRedux />
+        </Provider>
       </Route>
       <Route path="*">
         <Redirect to="/" />

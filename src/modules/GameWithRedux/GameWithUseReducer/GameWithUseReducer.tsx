@@ -1,16 +1,18 @@
 import React, { FC, useReducer, useCallback } from 'react';
 
 import { Coords } from '@/core/Field';
-
 import { GameLevels, LevelNames } from '@/modules/GameSettings';
-
 import { Scoreboard } from '@/components/Scoreboard';
 import { Grid } from '@/components/Grid';
 import { GameOver } from '@/components/Game';
 
-import { reducer, actions, getInitialState } from './game';
+import {
+  reducer,
+  actions,
+  getInitialState,
+} from '@/modules/GameWithRedux/game';
 
-export const GameWithRedux: FC = () => {
+export const GameWithUseReducer: FC = () => {
   const [
     { level, time, isGameOver, isWin, settings, playerField, flagCounter },
     dispatch,
@@ -24,14 +26,14 @@ export const GameWithRedux: FC = () => {
     []
   );
 
-  const onReset = useCallback(
-    () => dispatch(actions.reset()),
+  const onContextMenu = useCallback(
+    (coords: Coords) => dispatch(actions.setFlag(coords)),
     // Stryker disable next-line ArrayDeclaration
     []
   );
 
-  const onContextMenu = useCallback(
-    (coords: Coords) => dispatch(actions.setFlag(coords)),
+  const onReset = useCallback(
+    () => dispatch(actions.reset()),
     // Stryker disable next-line ArrayDeclaration
     []
   );

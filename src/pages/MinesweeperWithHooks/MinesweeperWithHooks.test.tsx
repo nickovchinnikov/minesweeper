@@ -9,7 +9,7 @@ jest.mock('react-router-dom', () => ({
   useLocation: jest.fn().mockReturnValue({ search: {} }),
 }));
 
-it('Top renders correctly', () => {
+it('MinesweeperWithHooks renders correctly', () => {
   const { asFragment } = render(<MinesweeperWithHooks />);
 
   expect(asFragment()).toMatchSnapshot();

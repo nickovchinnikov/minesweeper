@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Scoreboard renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.emotion-1 {
+  display: inline-block;
+  padding: 0 0.3vw;
+  color: #ec433c;
+  border: 0.15vw inset;
+  line-height: 2vw;
+  letter-spacing: 0.08em;
+  background: #333;
+  text-shadow: 0 0 0.1vw #ec433c;
+}
+
+.emotion-2 {
+  margin: 0;
+  height: 100%;
+  border-radius: 0;
+  border: 0.15vw solid;
+  border-color: white #9e9e9e #9e9e9e white;
+  background-color: #d1d1d1;
+}
+
+.emotion-3 {
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2em;
+  padding: 0 0.2vw 0.2vw;
+}
+
+.emotion-6 {
+  font-size: 1.1vw;
+  height: 100%;
+  cursor: pointer;
+  font-weight: 700;
+  border-width: 0.15vw;
+  border-style: solid;
+  background-color: #d1d1d1;
+  border-color: white #9e9e9e #9e9e9e white;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      0
+    </div>
+    <div>
+      <select
+        class="emotion-2"
+      >
+        <option
+          class="emotion-3"
+          value="beginner"
+        >
+          beginner
+        </option>
+        <option
+          class="emotion-3"
+          value="intermediate"
+        >
+          intermediate
+        </option>
+        <option
+          class="emotion-3"
+          value="expert"
+        >
+          expert
+        </option>
+      </select>
+      <button
+        class="emotion-6"
+      >
+        🙂
+      </button>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      10
+    </div>
+  </div>
+</DocumentFragment>
+`;

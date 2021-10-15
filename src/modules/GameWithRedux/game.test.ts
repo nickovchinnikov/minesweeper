@@ -1,8 +1,6 @@
 import { GameSettings } from '@/modules/GameSettings';
 import { CellState, Field } from '@/core/Field';
 
-import { RootState } from '@/store';
-
 const { empty: e, hidden: h, bomb: b, flag: f, weakFlag: w } = CellState;
 
 import { reducer, actions, runTimer, recursiveUpdate, State } from './game';

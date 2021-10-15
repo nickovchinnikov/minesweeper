@@ -317,3 +317,9 @@
 ### React-Redux
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/57/files)
+
+### Global store benifits and redux-dev-tools
+
+### Redux middlewares
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/58/files)

@@ -5,7 +5,7 @@ import { Coords } from '@/core/Field';
 import { RootState } from '@/store';
 import { Grid as GridComponent } from '@/components/Grid';
 
-import { actions } from '@/modules/GameWithRedux/game';
+import { actions, runTimer } from '@/modules/GameWithRedux/game';
 
 export const Grid: FC = () => {
   const { playerField } = useSelector(
@@ -17,13 +17,19 @@ export const Grid: FC = () => {
   const dispatch = useDispatch();
 
   const onClick = useCallback(
-    (coords: Coords) => dispatch(actions.openCell(coords)),
+    (coords: Coords) => {
+      dispatch(actions.openCell(coords));
+      dispatch(runTimer());
+    },
     // Stryker disable next-line ArrayDeclaration
     []
   );
 
   const onContextMenu = useCallback(
-    (coords: Coords) => dispatch(actions.setFlag(coords)),
+    (coords: Coords) => {
+      dispatch(actions.setFlag(coords));
+      dispatch(runTimer());
+    },
     // Stryker disable next-line ArrayDeclaration
     []
   );

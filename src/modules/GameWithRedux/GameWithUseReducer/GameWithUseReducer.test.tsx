@@ -39,9 +39,9 @@ describe('GameWithHooks test cases', () => {
   });
   it('Game over reset the game state', () => {
     const { asFragment } = render(<GameWithUseReducer />);
-    userEvent.click(screen.getByTestId('0,0'));
+    userEvent.click(screen.getByTestId('8,8'));
     expect(asFragment()).toMatchSnapshot();
-    userEvent.click(screen.getByText('🙂'));
+    userEvent.click(screen.getByText('🙁'));
     expect(asFragment()).toMatchSnapshot();
   });
 });

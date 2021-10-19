@@ -164,7 +164,7 @@ exports[`MinesweeperWithHooks renders correctly 1`] = `
       <h1
         class="emotion-2"
       >
-        Minesweeper with ReactHooks special for you
+        Minesweeper with ReactHooks special for you, Nikita; userId: 123
       </h1>
       <legend
         class="emotion-3"

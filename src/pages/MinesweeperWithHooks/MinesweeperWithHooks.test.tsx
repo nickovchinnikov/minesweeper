@@ -5,8 +5,8 @@ import { MinesweeperWithHooks } from './MinesweeperWithHooks';
 
 jest.mock('react-router-dom', () => ({
   ...jest.requireActual('react-router-dom'),
-  useParams: jest.fn().mockReturnValue({}),
-  useLocation: jest.fn().mockReturnValue({ search: {} }),
+  useParams: jest.fn().mockReturnValue({ username: 'Nikita' }),
+  useLocation: jest.fn().mockReturnValue({ search: '?id=123' }),
 }));
 
 it('MinesweeperWithHooks renders correctly', () => {

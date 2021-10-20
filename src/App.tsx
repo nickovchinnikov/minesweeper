@@ -55,4 +55,4 @@ export const App: FC = () => (
   </Router>
 );
 
-const Home: FC = () => <h2>Minesweeper game Forever!</h2>;
+export const Home: FC = () => <h2>Minesweeper game Forever!</h2>;

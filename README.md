@@ -323,3 +323,7 @@
 ### Redux middlewares
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/58/files)
+
+### Refactoring with Stryker
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/59/files)

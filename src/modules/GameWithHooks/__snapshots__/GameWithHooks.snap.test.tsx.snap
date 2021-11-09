@@ -122,8 +122,8 @@ exports[`Render game field by default 1`] = `
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
-  width: 1.8vw;
-  height: 1.8vw;
+  width: 1.8vh;
+  height: 1.8vh;
   color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
@@ -139,9 +139,9 @@ exports[`Render game field by default 1`] = `
   width: 0px;
   height: 0px;
   color: rgba(0,0,0,0);
-  border-top: 0.5vw solid transparent;
-  border-bottom: 0.5vw solid transparent;
-  border-left: 0.5vw solid #ec433c;
+  border-top: 0.5vh solid transparent;
+  border-bottom: 0.5vh solid transparent;
+  border-left: 0.5vh solid #ec433c;
 }
 
 <div
@@ -847,8 +847,8 @@ exports[`Render game field by default 2`] = `
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
-  width: 1.8vw;
-  height: 1.8vw;
+  width: 1.8vh;
+  height: 1.8vh;
   color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
@@ -864,9 +864,9 @@ exports[`Render game field by default 2`] = `
   width: 0px;
   height: 0px;
   color: rgba(0,0,0,0);
-  border-top: 0.5vw solid transparent;
-  border-bottom: 0.5vw solid transparent;
-  border-left: 0.5vw solid #ec433c;
+  border-top: 0.5vh solid transparent;
+  border-bottom: 0.5vh solid transparent;
+  border-left: 0.5vh solid #ec433c;
 }
 
 <div

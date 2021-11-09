@@ -29,8 +29,8 @@ exports[`Grid renders correctly 1`] = `
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
-  width: 1.8vw;
-  height: 1.8vw;
+  width: 1.8vh;
+  height: 1.8vh;
   color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
@@ -53,8 +53,8 @@ exports[`Grid renders correctly 1`] = `
 
 .emotion-2 {
   border-radius: 50%;
-  width: 1vw;
-  height: 1vw;
+  width: 1vh;
+  height: 1vh;
   background-color: #333;
 }
 
@@ -76,8 +76,8 @@ exports[`Grid renders correctly 1`] = `
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
-  width: 1.8vw;
-  height: 1.8vw;
+  width: 1.8vh;
+  height: 1.8vh;
   color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
@@ -115,8 +115,8 @@ exports[`Grid renders correctly 1`] = `
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
-  width: 1.8vw;
-  height: 1.8vw;
+  width: 1.8vh;
+  height: 1.8vh;
   color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
@@ -154,8 +154,8 @@ exports[`Grid renders correctly 1`] = `
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
-  width: 1.8vw;
-  height: 1.8vw;
+  width: 1.8vh;
+  height: 1.8vh;
   color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
@@ -193,8 +193,8 @@ exports[`Grid renders correctly 1`] = `
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
-  width: 1.8vw;
-  height: 1.8vw;
+  width: 1.8vh;
+  height: 1.8vh;
   color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
@@ -224,8 +224,8 @@ exports[`Grid renders correctly 1`] = `
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
-  width: 1.8vw;
-  height: 1.8vw;
+  width: 1.8vh;
+  height: 1.8vh;
   color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
@@ -263,8 +263,8 @@ exports[`Grid renders correctly 1`] = `
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
-  width: 1.8vw;
-  height: 1.8vw;
+  width: 1.8vh;
+  height: 1.8vh;
   color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;

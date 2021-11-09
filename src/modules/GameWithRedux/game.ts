@@ -24,6 +24,7 @@ export interface State {
   isGameOver: boolean;
   isGameStarted: boolean;
   isWin: boolean;
+  isTimerRunning: boolean;
   settings: [number, number];
   playerField: Field;
   gameField: Field;
@@ -41,6 +42,7 @@ export const getInitialState = (level: LevelNames = 'beginner'): State => {
     isGameOver: false,
     isGameStarted: false,
     isWin: false,
+    isTimerRunning: false,
     settings,
     flagCounter: 0,
     playerField: generateFieldWithDefaultState(size, CellState.hidden),
@@ -90,6 +92,9 @@ export const { reducer, actions } = createSlice({
     updateTime: (state) => {
       state.time = state.time + 1;
     },
+    setTimerActive: (state) => {
+      state.isTimerRunning = true;
+    },
     reset: ({ level }) => getInitialState(level),
     changeLevel: (state, { payload }: PayloadAction<LevelNames>) =>
       getInitialState(payload),
@@ -97,21 +102,24 @@ export const { reducer, actions } = createSlice({
 });
 
 export const recursiveUpdate =
-  (): ThunkAction<void, RootState, unknown, AnyAction> =>
+  (prevGameField: Field): ThunkAction<void, RootState, unknown, AnyAction> =>
   (dispatch, getState) =>
     setTimeout(() => {
-      const { isGameStarted } = getState().game;
-      if (isGameStarted) {
+      const { isGameStarted, isTimerRunning, gameField } = getState().game;
+      const isTheSameGame = gameField === prevGameField;
+
+      if (isGameStarted && isTimerRunning && isTheSameGame) {
         dispatch(actions.updateTime());
-        dispatch(recursiveUpdate());
+        dispatch(recursiveUpdate(gameField));
       }
     }, 1000);
 
 export const runTimer =
   (): ThunkAction<void, RootState, unknown, AnyAction> =>
   (dispatch, getState) => {
-    const { isGameStarted, time } = getState().game;
-    if (time === 0 && isGameStarted) {
-      dispatch(recursiveUpdate());
+    const { isGameStarted, isTimerRunning, gameField } = getState().game;
+    if (isGameStarted && !isTimerRunning) {
+      dispatch(actions.setTimerActive());
+      dispatch(recursiveUpdate(gameField));
     }
   };

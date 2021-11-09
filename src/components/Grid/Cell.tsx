@@ -131,8 +131,8 @@ export const ClosedFrame = styled.div<ClosedFrameProps>`
   justify-content: center;
   user-select: none;
   cursor: pointer;
-  width: 1.8vw;
-  height: 1.8vw;
+  width: 1.8vh;
+  height: 1.8vh;
   color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
@@ -171,8 +171,8 @@ const RevealedFrame = styled(ClosedFrame)`
 
 const Bomb = styled.div`
   border-radius: 50%;
-  width: 1vw;
-  height: 1vw;
+  width: 1vh;
+  height: 1vh;
   background-color: #333;
 `;
 
@@ -184,11 +184,11 @@ const Flag = styled.div`
   width: 0px;
   height: 0px;
   color: ${transparent};
-  border-top: 0.5vw solid transparent;
-  border-bottom: 0.5vw solid transparent;
-  border-left: 0.5vw solid #ec433c;
+  border-top: 0.5vh solid transparent;
+  border-bottom: 0.5vh solid transparent;
+  border-left: 0.5vh solid #ec433c;
 `;
 
 const WeakFlag = styled(Flag)`
-  border-left: 0.5vw solid #f19996;
+  border-left: 0.5vh solid #f19996;
 `;

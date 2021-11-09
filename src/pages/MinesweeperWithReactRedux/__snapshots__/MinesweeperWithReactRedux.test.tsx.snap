@@ -142,8 +142,8 @@ exports[`MinesweeperWithReactRedux renders correctly 1`] = `
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
-  width: 1.8vw;
-  height: 1.8vw;
+  width: 1.8vh;
+  height: 1.8vh;
   color: transparent;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;

@@ -327,3 +327,7 @@
 ### Refactoring with Stryker
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/59/files)
+
+### Fix timer
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/60/files)

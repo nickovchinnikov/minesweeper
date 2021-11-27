@@ -1,5 +1,5 @@
 # Minesweeper
-[Full video course](https://www.udemy.com/course/hands-on-reactjs)
+## [Full video course](https://www.udemy.com/course/hands-on-reactjs)
 
 ## Section: Introduction
 

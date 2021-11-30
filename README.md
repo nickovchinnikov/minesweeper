@@ -332,3 +332,7 @@
 ### Fix timer
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/60/files)
+
+#### Update dependencies
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/61)

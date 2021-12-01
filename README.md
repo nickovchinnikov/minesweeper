@@ -1,4 +1,5 @@
 # Minesweeper
+
 ## [Full video course](https://www.udemy.com/course/hands-on-reactjs)
 
 ## Section: Introduction
@@ -336,3 +337,9 @@
 #### Update dependencies
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/61)
+
+## Bundle optimization
+
+### React.lazy
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/62)

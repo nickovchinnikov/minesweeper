@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, Suspense } from 'react';
 import { Provider } from 'react-redux';
 
 import {
@@ -9,9 +9,27 @@ import {
   Redirect,
 } from 'react-router-dom';
 
-import { MinesweeperWithHooks } from '@/pages/MinesweeperWithHooks';
-import { MinesweeperWithUseReducer } from '@/pages/MinesweeperWithUseReducer';
-import { MinesweeperWithReactRedux } from '@/pages/MinesweeperWithReactRedux';
+const MinesweeperWithHooks = React.lazy(() =>
+  import('@/pages/MinesweeperWithHooks').then(({ MinesweeperWithHooks }) => ({
+    default: MinesweeperWithHooks,
+  }))
+);
+
+const MinesweeperWithUseReducer = React.lazy(() =>
+  import('@/pages/MinesweeperWithUseReducer').then(
+    ({ MinesweeperWithUseReducer }) => ({
+      default: MinesweeperWithUseReducer,
+    })
+  )
+);
+
+const MinesweeperWithReactRedux = React.lazy(() =>
+  import('@/pages/MinesweeperWithReactRedux').then(
+    ({ MinesweeperWithReactRedux }) => ({
+      default: MinesweeperWithReactRedux,
+    })
+  )
+);
 
 import { store } from '@/store';
 
@@ -34,19 +52,25 @@ export const App: FC = () => (
       </ul>
     </nav>
     <Switch>
-      <Route exact path="/">
+      <Route path="/">
         <Home />
       </Route>
       <Route path="/game-with-hooks/:username?">
-        <MinesweeperWithHooks />
+        <Suspense fallback={<div>Loading minesweeper with hooks...</div>}>
+          <MinesweeperWithHooks />
+        </Suspense>
       </Route>
       <Route path="/game-with-usereducer">
-        <MinesweeperWithUseReducer />
+        <Suspense fallback={<div>Loading minesweeper with useReducer...</div>}>
+          <MinesweeperWithUseReducer />
+        </Suspense>
       </Route>
       <Route path="/game-with-reactredux">
-        <Provider store={store}>
-          <MinesweeperWithReactRedux />
-        </Provider>
+        <Suspense fallback={<div>Loading minesweeper with ReactRedux...</div>}>
+          <Provider store={store}>
+            <MinesweeperWithReactRedux />
+          </Provider>
+        </Suspense>
       </Route>
       <Route path="*">
         <Redirect to="/" />

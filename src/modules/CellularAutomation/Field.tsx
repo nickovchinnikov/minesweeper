@@ -4,12 +4,12 @@ import { getStateColors } from './filling';
 import { Cell } from './types';
 
 export interface Props {
-  cellsState: Cell[][];
+  field: Cell[][];
   width: number;
   height: number;
 }
 
-export const Field: FC<Props> = ({ cellsState, width, height }) => {
+export const Field: FC<Props> = ({ field, width, height }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export const Field: FC<Props> = ({ cellsState, width, height }) => {
         const imageData = context.createImageData(width, height);
         for (let y = 0; y < height; y++) {
           for (let x = 0; x < width; x++) {
-            const state = cellsState[y][x];
+            const state = field[y][x];
 
             const offset = (height * y + x) * 4;
 
@@ -35,7 +35,7 @@ export const Field: FC<Props> = ({ cellsState, width, height }) => {
         context.putImageData(imageData, 0, 0);
       }
     }
-  }, [cellsState, width, height]);
+  }, [field, width, height]);
 
   return (
     <section>

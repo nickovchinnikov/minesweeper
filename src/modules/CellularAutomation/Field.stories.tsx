@@ -15,5 +15,5 @@ export const DisplayExample = Template.bind({});
 DisplayExample.args = {
   width: 300,
   height: 300,
-  cellsState: randomFill(300, 300),
+  field: randomFill(300, 300),
 };

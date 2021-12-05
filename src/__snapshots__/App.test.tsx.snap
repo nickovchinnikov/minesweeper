@@ -32,6 +32,13 @@ exports[`App test cases App renders check 1`] = `
           Game With ReactRedux
         </a>
       </li>
+      <li>
+        <a
+          href="/cellular-automation"
+        >
+          Cellular Automation
+        </a>
+      </li>
     </ul>
   </nav>
   <h2>

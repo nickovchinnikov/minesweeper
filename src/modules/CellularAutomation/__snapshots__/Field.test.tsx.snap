@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cellular Automation Field test cases Field fragment check 1`] = `
+<DocumentFragment>
+  <section>
+    <canvas
+      height="300"
+      width="300"
+    />
+  </section>
+</DocumentFragment>
+`;

@@ -1,4 +1,11 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import {
+  createSlice,
+  PayloadAction,
+  ThunkAction,
+  AnyAction,
+} from '@reduxjs/toolkit';
+
+import { RootState } from '@/store';
 
 import { randomFill, transitionFill } from './filling';
 import { Field, Rules } from './types';
@@ -13,12 +20,12 @@ export interface State {
 }
 
 export const getInitialState = (): State => ({
-  width: 300,
-  height: 300,
-  speed: 50,
+  width: 500,
+  height: 500,
+  speed: 500,
   isPlaying: false,
-  rule: 'Demons',
-  field: randomFill(300, 300),
+  rule: 'Hash',
+  field: randomFill(500, 500),
 });
 
 export const automationSlice = createSlice({
@@ -29,7 +36,7 @@ export const automationSlice = createSlice({
       const { rule, field, height, width } = state;
       state.field = transitionFill(rule, field, height, width);
     },
-    timerToggle: (state) => {
+    isPlayingToggle: (state) => {
       state.isPlaying = !state.isPlaying;
     },
     changeRule: (state, { payload }: PayloadAction<Rules>) => {
@@ -42,3 +49,21 @@ export const automationSlice = createSlice({
 });
 
 export const { actions, reducer } = automationSlice;
+
+export const recursiveUpdate =
+  (): ThunkAction<void, RootState, unknown, AnyAction> =>
+  (dispatch, getState) => {
+    const { speed, isPlaying } = getState().automation;
+
+    if (isPlaying) {
+      setTimeout(() => {
+        dispatch(actions.nextFieldState());
+        dispatch(recursiveUpdate());
+      }, speed);
+    }
+  };
+
+export const runGeneration =
+  (): ThunkAction<void, RootState, unknown, AnyAction> => (dispatch) => {
+    dispatch(recursiveUpdate());
+  };

@@ -35,13 +35,13 @@ describe('Automation slice test', () => {
     );
   });
   it('Timer toggle action check', () => {
-    expect(reducer(initialState, actions.timerToggle())).toEqual(
+    expect(reducer(initialState, actions.isPlayingToggle())).toEqual(
       expect.objectContaining({
         isPlaying: true,
       })
     );
     expect(
-      reducer({ ...initialState, isPlaying: true }, actions.timerToggle())
+      reducer({ ...initialState, isPlaying: true }, actions.isPlayingToggle())
     ).toEqual(
       expect.objectContaining({
         isPlaying: false,

@@ -1,4 +1,4 @@
-import { Rule, Cell, Field } from './types';
+import { Rules, Cell, Field } from './types';
 import { hashRule, demonsRule, venusRule } from './transitions';
 
 const colors: string[] = [
@@ -20,6 +20,8 @@ const colors: string[] = [
   '#567',
 ];
 
+const states = colors.length;
+
 export const stateColors: number[][] = colors.map((color) => [
   parseInt(color.charAt(1) + color.charAt(1), 16),
   parseInt(color.charAt(2) + color.charAt(2), 16),
@@ -29,11 +31,7 @@ export const stateColors: number[][] = colors.map((color) => [
 
 export const getStateColors = (state: Cell) => stateColors[state];
 
-export function randomFill(
-  states: number,
-  height: number,
-  width: number
-): Field {
+export function randomFill(height: number, width: number): Field {
   const result: Field = [];
   for (let y = 0; y < height; y++) {
     const row: Cell[] = [];
@@ -47,14 +45,13 @@ export function randomFill(
 }
 
 export function transitionFill(
-  rule: Rule,
+  rule: Rules,
   field: Field,
-  states: number,
   height: number,
   width: number
 ): Field {
-  return field.map((row, y, arr) => {
-    return row.map((cell, x) => {
+  return field.map((row, y, arr) =>
+    row.map((cell, x) => {
       const neighbors = {
         top: arr[(y + 1) % height][x],
         right: arr[y][(x + 1) % width],
@@ -73,6 +70,6 @@ export function transitionFill(
         return demonsRule(cell, neighbors, states);
       }
       return venusRule(cell, neighbors);
-    });
-  });
+    })
+  );
 }

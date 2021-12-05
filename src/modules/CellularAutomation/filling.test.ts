@@ -1,7 +1,7 @@
 import { randomFill, transitionFill } from './filling';
 
 describe('Check randomFill', () => {
-  const flatArr: number[] = randomFill(10, 10, 10).flat();
+  const flatArr: number[] = randomFill(10, 10).flat();
 
   const sum: number = flatArr.reduce(
     (prevEl: number, curEl: number) => prevEl + curEl
@@ -23,7 +23,6 @@ describe('transition filling Hash', () => {
       [5, 5, 5],
       [5, 5, 5],
     ],
-    10,
     3,
     3
   ).flat();
@@ -49,7 +48,6 @@ describe('transition filling Demons', () => {
       [5, 5, 5],
       [5, 5, 5],
     ],
-    10,
     3,
     3
   ).flat();
@@ -75,7 +73,6 @@ describe('transition filling Venus', () => {
       [5, 5, 5],
       [5, 5, 5],
     ],
-    10,
     3,
     3
   ).flat();

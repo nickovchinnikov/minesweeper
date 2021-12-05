@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 
-import { reducer } from '@/modules/GameWithRedux';
+import { gameSlice } from '@/modules/GameWithRedux';
+import { automationSlice } from '@/modules/CellularAutomation';
 
 export const store = configureStore({
   reducer: {
-    game: reducer,
+    game: gameSlice.reducer,
+    automation: automationSlice.reducer,
   },
 });
 

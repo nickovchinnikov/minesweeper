@@ -338,6 +338,10 @@
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/61)
 
+## Canvas and Ref
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/62)
+
 ## Bundle optimization
 
 ### React.lazy

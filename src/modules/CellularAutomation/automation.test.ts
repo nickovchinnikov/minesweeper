@@ -20,8 +20,22 @@ describe('Automation slice test', () => {
     expect(mockTransitionFill).toHaveBeenCalled();
   });
 
+  it('Change size action check', () => {
+    expect(reducer(initialState, actions.changeSize(120))).toEqual(
+      expect.objectContaining({
+        size: 120,
+      })
+    );
+  });
+  it('Reset action check', () => {
+    expect(reducer(initialState, actions.reset())).toEqual(
+      expect.objectContaining({
+        isPlaying: false,
+      })
+    );
+  });
   it('Change speed action check', () => {
-    expect(reducer(initialState, actions.changeSpeed(100))).toEqual(
+    expect(reducer(initialState, actions.changeSpeed('slow'))).toEqual(
       expect.objectContaining({
         speed: 100,
       })
@@ -34,7 +48,7 @@ describe('Automation slice test', () => {
       })
     );
   });
-  it('Timer toggle action check', () => {
+  it('isPlayingToggle action check', () => {
     expect(reducer(initialState, actions.isPlayingToggle())).toEqual(
       expect.objectContaining({
         isPlaying: true,

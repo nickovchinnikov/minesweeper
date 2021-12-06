@@ -1,7 +1,7 @@
 import { Rules, Cell, Field } from './types';
 import { hashRule, demonsRule, venusRule } from './transitions';
 
-const colors: string[] = [
+export const colors: string[] = [
   '#113',
   '#014',
   '#b16',
@@ -20,7 +20,7 @@ const colors: string[] = [
   '#567',
 ];
 
-const states = colors.length;
+export const getColor = (state: Cell) => colors[state];
 
 export const stateColors: number[][] = colors.map((color) => [
   parseInt(color.charAt(1) + color.charAt(1), 16),
@@ -31,7 +31,11 @@ export const stateColors: number[][] = colors.map((color) => [
 
 export const getStateColors = (state: Cell) => stateColors[state];
 
-export function randomFill(height: number, width: number): Field {
+export function randomFill(
+  height: number,
+  width: number,
+  states = colors.length
+): Field {
   const result: Field = [];
   for (let y = 0; y < height; y++) {
     const row: Cell[] = [];
@@ -48,7 +52,8 @@ export function transitionFill(
   rule: Rules,
   field: Field,
   height: number,
-  width: number
+  width: number,
+  states = colors.length
 ): Field {
   return field.map((row, y, arr) =>
     row.map((cell, x) => {

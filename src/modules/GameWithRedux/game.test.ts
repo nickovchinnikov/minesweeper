@@ -1,6 +1,8 @@
 import { GameSettings } from '@/modules/GameSettings';
 import { CellState, Field } from '@/core/Field';
 
+import { RootState } from '@/store';
+
 const { empty: e, hidden: h, bomb: b, flag: f, weakFlag: w } = CellState;
 
 import { reducer, actions, runTimer, recursiveUpdate, State } from './game';
@@ -207,12 +209,13 @@ describe('Game reducer', () => {
       const mockDispatch = jest.fn();
       runTimer()(
         mockDispatch,
-        () => ({
-          game: {
-            isGameStarted: true,
-            isTimerRunning: false,
-          } as State,
-        }),
+        () =>
+          ({
+            game: {
+              isGameStarted: true,
+              isTimerRunning: false,
+            },
+          } as RootState),
         undefined
       );
       expect(mockDispatch).toHaveBeenCalledTimes(2);
@@ -221,12 +224,13 @@ describe('Game reducer', () => {
       const mockDispatch = jest.fn();
       runTimer()(
         mockDispatch,
-        () => ({
-          game: {
-            isGameStarted: true,
-            isTimerRunning: true,
-          } as State,
-        }),
+        () =>
+          ({
+            game: {
+              isGameStarted: true,
+              isTimerRunning: true,
+            },
+          } as RootState),
         undefined
       );
       expect(mockDispatch).not.toHaveBeenCalled();
@@ -237,13 +241,14 @@ describe('Game reducer', () => {
       const mockDispatch = jest.fn();
       recursiveUpdate(baseInitialState.gameField)(
         mockDispatch,
-        () => ({
-          game: {
-            isGameStarted: true,
-            isTimerRunning: true,
-            gameField: baseInitialState.gameField,
-          } as State,
-        }),
+        () =>
+          ({
+            game: {
+              isGameStarted: true,
+              isTimerRunning: true,
+              gameField: baseInitialState.gameField,
+            },
+          } as RootState),
         undefined
       );
       jest.advanceTimersByTime(1000);
@@ -254,13 +259,14 @@ describe('Game reducer', () => {
       const mockDispatch = jest.fn();
       recursiveUpdate(baseInitialState.gameField)(
         mockDispatch,
-        () => ({
-          game: {
-            isGameStarted: true,
-            isTimerRunning: true,
-            gameField: [...baseInitialState.gameField],
-          } as State,
-        }),
+        () =>
+          ({
+            game: {
+              isGameStarted: true,
+              isTimerRunning: true,
+              gameField: [...baseInitialState.gameField],
+            },
+          } as RootState),
         undefined
       );
       jest.advanceTimersByTime(1000);
@@ -271,12 +277,13 @@ describe('Game reducer', () => {
       const mockDispatch = jest.fn();
       recursiveUpdate(baseInitialState.gameField)(
         mockDispatch,
-        () => ({
-          game: {
-            isGameStarted: true,
-            isTimerRunning: false,
-          } as State,
-        }),
+        () =>
+          ({
+            game: {
+              isGameStarted: true,
+              isTimerRunning: false,
+            },
+          } as RootState),
         undefined
       );
       jest.advanceTimersByTime(1000);
@@ -287,12 +294,13 @@ describe('Game reducer', () => {
       const mockDispatch = jest.fn();
       recursiveUpdate(baseInitialState.gameField)(
         mockDispatch,
-        () => ({
-          game: {
-            isGameStarted: false,
-            isTimerRunning: false,
-          } as State,
-        }),
+        () =>
+          ({
+            game: {
+              isGameStarted: false,
+              isTimerRunning: false,
+            },
+          } as RootState),
         undefined
       );
       jest.advanceTimersByTime(1000);

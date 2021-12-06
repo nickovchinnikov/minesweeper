@@ -340,7 +340,7 @@
 
 ## Canvas and Ref
 
-[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/63)
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/62)
 
 ## Bundle optimization
 

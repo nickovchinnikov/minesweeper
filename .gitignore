@@ -6,6 +6,7 @@ storybook-static
 coverage
 mutation
 node_modules
+storybook-static
 build-storybook.log
 # stryker temp files
 .stryker-tmp

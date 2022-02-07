@@ -1,13 +1,22 @@
-# Minesweeper
+# Minesweeper game
 
-## [Full video course](https://www.udemy.com/course/hands-on-reactjs)
+# [Full video course](https://www.udemy.com/course/hands-on-reactjs/?referralCode=4878AA679583335558E5)
 
-## Patches and fixes
+## Patches, fixes and updates
 
-#### Jest "No tests found, exiting with code 1" error on Windows
+### Update dependencies
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/61)
+
+### Jest "No tests found, exiting with code 1" error on Windows
 [Problem description](https://stackoverflow.com/questions/56348126/jest-no-tests-found-exiting-with-code-1-error-on-windows-10-in-react-redux-ap)
 
 [PR with Fix](https://github.com/nickovchinnikov/minesweeper/pull/65/files)
+
+### Update dependencies 2
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/69)
+
 
 ## Section: Introduction
 
@@ -28,7 +37,7 @@
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/2)
 
-#### Add script lint + eslint-plugin-storybook
+### Add script lint + eslint-plugin-storybook
 [Pull request 2](https://github.com/nickovchinnikov/minesweeper/pull/68)
 
 ## Section: Typescript recap
@@ -347,7 +356,3 @@
 ### Fix timer
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/60/files)
-
-#### Update dependencies
-
-[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/61)

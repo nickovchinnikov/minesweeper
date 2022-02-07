@@ -2,6 +2,12 @@
 
 ## [Full video course](https://www.udemy.com/course/hands-on-reactjs)
 
+## Patches and fixes
+
+#### Jest "No tests found, exiting with code 1" error on Windows
+[Problem description](https://stackoverflow.com/questions/56348126/jest-no-tests-found-exiting-with-code-1-error-on-windows-10-in-react-redux-ap)
+[Fix testMatch option](https://github.com/nickovchinnikov/minesweeper/pull/65/files)
+
 ## Section: Introduction
 
 ### Minesweeper presentation

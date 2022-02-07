@@ -23,10 +23,13 @@
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/1)
 
-### Code-style and Eslint 
+### Code-style and Eslint
 ### Prettier
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/2)
+
+#### Add script lint + eslint-plugin-storybook
+[Pull request 2](https://github.com/nickovchinnikov/minesweeper/pull/68)
 
 ## Section: Typescript recap
 

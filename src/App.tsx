@@ -31,12 +31,6 @@ const MinesweeperWithReactRedux = React.lazy(() =>
   )
 );
 
-const CellularAutomation = React.lazy(() =>
-  import('@/pages/CellularAutomation').then(({ CellularAutomation }) => ({
-    default: CellularAutomation,
-  }))
-);
-
 import { store } from '@/store';
 
 export const App: FC = () => (
@@ -55,9 +49,6 @@ export const App: FC = () => (
           </li>
           <li>
             <Link to="/game-with-reactredux">Game With ReactRedux</Link>
-          </li>
-          <li>
-            <Link to="/cellular-automation">Cellular Automation</Link>
           </li>
         </ul>
       </nav>
@@ -79,11 +70,6 @@ export const App: FC = () => (
             fallback={<div>Loading minesweeper with ReactRedux...</div>}
           >
             <MinesweeperWithReactRedux />
-          </Suspense>
-        </Route>
-        <Route path="/cellular-automation">
-          <Suspense fallback={<div>Loading Cellular Automation...</div>}>
-            <CellularAutomation />
           </Suspense>
         </Route>
         <Route path="/">

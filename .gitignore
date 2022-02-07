@@ -2,6 +2,7 @@
 .lh
 .vscode
 dist
+storybook-static
 coverage
 mutation
 node_modules

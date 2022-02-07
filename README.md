@@ -285,6 +285,10 @@
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/50/files)
 
+### React.lazy and routing
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/62)
+
 ## Redux intro
 
 ### Pure functions benifits
@@ -337,13 +341,3 @@
 #### Update dependencies
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/61)
-
-## Canvas and Ref
-
-[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/62)
-
-## Bundle optimization
-
-### React.lazy
-
-[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/62)

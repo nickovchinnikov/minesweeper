@@ -1,1 +1,0 @@
-export { CellularAutomation } from './CellularAutomation';

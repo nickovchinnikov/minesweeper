@@ -1,12 +1,25 @@
-import React, { FC, useCallback } from 'react';
+import React, { FC, useEffect, useCallback } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { useHistory } from 'react-router-dom';
 
-import { GameLevels, LevelNames } from '@/modules/GameSettings';
 import { RootState } from '@/store';
+import { useQuery } from '@/hooks/useQuery';
+import { GameLevels, LevelNames } from '@/modules/GameSettings';
 import { Scoreboard as ScoreboardComponent } from '@/components/Scoreboard';
 import { actions } from '@/modules/GameWithRedux';
 
 export const Scoreboard: FC = () => {
+  const query = useQuery();
+  const history = useHistory();
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const urlLevelParam = (query.get('level') || undefined) as LevelNames;
+    if (urlLevelParam) {
+      dispatch(actions.changeLevel(urlLevelParam as LevelNames));
+    }
+  }, []);
+
   const { level, time, bombs, flagCounter } = useSelector(
     ({ game: { level, time, bombs, flagCounter } }: RootState) => ({
       level,
@@ -16,11 +29,13 @@ export const Scoreboard: FC = () => {
     })
   );
 
-  const dispatch = useDispatch();
-
   const onChangeLevel = useCallback(
-    ({ target: { value: level } }: React.ChangeEvent<HTMLSelectElement>) =>
-      dispatch(actions.changeLevel(level as LevelNames)),
+    ({ target: { value: level } }: React.ChangeEvent<HTMLSelectElement>) => {
+      history.push({
+        search: `?${new URLSearchParams({ level }).toString()}`,
+      });
+      dispatch(actions.changeLevel(level as LevelNames));
+    },
     // Stryker disable next-line ArrayDeclaration
     []
   );

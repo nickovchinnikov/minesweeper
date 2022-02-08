@@ -15,6 +15,21 @@ jest.mock('react-redux', () => ({
   useDispatch: jest.fn(),
 }));
 
+jest.mock('@/hooks/useQuery', () => ({
+  __esModule: true,
+  useQuery: () => ({ get: () => null }),
+}));
+
+const mockHistoryPush = jest.fn();
+
+jest.mock('react-router-dom', () => ({
+  useHistory: () => ({
+    push: mockHistoryPush,
+  }),
+}));
+
+// (useQuery as jest.Mock).mockReturnValue({ get: () => null });
+
 describe('Scoreboard test cases', () => {
   it('Scoreboard check', () => {
     const mockDispatch = jest.fn();
@@ -35,6 +50,9 @@ describe('Scoreboard test cases', () => {
     expect(asFragment()).toMatchSnapshot();
 
     userEvent.selectOptions(screen.getByRole('combobox'), 'intermediate');
+    expect(mockHistoryPush).toHaveBeenCalledWith({
+      search: `?${new URLSearchParams({ level: 'intermediate' }).toString()}`,
+    });
     expect(asFragment()).toMatchSnapshot();
 
     userEvent.click(screen.getByRole('button'));

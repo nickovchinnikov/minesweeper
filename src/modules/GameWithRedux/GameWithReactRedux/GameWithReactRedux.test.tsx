@@ -6,6 +6,11 @@ import { store } from '@/store';
 
 import { GameWithReactRedux } from './GameWithReactRedux';
 
+jest.mock('@/hooks/useQuery', () => ({
+  __esModule: true,
+  useQuery: () => ({ get: () => null }),
+}));
+
 it('GameWithReactRedux renders correctly', () => {
   const { asFragment } = render(
     <Provider store={store}>

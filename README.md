@@ -17,7 +17,6 @@
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/69)
 
-
 ## Section: Introduction
 
 ### Minesweeper presentation
@@ -307,6 +306,10 @@
 ### React.lazy and routing
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/62)
+
+### Persistent state in URL search params
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/70)
 
 ## Redux intro
 

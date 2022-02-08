@@ -1,6 +1,6 @@
 import React, { FC, Suspense } from 'react';
 import { Provider } from 'react-redux';
-
+import { Location } from 'history';
 import {
   BrowserRouter as Router,
   Switch,
@@ -8,6 +8,9 @@ import {
   Link,
   Redirect,
 } from 'react-router-dom';
+
+import { useQuery } from '@/hooks/useQuery';
+import { store } from '@/store';
 
 const MinesweeperWithHooks = React.lazy(() =>
   import('@/pages/MinesweeperWithHooks').then(({ MinesweeperWithHooks }) => ({
@@ -31,27 +34,54 @@ const MinesweeperWithReactRedux = React.lazy(() =>
   )
 );
 
-import { store } from '@/store';
+export const Navigation: FC = () => {
+  const query = useQuery();
+  const level = query.get('level') || '';
+
+  const getLocationObjWithSearchParams = (
+    pathname: string
+  ): Partial<Location> => ({
+    pathname,
+    search: `${
+      level &&
+      `?${new URLSearchParams({
+        level,
+      }).toString()}`
+    }`,
+  });
+
+  return (
+    <nav>
+      <ul>
+        <li>
+          <Link to={getLocationObjWithSearchParams('/')}>Home</Link>
+        </li>
+        <li>
+          <Link to={getLocationObjWithSearchParams('/game-with-hooks')}>
+            Game With Hooks
+          </Link>
+        </li>
+        <li>
+          <Link to={getLocationObjWithSearchParams('/game-with-usereducer')}>
+            Game With useReducer
+          </Link>
+        </li>
+        <li>
+          <Link to={getLocationObjWithSearchParams('/game-with-reactredux')}>
+            Game With ReactRedux
+          </Link>
+        </li>
+      </ul>
+    </nav>
+  );
+};
+
+export const Home: FC = () => <h2>Minesweeper game Forever!</h2>;
 
 export const App: FC = () => (
   <Provider store={store}>
     <Router>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/game-with-hooks">Game With Hooks</Link>
-          </li>
-          <li>
-            <Link to="/game-with-usereducer">Game With useReducer</Link>
-          </li>
-          <li>
-            <Link to="/game-with-reactredux">Game With ReactRedux</Link>
-          </li>
-        </ul>
-      </nav>
+      <Navigation />
       <Switch>
         <Route path="/game-with-hooks/:username?">
           <Suspense fallback={<div>Loading minesweeper with hooks...</div>}>
@@ -82,5 +112,3 @@ export const App: FC = () => (
     </Router>
   </Provider>
 );
-
-export const Home: FC = () => <h2>Minesweeper game Forever!</h2>;

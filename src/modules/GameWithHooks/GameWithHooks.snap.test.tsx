@@ -4,6 +4,11 @@ import { render, screen } from '@testing-library/react';
 
 import { GameWithHooks } from './GameWithHooks';
 
+jest.mock('@/hooks/useQuery', () => ({
+  __esModule: true,
+  useQuery: () => ({ get: () => null }),
+}));
+
 it('Render game field by default', () => {
   const { asFragment } = render(<GameWithHooks />);
   userEvent.click(screen.getByTestId('0,0'), { button: 2 });

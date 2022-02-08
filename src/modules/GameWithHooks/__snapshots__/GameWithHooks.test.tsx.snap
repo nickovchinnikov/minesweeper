@@ -58,7 +58,7 @@ exports[`GameWithHooks test cases Render game field by default 1`] = `
     <div
       class="emotion-1"
     >
-      undefined
+      0
     </div>
     <div>
       <select
@@ -92,7 +92,7 @@ exports[`GameWithHooks test cases Render game field by default 1`] = `
     <div
       class="emotion-1"
     >
-      NaN
+      10
     </div>
   </div>
   .emotion-0 {

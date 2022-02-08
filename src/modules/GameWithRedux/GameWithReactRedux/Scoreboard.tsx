@@ -15,7 +15,9 @@ export const Scoreboard: FC = () => {
 
   useEffect(() => {
     const urlLevelParam = (query.get('level') || undefined) as LevelNames;
-    dispatch(actions.changeLevel(urlLevelParam as LevelNames));
+    if (urlLevelParam) {
+      dispatch(actions.changeLevel(urlLevelParam as LevelNames));
+    }
   }, []);
 
   const { level, time, bombs, flagCounter } = useSelector(

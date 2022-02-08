@@ -56,6 +56,6 @@ describe('Scoreboard test cases', () => {
     expect(asFragment()).toMatchSnapshot();
 
     userEvent.click(screen.getByRole('button'));
-    expect(mockDispatch).toHaveBeenCalledTimes(3);
+    expect(mockDispatch).toHaveBeenCalledTimes(2);
   });
 });

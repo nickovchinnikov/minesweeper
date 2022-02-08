@@ -6,6 +6,11 @@ import { store } from '@/store';
 
 import { MinesweeperWithReactRedux } from './MinesweeperWithReactRedux';
 
+jest.mock('@/hooks/useQuery', () => ({
+  __esModule: true,
+  useQuery: () => ({ get: () => null }),
+}));
+
 it('MinesweeperWithReactRedux renders correctly', () => {
   const { asFragment } = render(
     <Provider store={store}>

@@ -9,6 +9,7 @@
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/61)
 
 ### Jest "No tests found, exiting with code 1" error on Windows
+
 [Problem description](https://stackoverflow.com/questions/56348126/jest-no-tests-found-exiting-with-code-1-error-on-windows-10-in-react-redux-ap)
 
 [PR with Fix](https://github.com/nickovchinnikov/minesweeper/pull/65/files)
@@ -77,6 +78,7 @@
 ### Ecma TC39 and Babel
 
 [What is Babel?](https://babeljs.io/docs/en/)
+
 [TC39](https://tc39.es/)
 
 ### Webpack intro
@@ -206,7 +208,9 @@
 
 #### Move `mutation_testing` job to `workflow_dispatch`
 
-[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/74)
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/73)
+
+[hotfix](https://github.com/nickovchinnikov/minesweeper/pull/74)
 
 ## Section: React hooks and react testing library
 

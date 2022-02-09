@@ -39,6 +39,9 @@
 ### Add script lint + eslint-plugin-storybook
 [Pull request 2](https://github.com/nickovchinnikov/minesweeper/pull/68)
 
+### Add to eslintrc React version 
+[Pull request 3](https://github.com/nickovchinnikov/minesweeper/pull/71)
+
 ## Section: Typescript recap
 
 ### Typescript basic

@@ -204,6 +204,10 @@
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/48)
 
+#### Move `mutation_testing` job to `workflow_dispatch`
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/74)
+
 ## Section: React hooks and react testing library
 
 ### Static game

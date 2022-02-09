@@ -206,7 +206,7 @@
 
 #### Move `mutation_testing` job to `workflow_dispatch`
 
-[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/73)
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/74)
 
 ## Section: React hooks and react testing library
 

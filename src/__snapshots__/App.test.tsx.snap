@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App test cases App renders check 1`] = `
+<DocumentFragment>
+  <nav>
+    <ul>
+      <li>
+        <a
+          href="/"
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          href="/minesweeper/hooks"
+        >
+          Game With Hooks
+        </a>
+      </li>
+      <li>
+        <a
+          href="/minesweeper/usereducer"
+        >
+          Game With useReducer
+        </a>
+      </li>
+      <li>
+        <a
+          href="/minesweeper/reactredux"
+        >
+          Game With ReactRedux
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <h2>
+    Minesweeper game Forever!
+  </h2>
+</DocumentFragment>
+`;
+
+exports[`App test cases Home renders check 1`] = `
+<DocumentFragment>
+  <h2>
+    Minesweeper game Forever!
+  </h2>
+</DocumentFragment>
+`;

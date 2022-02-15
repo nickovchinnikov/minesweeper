@@ -322,6 +322,10 @@
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/70)
 
+### Update of React Router from v5 to v6
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/75/files)
+
 ## Redux intro
 
 ### Pure functions benifits

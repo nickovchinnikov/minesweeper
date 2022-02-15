@@ -1,18 +1,17 @@
 import React, { FC } from 'react';
 
-import { useParams } from 'react-router-dom';
+import { useParams, useSearchParams } from 'react-router-dom';
 
 import { Top } from '@/components/Top';
 import { GameLayout } from '@/components/Game';
 
 import { GameWithHooks } from '@/modules/GameWithHooks';
 
-import { useQuery } from '@/hooks/useQuery';
-
 export const MinesweeperWithHooks: FC = () => {
+  const [searchParams] = useSearchParams();
   const { username } = useParams<{ username?: string }>();
 
-  const id = useQuery().get('id');
+  const id = searchParams.get('id');
 
   return (
     <GameLayout

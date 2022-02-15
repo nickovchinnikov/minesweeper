@@ -6,9 +6,15 @@ import { store } from '@/store';
 
 import { MinesweeperWithReactRedux } from './MinesweeperWithReactRedux';
 
-jest.mock('@/hooks/useQuery', () => ({
-  __esModule: true,
-  useQuery: () => ({ get: () => null }),
+jest.mock('react-router-dom', () => ({
+  ...jest.requireActual('react-router-dom'),
+  useParams: jest.fn(),
+  useSearchParams: jest.fn().mockReturnValue([
+    {
+      get: () => null,
+    },
+    jest.fn(),
+  ]),
 }));
 
 it('MinesweeperWithReactRedux renders correctly', () => {

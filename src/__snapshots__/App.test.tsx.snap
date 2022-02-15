@@ -13,21 +13,21 @@ exports[`App test cases App renders check 1`] = `
       </li>
       <li>
         <a
-          href="/game-with-hooks"
+          href="/minesweeper/hooks"
         >
           Game With Hooks
         </a>
       </li>
       <li>
         <a
-          href="/game-with-usereducer"
+          href="/minesweeper/usereducer"
         >
           Game With useReducer
         </a>
       </li>
       <li>
         <a
-          href="/game-with-reactredux"
+          href="/minesweeper/reactredux"
         >
           Game With ReactRedux
         </a>

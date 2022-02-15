@@ -1,8 +1,9 @@
 import React from 'react';
-import { Provider } from 'react-redux';
+import { Provider, useSelector, useDispatch } from 'react-redux';
+import { useSearchParams } from 'react-router-dom';
+
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { useSelector, useDispatch } from 'react-redux';
 
 import { store } from '@/store';
 
@@ -15,20 +16,16 @@ jest.mock('react-redux', () => ({
   useDispatch: jest.fn(),
 }));
 
-jest.mock('@/hooks/useQuery', () => ({
-  __esModule: true,
-  useQuery: () => ({ get: () => null }),
-}));
-
-const mockHistoryPush = jest.fn();
+const mockSetSearchParams = jest.fn();
 
 jest.mock('react-router-dom', () => ({
-  useHistory: () => ({
-    push: mockHistoryPush,
-  }),
+  useSearchParams: jest.fn(),
 }));
 
-// (useQuery as jest.Mock).mockReturnValue({ get: () => null });
+(useSearchParams as jest.Mock).mockReturnValue([
+  { get: () => null },
+  mockSetSearchParams,
+]);
 
 describe('Scoreboard test cases', () => {
   it('Scoreboard check', () => {
@@ -50,9 +47,7 @@ describe('Scoreboard test cases', () => {
     expect(asFragment()).toMatchSnapshot();
 
     userEvent.selectOptions(screen.getByRole('combobox'), 'intermediate');
-    expect(mockHistoryPush).toHaveBeenCalledWith({
-      search: `?${new URLSearchParams({ level: 'intermediate' }).toString()}`,
-    });
+    expect(mockSetSearchParams).toHaveBeenCalledWith({ level: 'intermediate' });
     expect(asFragment()).toMatchSnapshot();
 
     userEvent.click(screen.getByRole('button'));

@@ -12,7 +12,7 @@ export const useTime = (
     let interval: NodeJS.Timeout;
 
     if (isGameStarted) {
-      interval = setInterval(() => {
+      interval = setTimeout(() => {
         setTime(time + 1);
       }, 1000);
 

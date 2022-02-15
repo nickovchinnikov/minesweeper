@@ -27,8 +27,6 @@ jest.mock('react-router-dom', () => ({
   mockSetSearchParams,
 ]);
 
-// (useQuery as jest.Mock).mockReturnValue({ get: () => null });
-
 describe('Scoreboard test cases', () => {
   it('Scoreboard check', () => {
     const mockDispatch = jest.fn();

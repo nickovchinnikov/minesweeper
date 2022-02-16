@@ -274,6 +274,10 @@
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/34/files)
 
+### Hotfix setInterval -> setTimeout
+
+[Pull request](https://github.com/nickovchinnikov/minesweeper/pull/76)
+
 ### Bombs counter
 
 [Pull request](https://github.com/nickovchinnikov/minesweeper/pull/35/files)

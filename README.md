@@ -2,6 +2,11 @@
 
 # [Full video course](https://www.udemy.com/course/hands-on-reactjs/?referralCode=4878AA679583335558E5)
 
+#### 4 days
+#### Starts 03/02/2022 05:07 AM PST (GMT -8)
+#### Expires 03/07/2022 05:07
+[The beast custom price 9.99$](https://www.udemy.com/course/hands-on-reactjs/?couponCode=3058359A92FD345FCF67)
+
 ## Patches, fixes and updates
 
 ### Update dependencies

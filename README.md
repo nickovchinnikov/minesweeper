@@ -1,5 +1,7 @@
 # Minesweeper game
 
+[![Join the chat at https://gitter.im/nickcourses/handson-reactjs](https://badges.gitter.im/nickcourses/handson-reactjs.svg)](https://gitter.im/nickcourses/handson-reactjs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 # [Full video course](https://www.udemy.com/course/hands-on-reactjs/?referralCode=4878AA679583335558E5)
 
 ## Patches, fixes and updates
